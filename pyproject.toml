@@ -1,0 +1,85 @@
+# ? ----------------------------------------------------------------------------
+# ? Building
+# ? ----------------------------------------------------------------------------
+
+[build-system]
+
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+
+# ? ----------------------------------------------------------------------------
+# ? Building
+# ? ----------------------------------------------------------------------------
+
+[project]
+
+name = "gcli"
+authors = [{ name = "Samuel Galvão Elias", email = "sgelias@outlook.com" }]
+description = "The Gene-Connector command line interface"
+requires-python = ">=3.11"
+keywords = ["DNA", "Bioinformatics", "Phylogeny", "Genomics", "Genetics"]
+classifiers = ["Programming Language :: Python :: 3.11"]
+dynamic = ["version"]
+
+
+# ? ----------------------------------------------------------------------------
+# ? Entrypoints
+# ? ----------------------------------------------------------------------------
+
+# [project.scripts]
+
+# The CLI entrypoint
+#gc="cls.ports.cli.main:classeq_cmd"
+
+
+# ? ----------------------------------------------------------------------------
+# ? Assets
+# ? ----------------------------------------------------------------------------
+
+# Remove hashtag if non python files should be included at the installation
+# files.
+#
+#[tool.setuptools.package-data]
+#gc = ["assets/*.tsv.gz"]
+
+# ? ----------------------------------------------------------------------------
+# ? Code consistence
+# ? ----------------------------------------------------------------------------
+
+[tool.commitizen]
+
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "v$version"
+bump_message = "bump: $current_version → $new_version [skip-ci]"
+
+
+[tool.mypy]
+python_version = 3.11
+exclude = ["build/"]
+
+[tool.flake8]
+ignore = "E722, W503, E501, E203"
+max-line-length = 80
+per-file-ignore="**/__init__.py: F401"
+
+
+ignore_missing_imports = "True"
+exclude = "./build/"
+explicit_package_bases = "./src/"
+
+follow_imports  = "normal"
+warn_redundant_casts = "True"
+warn_unused_ignores = "False"
+disallow_any_generics = "True"
+check_untyped_defs = "True"
+no_implicit_reexport = "True"
+namespace_packages = "False"
+disallow_untyped_defs = "True"
+
+[tool.attrs-mypy]
+init_forbid_extra = "True"
+init_typed = "True"
+warn_required_dynamic_aliases = "True"
+warn_untyped_fields = "True"
