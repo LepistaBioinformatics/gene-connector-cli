@@ -6,11 +6,22 @@ name = "pypi"
 [packages]
 biopython = "*"
 click = "*"
+pandera = "*"
+attrs = "*"
+bibtexparser = "*"
+gconon = {editable = true, path = "."}
 
 [dev-packages]
 mypy = "*"
 black = "*"
-gcli = {editable = true, path = "."}
+gcon = {editable = true, path = "."}
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+test = """
+env REFERENCE_TABLE=src/tests/mock/bipolaris.tsv \
+    CURRENT_USER_EMAIL=elias.samuel.galvao@gmail.com \
+    python -m unittest
+"""

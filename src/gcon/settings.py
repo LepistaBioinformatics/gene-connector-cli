@@ -54,7 +54,7 @@ basicConfig(
 )
 
 
-LOGGER = getLogger("GC")
+LOGGER = getLogger("gcon")
 
 
 LOGGER.setLevel(LOGGING_LEVEL)

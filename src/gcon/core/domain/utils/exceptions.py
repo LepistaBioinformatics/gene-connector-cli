@@ -1,6 +1,8 @@
 from enum import IntEnum, auto
 from logging import Logger, getLogger
-from typing import Any
+from typing import Any, Self
+
+from .either import Left, left
 
 
 class ErrorCodes(IntEnum):
@@ -44,7 +46,7 @@ class MappedErrors:
     __msg: Any = None
 
     # --------------------------------------------------------------------------
-    # MAGIC METHODS
+    # LIFE CYCLE HOOK METHODS
     # --------------------------------------------------------------------------
 
     def __init__(
@@ -65,6 +67,9 @@ class MappedErrors:
             logger.error(msg)
         else:
             logger.exception(msg)
+
+    def __call__(self) -> Left[Self]:
+        return left(self)
 
     # --------------------------------------------------------------------------
     # GETTERS AND SETTERS
@@ -104,7 +109,7 @@ class MappedErrors:
         self.__exp = exp
 
     # --------------------------------------------------------------------------
-    # PUBLIC METHODS
+    # PUBLIC INSTANCE METHODS
     # --------------------------------------------------------------------------
 
     def update_msg(self, msg: Any, prev: Any = None) -> str:
