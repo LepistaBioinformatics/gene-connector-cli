@@ -9,7 +9,6 @@ click = "*"
 pandera = "*"
 attrs = "*"
 bibtexparser = "*"
-gconon = {editable = true, path = "."}
 
 [dev-packages]
 mypy = "*"
@@ -21,7 +20,9 @@ python_version = "3.11"
 
 [scripts]
 test = """
-env REFERENCE_TABLE=src/tests/mock/bipolaris.tsv \
+env \
+    VALID_REFERENCE_TABLE=src/tests/mock/bipolaris-valid.tsv \
+    INVALID_REFERENCE_TABLE=src/tests/mock/bipolaris-invalid.tsv \
     CURRENT_USER_EMAIL=elias.samuel.galvao@gmail.com \
     python -m unittest
 """

@@ -14,7 +14,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 
-name = "gconon"
+name = "gcon"
 authors = [{ name = "Samuel Galvão Elias", email = "sgelias@outlook.com" }]
 description = "The Gene-Connector command line interface"
 requires-python = ">=3.11"
@@ -80,4 +80,3 @@ warn_untyped_fields = "True"
 
 [tool.flake8]
 ignore = "E722, W503, E501, E203"
-per-file-ignore="**/__init__.py: F401"

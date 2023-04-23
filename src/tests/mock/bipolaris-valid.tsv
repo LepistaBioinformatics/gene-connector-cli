@@ -1,0 +1,39 @@
+identifier	scientificName	literature	nuc-its	mit-gapdh	nuc-tef1
+#gcon:defs	std	opt	gene	gene	gene
+BRIP 12490T	Bipolaris austrostipae	"@article{tan2016eight,
+  title={Eight novel Bipolaris species identified from John L. Alcorn’s collections at the Queensland Plant Pathology Herbarium (BRIP)},
+  author={Tan, Yu Pei and Crous, Pedro W and Shivas, Roger G},
+  journal={Mycological Progress},
+  volume={15},
+  pages={1203--1214},
+  year={2016},
+  publisher={Springer}
+}"	KX452442	KX452408	KX452459
+BRIP 11740T	Bipolaris axonopicola	"@article{tan2016eight,
+  title={Eight novel Bipolaris species identified from John L. Alcorn’s collections at the Queensland Plant Pathology Herbarium (BRIP)},
+  author={Tan, Yu Pei and Crous, Pedro W and Shivas, Roger G},
+  journal={Mycological Progress},
+  volume={15},
+  pages={1203--1214},
+  year={2016},
+  publisher={Springer}
+}"	KX452443	KX452409	KX452460
+BRIP 13577T	Bipolaris bamagaensis	"@article{tan2016eight,
+  title={Eight novel Bipolaris species identified from John L. Alcorn’s collections at the Queensland Plant Pathology Herbarium (BRIP)},
+  author={Tan, Yu Pei and Crous, Pedro W and Shivas, Roger G},
+  journal={Mycological Progress},
+  volume={15},
+  pages={1203--1214},
+  year={2016},
+  publisher={Springer}
+}"	KX452445	KX452411	KX452462
+CBS 690.96	Bipolaris bicolor	"@article{manamgoda2014genus,
+  title={The genus bipolaris},
+  author={Manamgoda, DS and Rossman, Amy Y and Castlebury, LA and Crous, Pedro W and Madrid, H and Chukeatirote, E and Hyde, Kevin D},
+  journal={Studies in mycology},
+  volume={79},
+  number={1},
+  pages={221--288},
+  year={2014},
+  publisher={Westerdijk Fungal Biodiversity Institute}
+}"	KJ909762	KM042893	KM093776

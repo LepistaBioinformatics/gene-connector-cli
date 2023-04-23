@@ -1,23 +1,76 @@
-from attrs import define
+from typing import Any
+
+from attrs import field, frozen
+from pandas import DataFrame
 from pandera import DataFrameModel, Field
 from pandera.typing import Series
 
-
-@define(kw_only=True)
-class Citation:
-    ...
+from gcon.core.domain.dtos.connection import Connection
 
 
 class StandardFieldsSchema(DataFrameModel):
-    identifier: Series[str] = Field(alias="Identifier", unique=True)
-    sci_name: Series[str] = Field(alias="ScientificName")
-    literature: Series[str] = Field(alias="Literature")
+    identifier: Series[str] = Field(alias="identifier", unique=True)
+    sci_name: Series[str] = Field(alias="scientificName")
 
 
-@define(kw_only=True)
+class OptionalFieldsSchema(DataFrameModel):
+    literature: Series[str] = Field(alias="literature")
+
+
+@frozen(kw_only=True)
 class ReferenceData:
     # ? ------------------------------------------------------------------------
     # ? CLASS ATTRIBUTES
     # ? ------------------------------------------------------------------------
 
-    ...
+    # The data table content
+    data: DataFrame = field()
+
+    # A list of optional fields present in data
+    optional_fields: list[str] = field(default=list())
+
+    # A list of gene fields present in data
+    gene_fields: list[str] = field(default=list())
+
+    # A list of gene fields present in data
+    connections: list[Connection] = field(init=False)
+
+    # ? ------------------------------------------------------------------------
+    # ? VALIDATORS AND DEFAULTS
+    # ? ------------------------------------------------------------------------
+
+    @connections.default
+    def _set_default_connections(self) -> list[Connection]:
+        return list()
+
+    # ? ------------------------------------------------------------------------
+    # ? PUBLIC INSTANCE METHODS
+    # ? ------------------------------------------------------------------------
+
+    def with_connections(self, connections: list[Connection]) -> None:
+        """Add a list of connections to the reference data.
+
+        Args:
+            connections (list[Connection]): The list of connections to add.
+
+        """
+
+        self.connections.extend(connections)
+
+    def to_dict(self) -> dict[str, Any]:
+        """Convert the reference data to a dictionary.
+
+        Returns:
+            dict[str, list[dict[str, list[str]]]]: The reference data as a
+                dictionary.
+
+        """
+
+        return {
+            "data": self.data.to_dict(orient="records"),
+            "optional_fields": self.optional_fields,
+            "gene_fields": self.gene_fields,
+            "connections": [
+                connection.to_dict() for connection in self.connections
+            ],
+        }
