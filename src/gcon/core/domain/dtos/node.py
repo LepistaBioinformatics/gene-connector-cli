@@ -23,6 +23,7 @@ class Node:
     # ? ------------------------------------------------------------------------
 
     accession: str = field()
+    marker: str = field()
     metadata: Metadata = field()
 
     # ? ------------------------------------------------------------------------
@@ -33,7 +34,7 @@ class Node:
         return isinstance(other, Node) and self.__hash__() == other.__hash__()
 
     def __hash__(self) -> int:
-        return hash((self.accession, self.metadata))
+        return hash((self.accession, self.marker, self.metadata))
 
     # ? ------------------------------------------------------------------------
     # ? PUBLIC INSTANCE METHODS
@@ -42,5 +43,6 @@ class Node:
     def to_dict(self) -> dict[str, str | int]:
         return {
             "accession": self.accession,
+            "marker": self.marker,
             "metadata": self.metadata.to_dict(),
         }

@@ -19,6 +19,20 @@ class OptionalFieldsSchema(DataFrameModel):
 
 @frozen(kw_only=True)
 class ReferenceData:
+    """ReferenceData class.
+
+    Attributes:
+        data (DataFrame): The data table content.
+        optional_fields (list[str]): A list of optional fields present in data.
+        gene_fields (list[str]): A list of gene fields present in data.
+        connections (list[Connection]): A list of connections present in data.
+
+    Methods:
+        with_connections: Add a list of connections to the reference data.
+        to_dict: Convert the reference data to a dictionary.
+
+    """
+
     # ? ------------------------------------------------------------------------
     # ? CLASS ATTRIBUTES
     # ? ------------------------------------------------------------------------
@@ -32,7 +46,7 @@ class ReferenceData:
     # A list of gene fields present in data
     gene_fields: list[str] = field(default=list())
 
-    # A list of gene fields present in data
+    # A list of connections present in data
     connections: list[Connection] = field(init=False)
 
     # ? ------------------------------------------------------------------------

@@ -5,14 +5,11 @@ from typing import Generator
 
 from Bio import Entrez, SeqIO
 from Bio.SeqRecord import SeqRecord
-from gcon.core.domain.dtos.connection import Connection
-from gcon.core.domain.dtos.metadata import (
-    Metadata,
-    MetadataKeyGroup,
-)
-from gcon.core.domain.dtos.node import Node
 
 import gcon.core.domain.utils.exceptions as exc
+from gcon.core.domain.dtos.connection import Connection
+from gcon.core.domain.dtos.metadata import Metadata, MetadataKeyGroup
+from gcon.core.domain.dtos.node import Node
 from gcon.core.domain.dtos.reference_data import ReferenceData
 from gcon.core.domain.utils.either import Either, right
 from gcon.settings import CHUNK_SIZE, CURRENT_USER_EMAIL, LOGGER
@@ -47,11 +44,10 @@ def collect_metadata(
     for marker in reference_data.gene_fields:
         LOGGER.info(f"Recovering sequences from `{marker}` marker")
 
-        marker_column = reference_data.data[marker]
-
         marker_nodes = __collect_single_gene_metadata(
             entrez_handle=Entrez,
-            accessions=marker_column.dropna().values,
+            marker=marker,
+            accessions=reference_data.data[marker].dropna().values,
         )
 
         if marker_nodes.is_left:
@@ -86,10 +82,7 @@ def collect_metadata(
                     i for i in gene_nodes if i.accession == gene_value
                 )
             except StopIteration:
-                return exc.UseCaseError(
-                    f"Unable to find metadata for gene `{gene}`",
-                    logger=LOGGER,
-                )
+                continue
 
             row_nodes.append(acc_metadata)
 
@@ -120,6 +113,7 @@ def collect_metadata(
             reference_data.to_dict(),
             marker_out,
             indent=4,
+            sort_keys=True,
         )
 
     LOGGER.info("\tDone")
@@ -144,13 +138,16 @@ def __collect_unique_identifiers(
         ]
 
         if len(specimen_keys) == 0:
-            return exc.UseCaseError(
-                f"Unable to find specimen keys for node `{node}`",
-                logger=LOGGER,
-            )
+            continue
 
         for qualifier in specimen_keys:
             identifiers.append(node.metadata.qualifiers.get(qualifier))
+
+    if len(identifiers) == 0:
+        return exc.UseCaseError(
+            f"Unable to find identifiers for nodes `{[i.accession for i in nodes]}`",
+            logger=LOGGER,
+        )()
 
     return right(set(identifiers))
 
@@ -158,6 +155,7 @@ def __collect_unique_identifiers(
 def __collect_single_gene_metadata(
     entrez_handle: Entrez,
     accessions: list[str],
+    marker: str,
 ) -> Either[exc.UseCaseError, list[Metadata]]:
     """Collect metadata from a list of accessions.
 
@@ -223,6 +221,7 @@ def __collect_single_gene_metadata(
             nodes.append(
                 Node(
                     accession=record.name,
+                    marker=marker,
                     metadata=record_metadata.value,
                 )
             )

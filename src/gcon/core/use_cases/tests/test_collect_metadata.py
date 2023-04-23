@@ -33,5 +33,3 @@ class CollectMetadataTest(TestCase):
         self.assertTrue(metadata.is_right)
         self.assertIsInstance(metadata.value, ReferenceData)
         self.assertEqual(len(metadata.value.connections), 4)
-
-        print(metadata.value.connections)
