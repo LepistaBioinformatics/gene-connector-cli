@@ -23,6 +23,7 @@ test = """
 env \
     VALID_REFERENCE_TABLE=src/tests/mock/bipolaris-valid.tsv \
     INVALID_REFERENCE_TABLE=src/tests/mock/bipolaris-invalid.tsv \
+    PARSED_REFERENCE_DATA_JSON=src/tests/mock/reference_data.json \
     CURRENT_USER_EMAIL=elias.samuel.galvao@gmail.com \
     python -m unittest
 """

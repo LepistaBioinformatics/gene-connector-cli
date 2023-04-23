@@ -1,11 +1,12 @@
 from typing import Any
 
-from attrs import field, frozen
+from attrs import define, field
 
 from gcon.core.domain.dtos.node import Node
+from gcon.core.domain.dtos.score import ConnectionScores
 
 
-@frozen(kw_only=True)
+@define(kw_only=True)
 class Connection:
     """Connection class.
 
@@ -21,6 +22,7 @@ class Connection:
 
     identifiers: set[str] = field()
     nodes: set[Node] = field()
+    scores: ConnectionScores | None = field(default=None)
 
     # ? ------------------------------------------------------------------------
     # ? PUBLIC INSTANCE METHODS
@@ -38,3 +40,6 @@ class Connection:
             "identifiers": list(self.identifiers),
             "nodes": [node.to_dict() for node in self.nodes],
         }
+
+    def with_scores(self, scores: ConnectionScores) -> None:
+        self.scores = scores

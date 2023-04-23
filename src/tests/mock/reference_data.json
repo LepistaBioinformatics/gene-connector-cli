@@ -1,0 +1,247 @@
+{
+    "connections": [
+        {
+            "identifiers": [
+                "BRIP 12490",
+                "BRIP 12490T"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452442",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918526",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Leyburn",
+                        "HOST_SUBSTRATE.host": "Austrostipa verticillata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12490",
+                        "TAXONOMY.organism": "Bipolaris austrostipae",
+                        "TAXONOMY.type_material": "holotype of Bipolaris austrostipae"
+                    }
+                },
+                {
+                    "accession": "KX452408",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918526",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Leyburn",
+                        "HOST_SUBSTRATE.host": "Austrostipa verticillata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12490",
+                        "TAXONOMY.organism": "Bipolaris austrostipae",
+                        "TAXONOMY.type_material": "holotype of Bipolaris austrostipae"
+                    }
+                },
+                {
+                    "accession": "KX452459",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918526",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Leyburn",
+                        "HOST_SUBSTRATE.host": "Austrostipa verticillata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12490",
+                        "TAXONOMY.organism": "Bipolaris austrostipae",
+                        "TAXONOMY.type_material": "holotype of Bipolaris austrostipae"
+                    }
+                }
+            ],
+            "scores": null
+        },
+        {
+            "identifiers": [
+                "BRIP 11740T",
+                "BRIP 11740"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452443",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918527",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Axonopus fissifolius",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 11740",
+                        "TAXONOMY.organism": "Bipolaris axonopicola",
+                        "TAXONOMY.type_material": "holotype of Bipolaris axonopicola"
+                    }
+                },
+                {
+                    "accession": "KX452409",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918527",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Axonopus fissifolius",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 11740",
+                        "TAXONOMY.organism": "Bipolaris axonopicola",
+                        "TAXONOMY.type_material": "holotype of Bipolaris axonopicola"
+                    }
+                },
+                {
+                    "accession": "KX452460",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918527",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Axonopus fissifolius",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 11740",
+                        "TAXONOMY.organism": "Bipolaris axonopicola",
+                        "TAXONOMY.type_material": "holotype of Bipolaris axonopicola"
+                    }
+                }
+            ],
+            "scores": null
+        },
+        {
+            "identifiers": [
+                "BRIP 13577",
+                "BRIP 13577T"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452445",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918528",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Bamaga",
+                        "HOST_SUBSTRATE.host": "Urochloa subquadripara",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 13577",
+                        "TAXONOMY.organism": "Bipolaris bamagaensis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris bamagaensis"
+                    }
+                },
+                {
+                    "accession": "KX452411",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918528",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Bamaga",
+                        "HOST_SUBSTRATE.host": "Urochloa subquadripara",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 13577",
+                        "TAXONOMY.organism": "Bipolaris bamagaensis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris bamagaensis"
+                    }
+                },
+                {
+                    "accession": "KX452462",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918528",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Bamaga",
+                        "HOST_SUBSTRATE.host": "Urochloa subquadripara",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 13577",
+                        "TAXONOMY.organism": "Bipolaris bamagaensis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris bamagaensis"
+                    }
+                }
+            ],
+            "scores": null
+        },
+        {
+            "identifiers": [
+                "CBS690.96",
+                "BPI",
+                "CBS 690.96",
+                "CBS:690.96"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ909762",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.F. Castaneda",
+                        "ACTORS.identified_by": "R.F. Castaneda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:102001",
+                        "SPECIMEN.isolate": "CBS690.96",
+                        "SPECIMEN.specimen_voucher": "BPI",
+                        "TAXONOMY.organism": "Bipolaris bicolor"
+                    }
+                },
+                {
+                    "accession": "KM042893",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.F. Castaneda",
+                        "ACTORS.identified_by": "R.F. Castaneda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:102001",
+                        "SPECIMEN.culture_collection": "CBS:690.96",
+                        "SPECIMEN.strain": "CBS 690.96",
+                        "TAXONOMY.organism": "Bipolaris bicolor"
+                    }
+                },
+                {
+                    "accession": "KM093776",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.F. Castaneda",
+                        "ACTORS.identified_by": "R.F. Castaneda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:102001",
+                        "SPECIMEN.culture_collection": "CBS:690.96",
+                        "SPECIMEN.strain": "CBS 690.96",
+                        "TAXONOMY.organism": "Bipolaris bicolor"
+                    }
+                }
+            ],
+            "scores": null
+        }
+    ],
+    "data": [
+        {
+            "identifier": "BRIP 12490T",
+            "literature": "@article{tan2016eight,\n  title={Eight novel Bipolaris species identified from John L. Alcorn\u2019s collections at the Queensland Plant Pathology Herbarium (BRIP)},\n  author={Tan, Yu Pei and Crous, Pedro W and Shivas, Roger G},\n  journal={Mycological Progress},\n  volume={15},\n  pages={1203--1214},\n  year={2016},\n  publisher={Springer}\n}",
+            "mit-gapdh": "KX452408",
+            "nuc-its": "KX452442",
+            "nuc-tef1": "KX452459",
+            "scientificName": "Bipolaris austrostipae"
+        },
+        {
+            "identifier": "BRIP 11740T",
+            "literature": "@article{tan2016eight,\n  title={Eight novel Bipolaris species identified from John L. Alcorn\u2019s collections at the Queensland Plant Pathology Herbarium (BRIP)},\n  author={Tan, Yu Pei and Crous, Pedro W and Shivas, Roger G},\n  journal={Mycological Progress},\n  volume={15},\n  pages={1203--1214},\n  year={2016},\n  publisher={Springer}\n}",
+            "mit-gapdh": "KX452409",
+            "nuc-its": "KX452443",
+            "nuc-tef1": "KX452460",
+            "scientificName": "Bipolaris axonopicola"
+        },
+        {
+            "identifier": "BRIP 13577T",
+            "literature": "@article{tan2016eight,\n  title={Eight novel Bipolaris species identified from John L. Alcorn\u2019s collections at the Queensland Plant Pathology Herbarium (BRIP)},\n  author={Tan, Yu Pei and Crous, Pedro W and Shivas, Roger G},\n  journal={Mycological Progress},\n  volume={15},\n  pages={1203--1214},\n  year={2016},\n  publisher={Springer}\n}",
+            "mit-gapdh": "KX452411",
+            "nuc-its": "KX452445",
+            "nuc-tef1": "KX452462",
+            "scientificName": "Bipolaris bamagaensis"
+        },
+        {
+            "identifier": "CBS 690.96",
+            "literature": "@article{manamgoda2014genus,\n  title={The genus bipolaris},\n  author={Manamgoda, DS and Rossman, Amy Y and Castlebury, LA and Crous, Pedro W and Madrid, H and Chukeatirote, E and Hyde, Kevin D},\n  journal={Studies in mycology},\n  volume={79},\n  number={1},\n  pages={221--288},\n  year={2014},\n  publisher={Westerdijk Fungal Biodiversity Institute}\n}",
+            "mit-gapdh": "KM042893",
+            "nuc-its": "KJ909762",
+            "nuc-tef1": "KM093776",
+            "scientificName": "Bipolaris bicolor"
+        }
+    ],
+    "gene_fields": [
+        "nuc-its",
+        "mit-gapdh",
+        "nuc-tef1"
+    ],
+    "optional_fields": []
+}

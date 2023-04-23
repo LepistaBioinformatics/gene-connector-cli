@@ -1,12 +1,12 @@
 from enum import Enum
 from pathlib import Path
 
-from bibtexparser import loads as bib_loads
 from pandas import DataFrame, Series, read_csv
+from pandera.errors import SchemaError
 
 import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.reference_data import (
-    OptionalFieldsSchema,
+    OptionalColumnsSchema,
     ReferenceData,
     StandardFieldsSchema,
 )
@@ -173,7 +173,7 @@ def __validate_required_fields(
                 [StandardFieldsSchema.identifier, StandardFieldsSchema.sci_name]
             ]
         )
-    except Exception as e:
+    except SchemaError as e:
         return exc.UseCaseError(e, logger=LOGGER)()
 
     return right(None)
@@ -212,18 +212,13 @@ def __validate_optional_fields(
         ].columns
     )
 
-    if OptionalFieldsSchema.literature in optional_fields:
-        for literature in (
-            content_rows[OptionalFieldsSchema.literature].dropna().unique()
-        ):
-            try:
-                bib_loads(literature)
-            except Exception as e:
-                return exc.UseCaseError(
-                    f"Unable to parse literature field ({literature}) with "
-                    + f"error: {e}",
-                    logger=LOGGER,
-                )()
+    if len(optional_fields) == 0:
+        return right(optional_fields)
+
+    try:
+        OptionalColumnsSchema.validate(content_rows[optional_fields])
+    except SchemaError as e:
+        return exc.UseCaseError(e, logger=LOGGER)()
 
     return right(optional_fields)
 
@@ -327,5 +322,9 @@ def __validate_genes_fields(
                 )()
 
         inter_genic_unique_accessions.extend(uniques)
+
+    ReferenceData.build_genes_schema_from_list(
+        genes=gene_fields,
+    ).validate(content_rows[gene_fields])
 
     return right(gene_fields)

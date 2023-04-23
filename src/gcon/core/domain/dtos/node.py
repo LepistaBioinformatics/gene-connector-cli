@@ -34,7 +34,9 @@ class Node:
         return isinstance(other, Node) and self.__hash__() == other.__hash__()
 
     def __hash__(self) -> int:
-        return hash((self.accession, self.marker, self.metadata))
+        return hash(
+            (self.accession, self.marker, self.metadata.qualifiers.keys())
+        )
 
     # ? ------------------------------------------------------------------------
     # ? PUBLIC INSTANCE METHODS

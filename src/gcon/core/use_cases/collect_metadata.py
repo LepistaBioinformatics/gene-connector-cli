@@ -5,6 +5,7 @@ from typing import Generator
 
 from Bio import Entrez, SeqIO
 from Bio.SeqRecord import SeqRecord
+from gcon.core.domain.dtos.reference_data.schemas import StandardFieldsSchema
 
 import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.connection import Connection
@@ -18,116 +19,171 @@ from gcon.settings import CHUNK_SIZE, CURRENT_USER_EMAIL, LOGGER
 def collect_metadata(
     reference_data: ReferenceData,
     output_dir_path: Path,
-) -> Either[exc.UseCaseError, ReferenceData]:
-    # ? ------------------------------------------------------------------------
-    # ? Validate input arguments
-    # ? ------------------------------------------------------------------------
+) -> Either[exc.MappedErrors, ReferenceData]:
+    """Collect metadata from a list of accessions.
 
-    if not isinstance(reference_data, ReferenceData):
-        raise ValueError(
-            f"`{reference_data}` is not a instance of `{ReferenceData}`"
-        )
+    Args:
+        reference_data (ReferenceData): Reference data.
+        output_dir_path (Path): Output directory path.
 
-    if output_dir_path.is_dir() is False:
-        raise ValueError(f"Invalid directory path: `{output_dir_path}`")
+    Returns:
+        Either[exc.UseCaseError, ReferenceData]: Either a UseCaseError or a
+            ReferenceData.
 
-    # ? ------------------------------------------------------------------------
-    # ? Collect accessions from marker columns values
-    # ? ------------------------------------------------------------------------
+    Raises:
+        exc.UseCaseError: If the metadata source is not available or if the
+            output directory path is not valid.
 
-    Entrez.email = CURRENT_USER_EMAIL
+    """
 
-    by_marker_nodes: dict[str, list[Node]] = dict()
+    try:
+        # ? --------------------------------------------------------------------
+        # ? Validate input arguments
+        # ? --------------------------------------------------------------------
 
-    LOGGER.info(f"Fetching sequence from user `{CURRENT_USER_EMAIL}`")
-
-    for marker in reference_data.gene_fields:
-        LOGGER.info(f"Recovering sequences from `{marker}` marker")
-
-        marker_nodes = __collect_single_gene_metadata(
-            entrez_handle=Entrez,
-            marker=marker,
-            accessions=reference_data.data[marker].dropna().values,
-        )
-
-        if marker_nodes.is_left:
-            return marker_nodes
-
-        by_marker_nodes.update({marker: marker_nodes.value})
-
-        LOGGER.info(f"\t`{marker}`: {len(marker_nodes.value)} sequences found")
-
-    LOGGER.info("Fetching sequence done")
-
-    # ? ------------------------------------------------------------------------
-    # ? Build output Connections
-    # ? ------------------------------------------------------------------------
-
-    connections: list[Connection] = list()
-    for _, row in reference_data.data.iterrows():
-        row_nodes: list[Node] = list()
-
-        for gene in reference_data.gene_fields:
-            if (gene_value := row.get(gene)) is None:
-                continue
-
-            if (gene_nodes := by_marker_nodes.get(gene)) is None:
-                return exc.UseCaseError(
-                    f"Unable to find metadata for gene `{gene}`",
-                    logger=LOGGER,
-                )
-
-            try:
-                acc_metadata = next(
-                    i for i in gene_nodes if i.accession == gene_value
-                )
-            except StopIteration:
-                continue
-
-            row_nodes.append(acc_metadata)
-
-        identifiers = __collect_unique_identifiers(nodes=row_nodes)
-
-        if identifiers.is_left:
-            return identifiers
-
-        connections.append(
-            Connection(
-                identifiers=identifiers.value,
-                nodes=row_nodes,
+        if not isinstance(reference_data, ReferenceData):
+            return exc.InvalidArgumentError(
+                f"`{reference_data}` is not a instance of `{ReferenceData}`",
+                logger=LOGGER,
             )
-        )
 
-    reference_data.with_connections(connections)
+        if output_dir_path.is_dir() is False:
+            return exc.InvalidArgumentError(
+                f"Invalid directory path: `{output_dir_path}`",
+                logger=LOGGER,
+            )
 
-    # ? ------------------------------------------------------------------------
-    # ? Persist connections to file
-    # ? ------------------------------------------------------------------------
+        # ? --------------------------------------------------------------------
+        # ? Collect accessions from marker columns values
+        # ? --------------------------------------------------------------------
 
-    marker_output_file = output_dir_path.joinpath("connections.json")
+        Entrez.email = CURRENT_USER_EMAIL
 
-    LOGGER.info(f"Persisting metadata to file: {marker_output_file}")
+        by_marker_nodes: dict[str, list[Node]] = dict()
 
-    with marker_output_file.open("w") as marker_out:
-        dump(
-            reference_data.to_dict(),
-            marker_out,
-            indent=4,
-            sort_keys=True,
-        )
+        LOGGER.info(f"Fetching sequence from user `{CURRENT_USER_EMAIL}`")
 
-    LOGGER.info("\tDone")
+        for marker in reference_data.gene_fields:
+            LOGGER.info(f"Recovering sequences from `{marker}` marker")
 
-    # ? ------------------------------------------------------------------------
-    # ? Return a positive response
-    # ? ------------------------------------------------------------------------
+            marker_nodes = __collect_single_gene_metadata(
+                entrez_handle=Entrez,
+                marker=marker,
+                accessions=reference_data.data[marker].dropna().values,
+            )
 
-    return right(reference_data)
+            if marker_nodes.is_left:
+                return marker_nodes
+
+            by_marker_nodes.update({marker: marker_nodes.value})
+
+            LOGGER.info(
+                f"\t`{marker}`: {len(marker_nodes.value)} sequences found"
+            )
+
+        LOGGER.info("Fetching sequence done")
+
+        # ? --------------------------------------------------------------------
+        # ? Build output Connections
+        # ? --------------------------------------------------------------------
+
+        connections: list[Connection] = list()
+        for _, row in reference_data.data.iterrows():
+            row_nodes: list[Node] = list()
+
+            for gene in reference_data.gene_fields:
+                if (gene_value := row.get(gene)) is None:
+                    continue
+
+                if (gene_nodes := by_marker_nodes.get(gene)) is None:
+                    return exc.UseCaseError(
+                        f"Unable to find metadata for gene `{gene}`",
+                        logger=LOGGER,
+                    )
+
+                try:
+                    acc_metadata = next(
+                        i for i in gene_nodes if i.accession == gene_value
+                    )
+                except StopIteration:
+                    continue
+
+                row_nodes.append(acc_metadata)
+
+            identifiers = __collect_unique_identifiers(nodes=row_nodes)
+
+            if identifiers.is_left:
+                return identifiers
+
+            if (
+                row_identifier := row.get(StandardFieldsSchema.identifier)
+            ) is None:
+                return exc.UseCaseError(
+                    f"Unable to find identifier for row `{row}`",
+                    logger=LOGGER,
+                )()
+
+            unique_identifiers = set(
+                [
+                    *list(identifiers.value),
+                    row_identifier,
+                ]
+            )
+
+            connections.append(
+                Connection(
+                    identifiers=unique_identifiers,
+                    nodes=row_nodes,
+                )
+            )
+
+        reference_data.with_connections(connections)
+
+        # ? --------------------------------------------------------------------
+        # ? Persist connections to file
+        # ? --------------------------------------------------------------------
+
+        marker_output_file = output_dir_path.joinpath("reference_data.json")
+
+        LOGGER.info(f"Persisting metadata to file: {marker_output_file}")
+
+        with marker_output_file.open("w") as marker_out:
+            dump(
+                reference_data.to_dict(),
+                marker_out,
+                indent=4,
+                sort_keys=True,
+            )
+
+        LOGGER.info("\tDone")
+
+        # ? --------------------------------------------------------------------
+        # ? Return a positive response
+        # ? --------------------------------------------------------------------
+
+        return right(reference_data)
+
+    except Exception as e:
+        return exc.UseCaseError(e, logger=LOGGER)()
 
 
 def __collect_unique_identifiers(
     nodes: list[Node],
 ) -> Either[exc.UseCaseError, set[str]]:
+    """Collect unique identifiers from a list of nodes.
+
+    Args:
+        nodes (list[Node]): List of nodes.
+
+    Returns:
+        Either[exc.UseCaseError, set[str]]: Either a UseCaseError or a set of
+            unique identifiers.
+
+    Raises:
+        exc.UseCaseError: If the metadata source is not available.
+
+    """
+
     identifiers: list[str] = list()
 
     for node in nodes:

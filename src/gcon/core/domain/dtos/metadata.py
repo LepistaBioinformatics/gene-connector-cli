@@ -3,7 +3,7 @@ from __future__ import annotations
 from enum import Enum
 from typing import Self
 
-from attrs import field, frozen
+from attrs import define, field, frozen
 
 from gcon.settings import LOGGER
 
@@ -34,12 +34,83 @@ class MetadataKeyGroup(Enum):
     # ? CLASS ATTRIBUTES
     # ? ------------------------------------------------------------------------
 
+    SPECIMEN = MetadataGroupUnit(
+        description=(
+            "Any key that allows the unique distinction of the specimen along "
+            + "the species samples."
+        ),
+        score=8,
+        keys=[
+            "bio_material",
+            "clone",
+            "culture_collection",
+            "isolate",
+            "specimen_voucher",
+            "strain",
+            "subclone",
+            "substrain",
+        ],
+    )
+
+    TAXONOMY = MetadataGroupUnit(
+        description="Not also mapped keys.",
+        score=5,
+        keys=[
+            "biovar",
+            "biotype",
+            "breed",
+            "cultivar",
+            "genotype",
+            "haplogroup",
+            "haplotype",
+            "serogroup",
+            "serotype",
+            "serovar",
+            "variety",
+            "pathovar",
+            "pop_variant",
+            "organism",
+            "type_material",
+            "ecotype",
+            "forma",
+            "forma_specialis",
+        ],
+    )
+
+    HOST_SUBSTRATE = MetadataGroupUnit(
+        description="Keys related to host affinity or substrate preference.",
+        score=3,
+        keys=[
+            "host",
+            "isolation_source",
+        ],
+    )
+
+    TIME_REFERENCES = MetadataGroupUnit(
+        description="Geographic location related keys.",
+        score=2,
+        keys=[
+            "collection_date",
+        ],
+    )
+
+    GEO_REFERENCES = MetadataGroupUnit(
+        description="Geographic location related keys.",
+        score=2,
+        keys=[
+            "altitude",
+            "country",
+            "isolation",
+            "lat_lon",
+        ],
+    )
+
     ASSAY = MetadataGroupUnit(
         description=(
             "Keys related to molecular techniques, e.g. DNA extraction, "
             + "sequencing primers, extracted molecule, and others."
         ),
-        score=1,
+        score=0,
         keys=[
             "cell_line",
             "cell_type",
@@ -55,92 +126,21 @@ class MetadataKeyGroup(Enum):
             "tissue_lib",
             "tissue_type",
             "type",
+            "subtype",
         ],
     )
 
     EXTERNAL_LINKS = MetadataGroupUnit(
         description="External database links.",
-        score=1,
+        score=0,
         keys=[
             "db_xref",
         ],
     )
 
-    TIME_REFERENCES = MetadataGroupUnit(
-        description="Geographic location related keys.",
-        score=2,
-        keys=[
-            "collection_date",
-        ],
-    )
-
-    GEOGRAPHIC_REFERENCES = MetadataGroupUnit(
-        description="Geographic location related keys.",
-        score=2,
-        keys=[
-            "altitude",
-            "country",
-            "isolation",
-            "lat_lon",
-        ],
-    )
-
-    HOST_SUBSTRATE = MetadataGroupUnit(
-        description="Keys related to host affinity or substrate preference.",
-        score=3,
-        keys=[
-            "host",
-            "isolation_source",
-        ],
-    )
-
-    SPECIMEN = MetadataGroupUnit(
-        description=(
-            "Any key that allows the unique distinction of the specimen along "
-            + "the species samples."
-        ),
-        score=8,
-        keys=[
-            "bio_material",
-            "biotype",
-            "biovar",
-            "breed",
-            "clone",
-            "culture_collection",
-            "cultivar",
-            "ecotype",
-            "forma",
-            "forma_specialis",
-            "genotype",
-            "haplogroup",
-            "haplotype",
-            "isolate",
-            "pathovar",
-            "pop_variant",
-            "serogroup",
-            "serotype",
-            "serovar",
-            "specimen_voucher",
-            "strain",
-            "subclone",
-            "substrain",
-            "subtype",
-            "variety",
-        ],
-    )
-
-    TAXONOMY = MetadataGroupUnit(
-        description="Not also mapped keys.",
-        score=5,
-        keys=[
-            "organism",
-            "type_material",
-        ],
-    )
-
     ACTORS = MetadataGroupUnit(
         description="Not also mapped keys.",
-        score=1,
+        score=0,
         keys=[
             "authority",
             "collected_by",
@@ -274,7 +274,7 @@ class MetadataKey:
         return hash((self.group.name, self.key))
 
 
-@frozen(kw_only=True)
+@define(kw_only=True)
 class Metadata:
     """Metadata class.
 
