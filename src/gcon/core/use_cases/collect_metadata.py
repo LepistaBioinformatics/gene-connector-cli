@@ -61,10 +61,10 @@ def collect_metadata(
 
         by_marker_nodes: dict[str, list[Node]] = dict()
 
-        LOGGER.info(f"Fetching sequence from user `{CURRENT_USER_EMAIL}`")
+        LOGGER.debug(f"Fetching sequence from user `{CURRENT_USER_EMAIL}`")
 
         for marker in reference_data.gene_fields:
-            LOGGER.info(f"Recovering sequences from `{marker}` marker")
+            LOGGER.debug(f"Recovering sequences from `{marker}` marker")
 
             marker_nodes = __collect_single_gene_metadata(
                 entrez_handle=Entrez,
@@ -77,11 +77,11 @@ def collect_metadata(
 
             by_marker_nodes.update({marker: marker_nodes.value})
 
-            LOGGER.info(
+            LOGGER.debug(
                 f"\t`{marker}`: {len(marker_nodes.value)} sequences found"
             )
 
-        LOGGER.info("Fetching sequence done")
+        LOGGER.debug("Fetching sequence done")
 
         # ? --------------------------------------------------------------------
         # ? Build output Connections
@@ -145,7 +145,9 @@ def collect_metadata(
 
         marker_output_file = output_dir_path.joinpath("reference_data.json")
 
-        LOGGER.info(f"Persisting metadata to file: {marker_output_file}")
+        LOGGER.debug(
+            f"Persisting metadata to temporary file: {marker_output_file}"
+        )
 
         with marker_output_file.open("w") as marker_out:
             dump(
@@ -155,7 +157,7 @@ def collect_metadata(
                 sort_keys=True,
             )
 
-        LOGGER.info("\tDone")
+        LOGGER.debug("\tDone")
 
         # ? --------------------------------------------------------------------
         # ? Return a positive response
@@ -197,7 +199,7 @@ def __collect_unique_identifiers(
             continue
 
         for qualifier in specimen_keys:
-            identifiers.append(node.metadata.qualifiers.get(qualifier))
+            identifiers.extend(node.metadata.qualifiers.get(qualifier))
 
     if len(identifiers) == 0:
         return exc.UseCaseError(
@@ -232,7 +234,7 @@ def __collect_single_gene_metadata(
     chunks = [i for i in __chunks(accessions, CHUNK_SIZE)]
 
     for index, acc_chunk in enumerate(chunks):
-        LOGGER.info(
+        LOGGER.debug(
             f"Processing chunk {index + 1} of {len(chunks)}. "
             + f"Size: {len(acc_chunk)}"
         )
@@ -303,14 +305,14 @@ def __place_qualifiers(
     metadata = Metadata()
 
     for key, value in raw_qualifiers.items():
-        if len(value) != 1:
+        if len(value) == 0:
             return exc.UseCaseError(
-                f"Invalid qualifier value length for `{key}`. It should not"
-                + f" have more than one value. Found: {value}",
+                f"Invalid qualifier value length for `{key}`. It should have"
+                + f"at last one value. Found: {value}",
                 logger=LOGGER,
             )()
 
-        metadata.add_feature(key, value[0])
+        metadata.add_feature(key, value)
 
     return right(metadata)
 

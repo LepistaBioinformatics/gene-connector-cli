@@ -10,6 +10,19 @@ from gcon.settings import LOGGER
 def build_metadata_match_scores(
     reference_data: ReferenceData,
 ) -> Either[exc.MappedErrors, ReferenceData]:
+    """Calculate the match score of the metadata of a reference data.
+
+    Args:
+        reference_data (ReferenceData): The reference data to calculate the
+            match scores.
+
+    Returns:
+        Either[exc.MappedErrors, ReferenceData]: A positive response with the
+            reference data with the calculated match scores or a negative
+            response with the errors.
+
+    """
+
     try:
         # ? --------------------------------------------------------------------
         # ? Validate input arguments
@@ -91,6 +104,14 @@ def __calculate_connection_match_score(
             group: False for group in non_zero_groups
         }
 
+        """ for group in non_zero_groups:
+            unique_metadata_keys: set[MetadataKey] = set()
+
+            for node in connection.nodes:
+                unique_metadata_keys.update(node.metadata.qualifiers.keys())
+
+            print(unique_metadata_keys) """
+
         for node in connection.nodes:
             also_processed_groups: list[MetadataKeyGroup] = list()
 
@@ -171,13 +192,19 @@ def __calculate_connection_match_score(
         # ? Calculate observed completeness score
         # ? --------------------------------------------------------------------
 
-        observed_completeness_score = observed_score / expected_score
+        observed_completeness_score = round(
+            observed_score / expected_score,
+            ndigits=2,
+        )
 
         # ? --------------------------------------------------------------------
         # ? Calculate reachable completeness score
         # ? --------------------------------------------------------------------
 
-        reachable_completeness_score = non_zero_group_score / expected_score
+        reachable_completeness_score = round(
+            non_zero_group_score / expected_score,
+            ndigits=2,
+        )
 
         # ? --------------------------------------------------------------------
         # ? Update input connection with scores

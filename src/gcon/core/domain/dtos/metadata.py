@@ -290,7 +290,7 @@ class Metadata:
     # ? CLASS ATTRIBUTES
     # ? ------------------------------------------------------------------------
 
-    qualifiers: dict[MetadataKey, str | int] = field(init=False)
+    qualifiers: dict[MetadataKey, list[str | int]] = field(init=False)
 
     # ? ------------------------------------------------------------------------
     # ? VALIDATORS AND DEFAULTS
@@ -316,11 +316,11 @@ class Metadata:
     # ? PUBLIC INSTANCE METHODS
     # ? ------------------------------------------------------------------------
 
-    def to_dict(self) -> dict[str, str | int]:
+    def to_dict(self) -> dict[str, list[str | int]]:
         """Convert the metadata to a dictionary.
 
         Returns:
-            dict[str, str | int]: The metadata as a dictionary.
+            dict[str, list[str | int]]: The metadata as a dictionary.
 
         """
 
@@ -329,7 +329,7 @@ class Metadata:
             for metadata_key, value in self.qualifiers.items()
         }
 
-    def add_feature(self, key: str, value: str | int) -> Self:
+    def add_feature(self, key: str, value: list[str | int]) -> Self:
         """Add a new feature to the metadata.
 
         Args:

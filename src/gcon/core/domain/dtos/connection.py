@@ -39,6 +39,7 @@ class Connection:
         return {
             "identifiers": list(self.identifiers),
             "nodes": [node.to_dict() for node in self.nodes],
+            "scores": self.scores.to_dict() if self.scores else None,
         }
 
     def with_scores(self, scores: ConnectionScores) -> None:

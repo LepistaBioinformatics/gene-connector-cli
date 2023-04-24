@@ -27,10 +27,9 @@ dynamic = ["version"]
 # ? Entrypoints
 # ? ----------------------------------------------------------------------------
 
-# [project.scripts]
+[project.scripts]
 
-# The CLI entrypoint
-#gcon="cls.ports.cli.main:gcon_cmd"
+gcon="gcon.ports.cli.main:gcon_cmd"
 
 
 # ? ----------------------------------------------------------------------------

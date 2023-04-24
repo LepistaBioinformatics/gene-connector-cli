@@ -14,7 +14,7 @@ from gcon.core.domain.utils.either import Either, right
 from gcon.settings import LOGGER
 
 
-class RefDatColumnOptions(Enum):
+class ReferenceRowOptions(Enum):
     IDENTIFIER = "#gcon:defs"
     STANDARD = "std"
     OPTIONAL = "opt"
@@ -23,6 +23,7 @@ class RefDatColumnOptions(Enum):
 
 def load_and_validate_source_table(
     source_table_path: Path,
+    ignore_duplicates: bool = False,
 ) -> Either[exc.UseCaseError, ReferenceData]:
     """Load and validate source table
 
@@ -101,6 +102,7 @@ def load_and_validate_source_table(
         validation_response = __validate_genes_fields(
             definition_row=definition_row,
             content_rows=content_rows,
+            ignore_duplicates=ignore_duplicates,
         )
 
         if validation_response.is_left:
@@ -204,7 +206,7 @@ def __validate_optional_fields(
         definition_row[
             definition_row.columns[
                 definition_row.where(
-                    definition_row == RefDatColumnOptions.OPTIONAL.value,
+                    definition_row == ReferenceRowOptions.OPTIONAL.value,
                 )
                 .any()
                 .values
@@ -226,6 +228,7 @@ def __validate_optional_fields(
 def __validate_genes_fields(
     definition_row: DataFrame,
     content_rows: DataFrame,
+    ignore_duplicates: bool = False,
 ) -> Either[exc.UseCaseError, list[str]]:
     """Validates the gene fields in the source table
 
@@ -269,7 +272,7 @@ def __validate_genes_fields(
         definition_row[
             definition_row.columns[
                 definition_row.where(
-                    definition_row == RefDatColumnOptions.GENE.value,
+                    definition_row == ReferenceRowOptions.GENE.value,
                 )
                 .any()
                 .values
@@ -315,7 +318,10 @@ def __validate_genes_fields(
             )()
 
         for unique in uniques:
-            if unique in inter_genic_unique_accessions:
+            if (
+                unique in inter_genic_unique_accessions
+                and ignore_duplicates is False
+            ):
                 return exc.UseCaseError(
                     f"Duplicate gene marker name found in `{gene}`: {unique}",
                     logger=LOGGER,
