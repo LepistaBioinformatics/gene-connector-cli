@@ -1,6 +1,10 @@
+import re
+from functools import reduce
+from operator import iconcat
+
 import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.connection import Connection
-from gcon.core.domain.dtos.metadata import MetadataKeyGroup
+from gcon.core.domain.dtos.metadata import MetadataKey, MetadataKeyGroup
 from gcon.core.domain.dtos.reference_data import ReferenceData
 from gcon.core.domain.dtos.score import ConnectionScores
 from gcon.core.domain.utils.either import Either, right
@@ -98,46 +102,69 @@ def __calculate_connection_match_score(
 
         """
 
-        nodes_scores: dict[str, dict[MetadataKeyGroup, int]] = dict()
-
-        nodes_completeness: dict[MetadataKeyGroup, bool] = {
+        group_completeness: dict[MetadataKeyGroup, bool] = {
             group: False for group in non_zero_groups
         }
 
-        """ for group in non_zero_groups:
-            unique_metadata_keys: set[MetadataKey] = set()
+        group_scores: dict[MetadataKeyGroup, int] = {
+            group: 0 for group in non_zero_groups
+        }
 
-            for node in connection.nodes:
-                unique_metadata_keys.update(node.metadata.qualifiers.keys())
+        for group in non_zero_groups:
+            higher_score = 0
 
-            print(unique_metadata_keys) """
+            for key in group.value.keys:
+                metadata_key = MetadataKey(group=group, key=key)
 
-        for node in connection.nodes:
-            also_processed_groups: list[MetadataKeyGroup] = list()
+                nodes_with_key: list[tuple[str, set[str]]] = [
+                    (
+                        node.accession,
+                        set(
+                            reduce(
+                                iconcat,
+                                [
+                                    v
+                                    for k, v in node.metadata.qualifiers.items()
+                                    if k == metadata_key
+                                ],
+                                [],
+                            )
+                        ),
+                    )
+                    for node in connection.nodes
+                    if metadata_key in node.metadata.qualifiers.keys()
+                ]
 
-            groups_scores: dict[MetadataKeyGroup, int] = {
-                group: 0 for group in non_zero_groups
-            }
+                values_shared_by_nodes: dict[str, set[str]] = dict()
 
-            for key in node.metadata.qualifiers.keys():
-                if (
-                    key.group not in also_processed_groups
-                    and key.group in non_zero_groups
-                ):
-                    also_processed_groups.append(key.group)
-                    groups_scores[key.group] += key.group.value.score
-                    nodes_completeness[key.group] = True
+                for accession, values in nodes_with_key:
+                    for value in values:
+                        # Replace all non alphanumeric characters from string
+                        # to nothing
+                        value = re.sub(r"\W+", "", value).lower()
 
-            nodes_scores.update({node.accession: groups_scores})
+                        if value not in values_shared_by_nodes:
+                            values_shared_by_nodes[value] = set()
+                        values_shared_by_nodes[value].add(accession)
+
+                if not values_shared_by_nodes:
+                    continue
+
+                nodes_set_score = max(
+                    len(accessions) * group.value.score
+                    for _, accessions in values_shared_by_nodes.items()
+                )
+
+                if nodes_set_score > higher_score:
+                    higher_score = nodes_set_score
+
+            if higher_score > 0:
+                group_completeness[group] = True
+                group_scores[group] = higher_score
 
         return (
-            nodes_completeness,
-            sum(
-                [
-                    sum([score for score in group_scores.values()])
-                    for group_scores in nodes_scores.values()
-                ]
-            ),
+            group_completeness,
+            sum(group_scores.values()),
         )
 
     try:

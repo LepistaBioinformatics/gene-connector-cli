@@ -4,9 +4,8 @@ from typing import Any, Self
 
 from attrs import field, frozen
 from pandas import DataFrame
-from pandera import Column, DataFrameSchema
+from pandera import DataFrameSchema
 from pandera.errors import SchemaError
-from gcon.core.domain.dtos.score import ConnectionScores
 
 import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.connection import Connection
@@ -16,10 +15,15 @@ from gcon.core.domain.dtos.metadata import (
     MetadataKeyGroup,
 )
 from gcon.core.domain.dtos.node import Node
+from gcon.core.domain.dtos.score import ConnectionScores
 from gcon.core.domain.utils.either import Either, right
 from gcon.settings import LOGGER
 
-from .schemas import OptionalColumnsSchema, StandardFieldsSchema
+from .schemas import (
+    GeneColumnSchema,
+    OptionalColumnsSchema,
+    StandardFieldsSchema,
+)
 
 
 @frozen(kw_only=True)
@@ -125,9 +129,7 @@ class ReferenceData:
 
         """
 
-        return DataFrameSchema(
-            {gene: Column(str, nullable=True) for gene in genes}
-        )
+        return DataFrameSchema({gene: GeneColumnSchema for gene in genes})
 
     @classmethod
     def from_json(

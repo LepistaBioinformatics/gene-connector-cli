@@ -1,4 +1,8 @@
+import re
+from typing import Literal
+
 from bibtexparser import loads as bib_loads
+from numpy import nan
 from pandera import Column, DataFrameModel, DataFrameSchema, Field, Check
 from pandera.typing import Series
 
@@ -52,6 +56,51 @@ def __check_bid(bibs: str) -> bool:
     return True
 
 
+def __check_accession(accessions: str) -> Literal[True]:
+    """Check if the accessions are valid.
+
+    Args:
+        accessions (str): A list of accessions.
+
+    Returns:
+        Literal[True]: True if the accessions are valid.
+
+    Raises:
+        ValueError: If the accessions are not valid.
+
+    """
+
+    if len(accessions) == 0:
+        return True
+
+    for accession in accessions:
+        if accession is nan:
+            continue
+
+        nucleotide = re.compile(r"^[A-Z]{1,2}_?[0-9]{5,8}$")
+        protein = re.compile(r"^[A-Z]{3}[0-9]{5,7}$")
+        wgs = re.compile(r"^[A-Z]{4,6}[0-9]{2}[0-9]{6,7}$")
+        mga = re.compile(r"^[A-Z]{5}[0-9]{7}$")
+
+        for name, pattern in [
+            ("protein", protein),
+            ("wgs", wgs),
+            ("mga", mga),
+        ]:
+            if re.findall(pattern, accession):
+                raise ValueError(
+                    f"Accession is a {name} ({pattern}). Only nucleotides are "
+                    + f"allowed ({nucleotide})"
+                )
+
+        if not re.findall(nucleotide, accession):
+            raise ValueError(
+                f"Invalid nucleotide format of accession `{accession}` ({nucleotide})."
+            )
+
+    return True
+
+
 OptionalColumnsSchema = DataFrameSchema(
     {
         "literature": Column(
@@ -68,5 +117,5 @@ GeneColumnSchema = Column(
     str,
     required=False,
     nullable=True,
-    checks=[Check(lambda i: __check_bid(i))],
+    checks=[Check(lambda i: __check_accession(i))],
 )

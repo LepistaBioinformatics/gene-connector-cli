@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from enum import Enum
+from hashlib import md5
 from typing import Self
 
 from attrs import define, field, frozen
@@ -158,6 +159,13 @@ class MetadataKeyGroup(Enum):
     )
 
     # ? ------------------------------------------------------------------------
+    # ? LIFE CYCLE HOOK METHODS
+    # ? ------------------------------------------------------------------------
+
+    def __str__(self) -> str:
+        return f"{self.name} ({self.value.score})"
+
+    # ? ------------------------------------------------------------------------
     # ? CLASS METHODS
     # ? ------------------------------------------------------------------------
 
@@ -271,7 +279,13 @@ class MetadataKey:
         )
 
     def __hash__(self) -> int:
-        return hash((self.group.name, self.key))
+        return int(
+            md5((self.group.name + str(self.key)).encode()).hexdigest(),
+            16,
+        )
+
+    def __str__(self) -> str:
+        return f"{self.group.name}: {self.key}"
 
 
 @define(kw_only=True)
@@ -310,7 +324,10 @@ class Metadata:
         )
 
     def __hash__(self) -> int:
-        return hash(self.qualifiers)
+        return int(md5(str(self.qualifiers).encode()).hexdigest(), 16)
+
+    """ def __str__(self) -> str:
+        return str(self.to_dict()) """
 
     # ? ------------------------------------------------------------------------
     # ? PUBLIC INSTANCE METHODS
