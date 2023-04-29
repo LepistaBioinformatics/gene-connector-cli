@@ -136,6 +136,17 @@ class ReferenceData:
         cls,
         json_path: Path,
     ) -> Either[exc.MappedErrors, Self]:
+        """Create a reference data from a JSON file.
+
+        Args:
+            json_path (Path): The path to the JSON file.
+
+        Returns:
+            Either[exc.MappedErrors, Self]: The reference data or a list of
+                errors.
+
+        """
+
         try:
             # ? ----------------------------------------------------------------
             # ? Validate input arguments
