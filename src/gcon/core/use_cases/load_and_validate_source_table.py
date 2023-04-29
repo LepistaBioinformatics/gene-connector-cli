@@ -1,5 +1,6 @@
 from enum import Enum
 from pathlib import Path
+from numpy import nan
 
 from pandas import DataFrame, Series, read_csv
 from pandera.errors import SchemaError
@@ -38,6 +39,12 @@ def load_and_validate_source_table(
         exc.UseCaseError: If the source table file is not found.
 
     """
+
+    def format_gene_field_as_list(value: str) -> list[str]:
+        if value is nan:
+            return []
+
+        return [i.strip() for i in value.split(",")] if value else []
 
     try:
         # ? --------------------------------------------------------------------
@@ -115,16 +122,23 @@ def load_and_validate_source_table(
         # ? Return a positive response
         # ? --------------------------------------------------------------------
 
+        data = content_rows[
+            [
+                StandardFieldsSchema.identifier,
+                StandardFieldsSchema.sci_name,
+                *optional_fields,
+                *gene_fields,
+            ]
+        ]
+
+        for gene in gene_fields:
+            data[gene] = data[gene].apply(
+                lambda x: format_gene_field_as_list(x)
+            )
+
         return right(
             ReferenceData(
-                data=content_rows[
-                    [
-                        StandardFieldsSchema.identifier,
-                        StandardFieldsSchema.sci_name,
-                        *optional_fields,
-                        *gene_fields,
-                    ]
-                ],
+                data=data,
                 optional_fields=optional_fields,
                 gene_fields=gene_fields,
             )

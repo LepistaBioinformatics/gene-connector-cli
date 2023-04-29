@@ -70,12 +70,19 @@ def __check_accession(accessions: str) -> Literal[True]:
 
     """
 
-    if len(accessions) == 0:
-        return True
+    def validate_single_accession(accession: str) -> Literal[True]:
+        """Validate a single accession.
 
-    for accession in accessions:
-        if accession is nan:
-            continue
+        Args:
+            accession (str): A single accession.
+
+        Returns:
+            Literal[True]: True if the accession is valid.
+
+        Raises:
+            ValueError: If the accession is not valid.
+
+        """
 
         nucleotide = re.compile(r"^[A-Z]{1,2}_?[0-9]{5,8}$")
         protein = re.compile(r"^[A-Z]{3}[0-9]{5,7}$")
@@ -97,6 +104,20 @@ def __check_accession(accessions: str) -> Literal[True]:
             raise ValueError(
                 f"Invalid nucleotide format of accession `{accession}` ({nucleotide})."
             )
+
+        return True
+
+    if len(accessions) == 0:
+        return True
+
+    for accession in accessions:
+        if accession is nan:
+            continue
+
+        accession_splitted = [i.strip() for i in accession.split(",")]
+
+        for accession in accession_splitted:
+            validate_single_accession(accession)
 
     return True
 

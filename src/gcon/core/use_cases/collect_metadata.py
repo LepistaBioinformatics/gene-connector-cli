@@ -1,5 +1,7 @@
+from functools import reduce
 from io import StringIO
 from json import dump
+from operator import iconcat
 from pathlib import Path
 from typing import Generator
 
@@ -69,7 +71,9 @@ def collect_metadata(
             marker_nodes = __collect_single_gene_metadata(
                 entrez_handle=Entrez,
                 marker=marker,
-                accessions=reference_data.data[marker].dropna().values,
+                accessions=reduce(
+                    iconcat, reference_data.data[marker].dropna().values, []
+                ),
             )
 
             if marker_nodes.is_left:
@@ -102,13 +106,13 @@ def collect_metadata(
                     )
 
                 try:
-                    acc_metadata = next(
-                        i for i in gene_nodes if i.accession == gene_value
-                    )
+                    acc_metadata = [
+                        i for i in gene_nodes if i.accession in gene_value
+                    ]
                 except StopIteration:
                     continue
 
-                row_nodes.append(acc_metadata)
+                row_nodes.extend(acc_metadata)
 
             identifiers = __collect_unique_identifiers(nodes=row_nodes)
 
