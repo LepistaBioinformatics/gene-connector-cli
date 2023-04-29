@@ -129,7 +129,13 @@ class ReferenceData:
 
         """
 
-        return DataFrameSchema({gene: GeneColumnSchema for gene in genes})
+        col, pattern, attrs = GeneColumnSchema
+
+        return DataFrameSchema(
+            {pattern: col(**attrs, name=gene) for gene in genes},  # type: ignore
+            unique_column_names=True,
+            coerce=True,
+        )
 
     @classmethod
     def from_json(

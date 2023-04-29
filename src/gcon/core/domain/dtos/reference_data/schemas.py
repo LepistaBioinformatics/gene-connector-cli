@@ -3,7 +3,14 @@ from typing import Literal
 
 from bibtexparser import loads as bib_loads
 from numpy import nan
-from pandera import Column, DataFrameModel, DataFrameSchema, Field, Check
+from pandera import (
+    Check,
+    Column,
+    DataFrameModel,
+    DataFrameSchema,
+    Field,
+    String,
+)
 from pandera.typing import Series
 
 
@@ -134,9 +141,14 @@ OptionalColumnsSchema = DataFrameSchema(
 )
 
 
-GeneColumnSchema = Column(
-    str,
-    required=False,
-    nullable=True,
-    checks=[Check(lambda i: __check_accession(i))],
+GeneColumnSchema = (
+    Column,
+    "^[a-z]{3}-[a-zA-Z0-9]+$",
+    dict(
+        dtype=String,
+        regex=True,
+        required=True,
+        nullable=False,
+        checks=[Check(lambda i: __check_accession(i))],
+    ),
 )
