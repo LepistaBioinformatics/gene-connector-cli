@@ -20,7 +20,11 @@ description = "The Gene-Connector command line interface"
 requires-python = ">=3.11"
 keywords = ["DNA", "Bioinformatics", "Phylogeny", "Genomics", "Genetics"]
 classifiers = ["Programming Language :: Python :: 3.11"]
-dynamic = ["version"]
+dynamic = ["version", "dependencies"]
+
+[tool.setuptools.dynamic]
+
+dependencies = {file = ["requirements.txt"]}
 
 
 # ? ----------------------------------------------------------------------------
@@ -47,7 +51,7 @@ gcon = ["assets/*"]
 [tool.commitizen]
 
 name = "cz_conventional_commits"
-version = "0.2.0"
+version = "0.3.0"
 tag_format = "v$version"
 bump_message = "bump: $current_version → $new_version [skip-ci]"
 

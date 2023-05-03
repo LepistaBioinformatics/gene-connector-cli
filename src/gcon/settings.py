@@ -56,6 +56,7 @@ basicConfig(
 
 LOGGER = getLogger("gcon")
 
+getLogger("bibtexparser").setLevel(WARNING)
 
 LOGGER.setLevel(LOGGING_LEVEL)
 
