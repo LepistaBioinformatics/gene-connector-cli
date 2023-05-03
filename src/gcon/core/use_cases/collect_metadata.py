@@ -79,6 +79,7 @@ def collect_metadata(
         by_marker_nodes: dict[str, list[Node]] = dict()
 
         LOGGER.debug(f"Fetching sequence from user `{CURRENT_USER_EMAIL}`")
+        LOGGER.debug("")
 
         for marker in reference_data.gene_fields:
             LOGGER.debug(f"Recovering sequences from `{marker}` marker")
@@ -284,6 +285,10 @@ def __collect_single_gene_metadata(
             continue
 
         cached_accessions.append(fetch_response.instance)
+
+    LOGGER.debug(
+        f"Found {len(cached_accessions)} cached nodes for `{marker}` marker"
+    )
 
     # ? ------------------------------------------------------------------------
     # ? Populate not already stored accessions

@@ -3,6 +3,8 @@ from typing import Self
 
 from pickledb import PickleDB, load
 
+from gcon.settings import LOGGER
+
 
 class PickleDbConnector:
     # ? ------------------------------------------------------------------------
@@ -20,6 +22,12 @@ class PickleDbConnector:
         if cls.__instance is None:
             if cls.__db is None:
                 cls.__db = load(db_path, auto_dump=True)
+
+            LOGGER.info(
+                "PickleDB database was initialized with size: "
+                + f"{cls.__db.totalkeys()}"
+            )
+
             cls.__instance = super(PickleDbConnector, cls).__new__(cls)
 
         return cls.__instance  # type: ignore

@@ -105,7 +105,11 @@ def resolve_cmd(
         if not temporary_directory.is_dir():
             temporary_directory.mkdir(parents=True)
 
-        connector = PickleDbConnector(cache_file)
+        try:
+            connector = PickleDbConnector(db_path=cache_file)
+        except Exception as e:
+            LOGGER.exception(e)
+            raise Exception("Could not initialize PickleDbConnector.")
 
         response_either = run_gcon_pipeline(
             source_table_path=input_table,

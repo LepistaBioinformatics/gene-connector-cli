@@ -148,7 +148,7 @@ GeneColumnSchema = (
         dtype=String,
         regex=True,
         required=True,
-        nullable=False,
+        nullable=True,
         checks=[Check(lambda i: __check_accession(i))],
     ),
 )

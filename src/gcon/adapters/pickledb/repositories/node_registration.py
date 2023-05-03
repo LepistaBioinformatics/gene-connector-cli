@@ -69,6 +69,8 @@ class NodeRegistrationPickleDbRepository(NodeRegistration):
             for node in nodes:
                 self.__conn.db.set(node.accession, node.to_dict())
 
+            self.__conn.db.dump()
+
             return right(CreateManyResponse(True, nodes))
 
         except Exception as e:

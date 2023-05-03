@@ -51,7 +51,7 @@ class NodeFetchingPickleDbRepository(NodeFetching):
 
             response = self.__conn.db.get(accession)
 
-            if response is False:
+            if not response or response is False:
                 return right(FetchResponse(False, None))
 
             node_either: Either = Node.from_dict(response)
