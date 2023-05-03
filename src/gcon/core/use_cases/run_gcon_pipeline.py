@@ -24,6 +24,12 @@ def run_gcon_pipeline(
     local_node_registration_repo: NodeRegistration,
     ignore_duplicates: bool = False,
 ) -> Either[exc.UseCaseError, Literal[True]]:
+    def section_log(msg: str) -> None:
+        LOGGER.info("")
+        LOGGER.info("-" * 80)
+        LOGGER.info(msg.upper())
+        LOGGER.info("")
+
     try:
         # ? --------------------------------------------------------------------
         # ? Validate entry params
@@ -39,7 +45,9 @@ def run_gcon_pipeline(
         # ? Load source data
         # ? --------------------------------------------------------------------
 
-        LOGGER.info(f"LOADING SOURCE METADATA: {source_table_path}")
+        section_log("LOADING SOURCE METADATA")
+
+        LOGGER.info(f"Try to load from {source_table_path}")
 
         loading_response_either = load_and_validate_source_table(
             source_table_path=source_table_path,
@@ -49,13 +57,11 @@ def run_gcon_pipeline(
         if loading_response_either.is_left:
             return loading_response_either
 
-        LOGGER.info("LOADING DONE")
-
         # ? --------------------------------------------------------------------
         # ? Collect metadata
         # ? --------------------------------------------------------------------
 
-        LOGGER.info("COLLECTING METADATA FROM GENBANK")
+        section_log("COLLECTING METADATA FROM GENBANK")
 
         metadata_collection_response_either = collect_metadata(
             reference_data=loading_response_either.value,
@@ -67,13 +73,11 @@ def run_gcon_pipeline(
         if metadata_collection_response_either.is_left:
             return metadata_collection_response_either
 
-        LOGGER.info("COLLECTION DONE")
-
         # ? --------------------------------------------------------------------
         # ? Calculate metadata match scores
         # ? --------------------------------------------------------------------
 
-        LOGGER.info("CALCULATING METADATA MATCH SCORES")
+        section_log("CALCULATING METADATA MATCH SCORES")
 
         calculation_response_either = build_metadata_match_scores(
             reference_data=metadata_collection_response_either.value,
@@ -82,13 +86,13 @@ def run_gcon_pipeline(
         if calculation_response_either.is_left:
             return calculation_response_either
 
-        LOGGER.info("CALCULATION DONE")
+        LOGGER.info("Metadata match scores calculated successfully")
 
         # ? --------------------------------------------------------------------
         # ? Persist results to temporary directory
         # ? --------------------------------------------------------------------
 
-        LOGGER.info("PERSISTING RESULTS LOCALLY")
+        section_log("PERSISTING RESULTS LOCALLY")
 
         LOGGER.info(f"Persisting results to file: {output_file}")
 
@@ -101,7 +105,7 @@ def run_gcon_pipeline(
                 )
             )
 
-        LOGGER.info("PERSISTENCE DONE")
+        LOGGER.info("")
 
         # ? --------------------------------------------------------------------
         # ? Return success

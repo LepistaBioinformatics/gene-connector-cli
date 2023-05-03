@@ -7,10 +7,12 @@ from logging import (
     NOTSET,
     WARN,
     WARNING,
-    basicConfig,
+    Formatter,
+    StreamHandler,
     getLogger,
 )
 from os import getenv
+from sys import stdout
 
 # ? ----------------------------------------------------------------------------
 # ? Build logger configurations
@@ -48,17 +50,29 @@ if ENV_LOGGING_LEVEL is not None:
 # ? ----------------------------------------------------------------------------
 
 
-basicConfig(
-    level=DEBUG,
-    format="%(levelname)s\t[ %(asctime)s ]\t%(message)s",
+LOGGER = getLogger("gcon")
+
+
+LOGGER.setLevel(LOGGING_LEVEL)
+
+
+formatter = Formatter(
+    "%(levelname)s\t[ %(asctime)s ]\t%(message)s",
+    datefmt="%Y-%d-%m %H:%M:%S",
 )
 
 
-LOGGER = getLogger("gcon")
+stdout_handler = StreamHandler(stdout)
 
+
+stdout_handler.setFormatter(formatter)
+
+
+LOGGER.addHandler(stdout_handler)
+
+
+# ? Configure bibtexparser external library logger
 getLogger("bibtexparser").setLevel(WARNING)
-
-LOGGER.setLevel(LOGGING_LEVEL)
 
 
 # ? ----------------------------------------------------------------------------
@@ -66,7 +80,7 @@ LOGGER.setLevel(LOGGING_LEVEL)
 # ? ----------------------------------------------------------------------------
 
 
-CURRENT_USER_EMAIL: str | None = None
+CURRENT_USER_EMAIL: str | None = getenv("CURRENT_USER_EMAIL")
 
 
 # ? ----------------------------------------------------------------------------

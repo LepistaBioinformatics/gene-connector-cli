@@ -68,10 +68,11 @@ def collect_metadata(
         # ? --------------------------------------------------------------------
 
         if CURRENT_USER_EMAIL is None:
-            raise EnvironmentError(
-                "`CURRENT_USER_EMAIL` not configured correctly. Please contact "
-                + "the system developers"
-            )
+            return exc.UseCaseError(
+                "`CURRENT_USER_EMAIL` not configured correctly. Please "
+                "configure before running the pipeline.",
+                logger=LOGGER,
+            )()
 
         Entrez.email = CURRENT_USER_EMAIL
 
@@ -98,10 +99,12 @@ def collect_metadata(
             by_marker_nodes.update({marker: marker_nodes.value})
 
             LOGGER.debug(
-                f"\t`{marker}`: {len(marker_nodes.value)} sequences found"
+                f"`{marker}`: {len(marker_nodes.value)} sequences found"
             )
 
-        LOGGER.debug("Fetching sequence done")
+            LOGGER.debug("")
+
+        LOGGER.info("Fetching sequence done")
 
         # ? --------------------------------------------------------------------
         # ? Build output Connections
@@ -178,8 +181,6 @@ def collect_metadata(
                 indent=4,
                 sort_keys=True,
             )
-
-        LOGGER.debug("\tDone")
 
         # ? --------------------------------------------------------------------
         # ? Return a positive response
