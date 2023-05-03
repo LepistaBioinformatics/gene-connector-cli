@@ -67,6 +67,12 @@ def collect_metadata(
         # ? Collect accessions from marker columns values
         # ? --------------------------------------------------------------------
 
+        if CURRENT_USER_EMAIL is None:
+            raise EnvironmentError(
+                "`CURRENT_USER_EMAIL` not configured correctly. Please contact "
+                + "the system developers"
+            )
+
         Entrez.email = CURRENT_USER_EMAIL
 
         by_marker_nodes: dict[str, list[Node]] = dict()

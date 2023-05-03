@@ -69,25 +69,6 @@ LOGGER.setLevel(LOGGING_LEVEL)
 CURRENT_USER_EMAIL: str | None = None
 
 
-ENV_CURRENT_USER_EMAIL = getenv("CURRENT_USER_EMAIL")
-
-
-if ENV_CURRENT_USER_EMAIL is None:
-    raise EnvironmentError(
-        "`CURRENT_USER_EMAIL` environment variable not configured"
-    )
-
-
-CURRENT_USER_EMAIL = ENV_CURRENT_USER_EMAIL
-
-
-if CURRENT_USER_EMAIL is None:
-    raise EnvironmentError(
-        "`CURRENT_USER_EMAIL` not configured correctly. Please contact the "
-        + "system developers"
-    )
-
-
 # ? ----------------------------------------------------------------------------
 # ? Accessions chunk default size configuration
 # ? ----------------------------------------------------------------------------
