@@ -2,9 +2,15 @@ from pathlib import Path
 
 import click
 
+from gcon.adapters.pickledb.repositories.connector import PickleDbConnector
+from gcon.adapters.pickledb.repositories.node_fetching import (
+    NodeFetchingPickleDbRepository,
+)
+from gcon.adapters.pickledb.repositories.node_registration import (
+    NodeRegistrationPickleDbRepository,
+)
 from gcon.core.use_cases.run_gcon_pipeline import run_gcon_pipeline
 from gcon.settings import LOGGER
-
 
 # ? ----------------------------------------------------------------------------
 # ? Initialize the CLI groups
@@ -72,23 +78,49 @@ def gcon_cmd() -> None:
         + "genes. This is a common situation at ribosomal genes."
     ),
 )
+@click.option(
+    "--cache-file",
+    required=False,
+    default=Path("cache.json"),
+    type=click.Path(
+        resolve_path=True,
+        readable=True,
+        file_okay=True,
+        path_type=Path,
+    ),
+    help=(
+        "A path to the JSON cache file used to persist intermediary records "
+        + "from the pipeline. This is useful to avoid reprocessing the same "
+        + "data when the pipeline is interrupted."
+    ),
+)
 def resolve_cmd(
     input_table: Path,
     temporary_directory: Path,
     output_file: Path,
     ignore_duplicates: bool,
+    cache_file: Path,
 ) -> None:
     try:
         if not temporary_directory.is_dir():
             temporary_directory.mkdir(parents=True)
+
+        connector = PickleDbConnector(cache_file)
 
         response_either = run_gcon_pipeline(
             source_table_path=input_table,
             output_dir_path=temporary_directory,
             output_file=output_file,
             ignore_duplicates=ignore_duplicates,
+            local_node_fetching_repo=NodeFetchingPickleDbRepository(
+                db=connector,
+            ),
+            local_node_registration_repo=NodeRegistrationPickleDbRepository(
+                db=connector,
+            ),
         )
 
+        print(response_either.value)
         if response_either.is_left:
             raise Exception(response_either.value.msg)
 

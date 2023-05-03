@@ -3,6 +3,8 @@ from pathlib import Path
 from typing import Literal
 
 import gcon.core.domain.utils.exceptions as exc
+from gcon.core.domain.entities.node_fetching import NodeFetching
+from gcon.core.domain.entities.node_registration import NodeRegistration
 from gcon.core.domain.utils.either import Either, right
 from gcon.core.use_cases.build_metadata_match_scores import (
     build_metadata_match_scores,
@@ -18,6 +20,8 @@ def run_gcon_pipeline(
     source_table_path: Path,
     output_dir_path: Path,
     output_file: Path,
+    local_node_fetching_repo: NodeFetching,
+    local_node_registration_repo: NodeRegistration,
     ignore_duplicates: bool = False,
 ) -> Either[exc.UseCaseError, Literal[True]]:
     try:
@@ -35,7 +39,7 @@ def run_gcon_pipeline(
         # ? Load source data
         # ? --------------------------------------------------------------------
 
-        LOGGER.info(f"Loading source table: {source_table_path}")
+        LOGGER.info(f"LOADING SOURCE METADATA: {source_table_path}")
 
         loading_response_either = load_and_validate_source_table(
             source_table_path=source_table_path,
@@ -45,29 +49,31 @@ def run_gcon_pipeline(
         if loading_response_either.is_left:
             return loading_response_either
 
-        LOGGER.info("\tLoading done")
+        LOGGER.info("LOADING DONE")
 
         # ? --------------------------------------------------------------------
         # ? Collect metadata
         # ? --------------------------------------------------------------------
 
-        LOGGER.info("Collecting metadata")
+        LOGGER.info("COLLECTING METADATA FROM GENBANK")
 
         metadata_collection_response_either = collect_metadata(
             reference_data=loading_response_either.value,
             output_dir_path=output_dir_path,
+            local_node_fetching_repo=local_node_fetching_repo,
+            local_node_registration_repo=local_node_registration_repo,
         )
 
         if metadata_collection_response_either.is_left:
             return metadata_collection_response_either
 
-        LOGGER.info("\tCollection done")
+        LOGGER.info("COLLECTION DONE")
 
         # ? --------------------------------------------------------------------
         # ? Calculate metadata match scores
         # ? --------------------------------------------------------------------
 
-        LOGGER.info("Calculating metadata match scores")
+        LOGGER.info("CALCULATING METADATA MATCH SCORES")
 
         calculation_response_either = build_metadata_match_scores(
             reference_data=metadata_collection_response_either.value,
@@ -76,11 +82,13 @@ def run_gcon_pipeline(
         if calculation_response_either.is_left:
             return calculation_response_either
 
-        LOGGER.info("\tCalculation done")
+        LOGGER.info("CALCULATION DONE")
 
         # ? --------------------------------------------------------------------
         # ? Persist results to temporary directory
         # ? --------------------------------------------------------------------
+
+        LOGGER.info("PERSISTING RESULTS LOCALLY")
 
         LOGGER.info(f"Persisting results to file: {output_file}")
 
@@ -92,6 +100,8 @@ def run_gcon_pipeline(
                     sort_keys=True,
                 )
             )
+
+        LOGGER.info("PERSISTENCE DONE")
 
         # ? --------------------------------------------------------------------
         # ? Return success

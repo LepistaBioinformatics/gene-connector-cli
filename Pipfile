@@ -9,6 +9,7 @@ click = "*"
 pandera = "*"
 attrs = "*"
 bibtexparser = "*"
+pickledb = "*"
 
 [dev-packages]
 mypy = "*"

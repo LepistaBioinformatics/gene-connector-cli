@@ -1,3 +1,12 @@
 {
-  "cSpell.words": ["bibtexparser", "entrez", "gcon", "pandera"]
+  "cSpell.words": [
+    "bibtexparser",
+    "entrez",
+    "gcon",
+    "GENBANK",
+    "middlewares",
+    "pandera",
+    "pickledb",
+    "tinydb"
+  ]
 }

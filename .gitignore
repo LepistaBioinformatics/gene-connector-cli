@@ -8,3 +8,4 @@ Pipfile.lock
 .dmypy.json
 pipeline.log
 out.json
+cache.json

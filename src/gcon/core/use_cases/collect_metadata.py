@@ -7,26 +7,34 @@ from typing import Generator
 
 from Bio import Entrez, SeqIO
 from Bio.SeqRecord import SeqRecord
-from gcon.core.domain.dtos.reference_data.schemas import StandardFieldsSchema
 
 import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.connection import Connection
 from gcon.core.domain.dtos.metadata import Metadata, MetadataKeyGroup
 from gcon.core.domain.dtos.node import Node
 from gcon.core.domain.dtos.reference_data import ReferenceData
+from gcon.core.domain.dtos.reference_data.schemas import StandardFieldsSchema
+from gcon.core.domain.entities.node_fetching import NodeFetching
+from gcon.core.domain.entities.node_registration import NodeRegistration
 from gcon.core.domain.utils.either import Either, right
+from gcon.core.domain.utils.entities import FetchResponse
 from gcon.settings import CHUNK_SIZE, CURRENT_USER_EMAIL, LOGGER
 
 
 def collect_metadata(
     reference_data: ReferenceData,
     output_dir_path: Path,
+    local_node_fetching_repo: NodeFetching,
+    local_node_registration_repo: NodeRegistration,
 ) -> Either[exc.MappedErrors, ReferenceData]:
     """Collect metadata from a list of accessions.
 
     Args:
         reference_data (ReferenceData): Reference data.
         output_dir_path (Path): Output directory path.
+        local_node_fetching_repo (NodeFetching): Local node fetching repository.
+        local_node_registration_repo (NodeRegistration): Local node registration
+            repository.
 
     Returns:
         Either[exc.UseCaseError, ReferenceData]: Either a UseCaseError or a
@@ -74,6 +82,8 @@ def collect_metadata(
                 accessions=reduce(
                     iconcat, reference_data.data[marker].dropna().values, []
                 ),
+                local_node_fetching_repo=local_node_fetching_repo,
+                local_node_registration_repo=local_node_registration_repo,
             )
 
             if marker_nodes.is_left:
@@ -114,7 +124,9 @@ def collect_metadata(
 
                 row_nodes.extend(acc_metadata)
 
-            identifiers = __collect_unique_identifiers(nodes=row_nodes)
+            identifiers = __collect_unique_identifiers(
+                nodes=row_nodes,
+            )
 
             if identifiers.is_left:
                 return identifiers
@@ -218,6 +230,8 @@ def __collect_single_gene_metadata(
     entrez_handle: Entrez,
     accessions: list[str],
     marker: str,
+    local_node_fetching_repo: NodeFetching,
+    local_node_registration_repo: NodeRegistration,
 ) -> Either[exc.UseCaseError, list[Metadata]]:
     """Collect metadata from a list of accessions.
 
@@ -234,8 +248,46 @@ def __collect_single_gene_metadata(
 
     """
 
+    # ? ------------------------------------------------------------------------
+    # ? Collect nodes from local storage
+    #
+    # Locally stored nodes includes nodes that were previously fetched from
+    # Entrez and stored in the local storage. This is done to avoid fetching
+    # the same nodes multiple times.
+    #
+    # ? ------------------------------------------------------------------------
+
+    LOGGER.debug(f"Collecting nodes from local storage for `{marker}` marker")
+
+    cached_accessions: list[Node] = []
+    new_accessions: list[Node] = []
+
+    for accession in accessions:
+        local_nodes_response_either = local_node_fetching_repo.get(
+            accession=accession,
+        )
+
+        if local_nodes_response_either.is_left:
+            return local_nodes_response_either
+
+        fetch_response: FetchResponse = local_nodes_response_either.value
+
+        if fetch_response.fetched is False:
+            new_accessions.append(accession)
+            continue
+
+        cached_accessions.append(fetch_response.instance)
+
+    # ? ------------------------------------------------------------------------
+    # ? Populate not already stored accessions
+    #
+    # Accessions that are not already stored in the local storage are fetched
+    # from Entrez and stored in the local storage.
+    #
+    # ? ------------------------------------------------------------------------
+
     nodes: list[Node] = []
-    chunks = [i for i in __chunks(accessions, CHUNK_SIZE)]
+    chunks = [i for i in __chunks(new_accessions, CHUNK_SIZE)]
 
     for index, acc_chunk in enumerate(chunks):
         LOGGER.debug(
@@ -288,7 +340,12 @@ def __collect_single_gene_metadata(
                 )
             )
 
-    return right(nodes)
+    response_either = local_node_registration_repo.create_many(nodes=nodes)
+
+    if response_either.is_left:
+        return response_either
+
+    return right([*nodes, *cached_accessions])
 
 
 def __place_qualifiers(
