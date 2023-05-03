@@ -120,7 +120,6 @@ def resolve_cmd(
             ),
         )
 
-        print(response_either.value)
         if response_either.is_left:
             raise Exception(response_either.value.msg)
 
