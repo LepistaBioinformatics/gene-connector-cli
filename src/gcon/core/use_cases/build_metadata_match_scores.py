@@ -251,4 +251,5 @@ def __calculate_connection_match_score(
         return right(connection)
 
     except Exception as e:
+        LOGGER.warning(connection)
         return exc.UseCaseError(e, logger=LOGGER)()

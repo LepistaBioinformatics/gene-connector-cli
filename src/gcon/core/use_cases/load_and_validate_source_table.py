@@ -1,5 +1,6 @@
 from enum import Enum
 from pathlib import Path
+from uuid import uuid4
 from numpy import nan
 
 from pandas import DataFrame, Series, read_csv
@@ -135,6 +136,8 @@ def load_and_validate_source_table(
             data[gene] = data[gene].apply(
                 lambda x: format_gene_field_as_list(x)
             )
+
+        data["uuid"] = [uuid4() for _ in range(len(data.index))]
 
         return right(
             ReferenceData(

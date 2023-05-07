@@ -1,4 +1,5 @@
-from typing import Any
+from typing import Any, Self
+from uuid import UUID, uuid4
 
 from attrs import define, field
 
@@ -20,15 +21,28 @@ class Connection:
     # ? CLASS ATTRIBUTES
     # ? ------------------------------------------------------------------------
 
+    id: UUID = field(init=False)
     identifiers: set[str] = field()
     nodes: set[Node] = field()
     scores: ConnectionScores | None = field(default=None)
 
     # ? ------------------------------------------------------------------------
+    # ? VALIDATORS
+    # ? ------------------------------------------------------------------------
+
+    @id.default
+    def _set_default_id(self) -> UUID:
+        return uuid4()
+
+    # ? ------------------------------------------------------------------------
     # ? PUBLIC INSTANCE METHODS
     # ? ------------------------------------------------------------------------
 
-    def to_dict(self) -> dict[str, list[Any]]:
+    def with_id(self, id: UUID) -> Self:
+        self.id = id
+        return self
+
+    def to_dict(self) -> dict[str, UUID | list[Any] | object]:
         """Convert the connection to a dictionary.
 
         Returns:
@@ -37,6 +51,7 @@ class Connection:
         """
 
         return {
+            "id": self.id,
             "identifiers": list(self.identifiers),
             "nodes": [node.to_dict() for node in self.nodes],
             "scores": self.scores.to_dict() if self.scores else None,

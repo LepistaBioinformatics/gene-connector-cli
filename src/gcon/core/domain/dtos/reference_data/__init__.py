@@ -220,6 +220,7 @@ class ReferenceData:
                             logger=LOGGER,
                         )()
 
+                id = connection.pop("id")
                 identifiers = connection.pop("identifiers")
                 nodes = connection.pop("nodes")
 
@@ -372,7 +373,7 @@ class ReferenceData:
                 connection = Connection(
                     identifiers=parsed_identifiers,
                     nodes=parsed_nodes,
-                )
+                ).with_id(id)
 
                 if scores is not None:
                     connection.with_scores(scores=scores)

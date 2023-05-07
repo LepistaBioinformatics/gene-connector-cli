@@ -24,7 +24,7 @@ from gcon.settings import CHUNK_SIZE, CURRENT_USER_EMAIL, LOGGER
 
 
 def collect_metadata(
-    reference_data_either: ReferenceData,
+    reference_data: ReferenceData,
     output_dir_path: Path,
     local_node_fetching_repo: NodeFetching,
     local_node_registration_repo: NodeRegistration,
@@ -53,9 +53,9 @@ def collect_metadata(
         # ? Validate input arguments
         # ? --------------------------------------------------------------------
 
-        if not isinstance(reference_data_either, ReferenceData):
+        if not isinstance(reference_data, ReferenceData):
             return exc.InvalidArgumentError(
-                f"`{reference_data_either}` is not a instance of `{ReferenceData}`",
+                f"`{reference_data}` is not a instance of `{ReferenceData}`",
                 logger=LOGGER,
             )
 
@@ -104,7 +104,7 @@ def collect_metadata(
         LOGGER.debug(f"Fetching sequence from user `{CURRENT_USER_EMAIL}`")
         LOGGER.debug("")
 
-        for marker in reference_data_either.gene_fields:
+        for marker in reference_data.gene_fields:
             LOGGER.debug(f"Recovering sequences from `{marker}` marker")
 
             marker_nodes = __collect_single_gene_metadata(
@@ -112,7 +112,7 @@ def collect_metadata(
                 marker=marker,
                 accessions=reduce(
                     iconcat,
-                    reference_data_either.data[marker].dropna().values,
+                    reference_data.data[marker].dropna().values,
                     [],
                 ),
                 local_node_fetching_repo=local_node_fetching_repo,
@@ -137,10 +137,10 @@ def collect_metadata(
         # ? --------------------------------------------------------------------
 
         connections: list[Connection] = list()
-        for _, row in reference_data_either.data.iterrows():
+        for _, row in reference_data.data.iterrows():
             row_nodes: list[Node] = list()
 
-            for gene in reference_data_either.gene_fields:
+            for gene in reference_data.gene_fields:
                 if (gene_value := row.get(gene)) is None:
                     continue
 
@@ -185,10 +185,10 @@ def collect_metadata(
                 Connection(
                     identifiers=unique_identifiers,
                     nodes=row_nodes,
-                )
+                ).with_id(row.get("uuid"))
             )
 
-        reference_data_either.with_connections(connections)
+        reference_data.with_connections(connections)
 
         # ? --------------------------------------------------------------------
         # ? Persist connections to file
@@ -200,10 +200,11 @@ def collect_metadata(
 
         with marker_output_file.open("w") as marker_out:
             dump(
-                reference_data_either.to_dict(),
+                reference_data.to_dict(),
                 marker_out,
                 indent=4,
                 sort_keys=True,
+                default=str,
             )
 
         # ? --------------------------------------------------------------------
@@ -216,7 +217,7 @@ def collect_metadata(
         # ? Return a positive response
         # ? --------------------------------------------------------------------
 
-        return right(reference_data_either)
+        return right(reference_data)
 
     except Exception as e:
         return exc.UseCaseError(e, logger=LOGGER)()

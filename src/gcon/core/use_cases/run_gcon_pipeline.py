@@ -69,7 +69,7 @@ def run_gcon_pipeline(
         section_log("COLLECTING METADATA FROM GENBANK")
 
         metadata_collection_response_either = collect_metadata(
-            reference_data_either=loading_response_either.value,
+            reference_data=loading_response_either.value,
             output_dir_path=output_dir_path,
             local_node_fetching_repo=local_node_fetching_repo,
             local_node_registration_repo=local_node_registration_repo,
@@ -107,6 +107,7 @@ def run_gcon_pipeline(
                     calculation_response_either.value.to_dict(),
                     indent=4,
                     sort_keys=True,
+                    default=str,
                 )
             )
 
@@ -168,6 +169,7 @@ def __build_metadata_table(
 
             connection_record.update(
                 {
+                    "id": connection.id,
                     StandardFieldsSchema.identifier: f"{JOIN_SEPARATOR}".join(
                         set(connection.identifiers)
                     ),
@@ -220,9 +222,28 @@ def __build_metadata_table(
             / output_df["reachable_completeness_score"]
         )
 
-        output_df.reindex(
+        output_df.merge(
+            right=reference_data.data[
+                [
+                    c
+                    for c in reference_data.data.columns
+                    if c
+                    in [
+                        "uuid",
+                        StandardFieldsSchema.sci_name,
+                        *reference_data.optional_fields,
+                    ]
+                ]
+            ],
+            how="left",
+            left_on="id",
+            right_on="uuid",
+        ).reindex(
             [
+                "id",
                 StandardFieldsSchema.identifier,
+                StandardFieldsSchema.sci_name,
+                *reference_data.optional_fields,
                 "observed_completeness_score",
                 "reachable_completeness_score",
                 "information_gain",
