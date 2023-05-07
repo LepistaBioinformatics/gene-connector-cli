@@ -67,6 +67,15 @@ class NodeRegistrationPickleDbRepository(NodeRegistration):
                     )()
 
             for node in nodes:
+                node_dict = node.to_dict()
+
+                if not node_dict:
+                    LOGGER.warning(
+                        f"Node {node.accession} was not cached because it is empty."
+                    )
+
+                    continue
+
                 self.__conn.db.set(node.accession, node.to_dict())
 
             self.__conn.db.dump()

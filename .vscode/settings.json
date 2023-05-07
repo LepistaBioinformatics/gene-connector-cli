@@ -7,6 +7,7 @@
     "middlewares",
     "pandera",
     "pickledb",
-    "tinydb"
+    "tinydb",
+    "unidecode"
   ]
 }

@@ -89,3 +89,11 @@ CURRENT_USER_EMAIL: str | None = getenv("CURRENT_USER_EMAIL")
 
 
 CHUNK_SIZE = 15
+
+
+# ? ----------------------------------------------------------------------------
+# ? The file to lock processed steps
+# ? ----------------------------------------------------------------------------
+
+
+LOCK_FILE = "finished-{step}.lock"

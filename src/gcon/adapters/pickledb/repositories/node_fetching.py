@@ -29,7 +29,7 @@ class NodeFetchingPickleDbRepository(NodeFetching):
         # This implementation is needed to guarantee that the TinyDbConnector
         # instance will be initialized.
         if self.__conn is None:
-            db = PickleDbConnector()
+            self.__conn = PickleDbConnector()
 
     def __init_subclass__(cls) -> None:
         return super().__init_subclass__()
@@ -50,6 +50,7 @@ class NodeFetchingPickleDbRepository(NodeFetching):
                 )()
 
             response = self.__conn.db.get(accession)
+            self.__conn.db.dump()
 
             if not response or response is False:
                 return right(FetchResponse(False, None))

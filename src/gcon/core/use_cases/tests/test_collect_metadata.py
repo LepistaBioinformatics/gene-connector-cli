@@ -26,7 +26,7 @@ class CollectMetadataTest(TestCase):
 
     def test_collect_metadata(self) -> None:
         metadata = collect_metadata(
-            reference_data=self.__reference_data,
+            reference_data_either=self.__reference_data,
             output_dir_path=Path("/tmp"),
         )
 

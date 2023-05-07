@@ -12,6 +12,7 @@ class PickleDbConnector:
     # ? ------------------------------------------------------------------------
 
     __instance: Self | None = None
+    __db_path: Path | None = None
     __db: PickleDB | None = None
 
     # ? ------------------------------------------------------------------------
@@ -19,13 +20,15 @@ class PickleDbConnector:
     # ? ------------------------------------------------------------------------
 
     def __new__(cls, db_path: Path) -> Self:
+        cls.__db_path = db_path
+
         if cls.__instance is None:
             if cls.__db is None:
-                cls.__db = load(db_path, auto_dump=True)
+                cls.load(cls)  # type: ignore
 
             LOGGER.info(
                 "PickleDB database was initialized with size: "
-                + f"{cls.__db.totalkeys()}"
+                + f"{cls.__db.totalkeys()}"  # type: ignore
             )
 
             cls.__instance = super(PickleDbConnector, cls).__new__(cls)
@@ -33,7 +36,7 @@ class PickleDbConnector:
         return cls.__instance  # type: ignore
 
     # ? ------------------------------------------------------------------------
-    # ? PUBLIC METHODS
+    # ? PUBLIC PROPERTIES
     # ? ------------------------------------------------------------------------
 
     @property
@@ -48,3 +51,15 @@ class PickleDbConnector:
             raise ValueError("PickleDB instance is not initialized.")
 
         return self.__db
+
+    # ? ------------------------------------------------------------------------
+    # ? PUBLIC METHODS
+    # ? ------------------------------------------------------------------------
+
+    def load(self) -> None:
+        """Loads the PickleDB instance."""
+
+        self.__db = load(
+            self.__db_path,
+            auto_dump=False,
+        )

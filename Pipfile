@@ -10,6 +10,7 @@ pandera = "*"
 attrs = "*"
 bibtexparser = "*"
 pickledb = "*"
+unidecode = "*"
 
 [dev-packages]
 mypy = "*"

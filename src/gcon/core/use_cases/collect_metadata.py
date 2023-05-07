@@ -18,11 +18,13 @@ from gcon.core.domain.entities.node_fetching import NodeFetching
 from gcon.core.domain.entities.node_registration import NodeRegistration
 from gcon.core.domain.utils.either import Either, right
 from gcon.core.domain.utils.entities import FetchResponse
+from gcon.core.domain.utils.lock import has_lock, lock
+from gcon.core.domain.utils.slugify import slugify_string
 from gcon.settings import CHUNK_SIZE, CURRENT_USER_EMAIL, LOGGER
 
 
 def collect_metadata(
-    reference_data: ReferenceData,
+    reference_data_either: ReferenceData,
     output_dir_path: Path,
     local_node_fetching_repo: NodeFetching,
     local_node_registration_repo: NodeRegistration,
@@ -51,9 +53,9 @@ def collect_metadata(
         # ? Validate input arguments
         # ? --------------------------------------------------------------------
 
-        if not isinstance(reference_data, ReferenceData):
+        if not isinstance(reference_data_either, ReferenceData):
             return exc.InvalidArgumentError(
-                f"`{reference_data}` is not a instance of `{ReferenceData}`",
+                f"`{reference_data_either}` is not a instance of `{ReferenceData}`",
                 logger=LOGGER,
             )
 
@@ -62,6 +64,27 @@ def collect_metadata(
                 f"Invalid directory path: `{output_dir_path}`",
                 logger=LOGGER,
             )
+
+        # ? --------------------------------------------------------------------
+        # ? Collect accessions from marker columns values
+        # ? --------------------------------------------------------------------
+
+        marker_output_file = output_dir_path.joinpath("reference_data.json")
+
+        lock_config = dict(
+            base_dir=output_dir_path,
+            step=slugify_string(collect_metadata.__name__),
+        )
+
+        if has_lock(**lock_config):
+            if (
+                reference_data_either := ReferenceData.from_json(
+                    json_path=marker_output_file,
+                )
+            ).is_left:
+                return reference_data_either
+
+            return right(reference_data_either.value)
 
         # ? --------------------------------------------------------------------
         # ? Collect accessions from marker columns values
@@ -81,14 +104,16 @@ def collect_metadata(
         LOGGER.debug(f"Fetching sequence from user `{CURRENT_USER_EMAIL}`")
         LOGGER.debug("")
 
-        for marker in reference_data.gene_fields:
+        for marker in reference_data_either.gene_fields:
             LOGGER.debug(f"Recovering sequences from `{marker}` marker")
 
             marker_nodes = __collect_single_gene_metadata(
                 entrez_handle=Entrez,
                 marker=marker,
                 accessions=reduce(
-                    iconcat, reference_data.data[marker].dropna().values, []
+                    iconcat,
+                    reference_data_either.data[marker].dropna().values,
+                    [],
                 ),
                 local_node_fetching_repo=local_node_fetching_repo,
                 local_node_registration_repo=local_node_registration_repo,
@@ -112,10 +137,10 @@ def collect_metadata(
         # ? --------------------------------------------------------------------
 
         connections: list[Connection] = list()
-        for _, row in reference_data.data.iterrows():
+        for _, row in reference_data_either.data.iterrows():
             row_nodes: list[Node] = list()
 
-            for gene in reference_data.gene_fields:
+            for gene in reference_data_either.gene_fields:
                 if (gene_value := row.get(gene)) is None:
                     continue
 
@@ -163,13 +188,11 @@ def collect_metadata(
                 )
             )
 
-        reference_data.with_connections(connections)
+        reference_data_either.with_connections(connections)
 
         # ? --------------------------------------------------------------------
         # ? Persist connections to file
         # ? --------------------------------------------------------------------
-
-        marker_output_file = output_dir_path.joinpath("reference_data.json")
 
         LOGGER.debug(
             f"Persisting metadata to temporary file: {marker_output_file}"
@@ -177,17 +200,23 @@ def collect_metadata(
 
         with marker_output_file.open("w") as marker_out:
             dump(
-                reference_data.to_dict(),
+                reference_data_either.to_dict(),
                 marker_out,
                 indent=4,
                 sort_keys=True,
             )
 
         # ? --------------------------------------------------------------------
+        # ? Lock the step execution
+        # ? --------------------------------------------------------------------
+
+        lock(**lock_config)
+
+        # ? --------------------------------------------------------------------
         # ? Return a positive response
         # ? --------------------------------------------------------------------
 
-        return right(reference_data)
+        return right(reference_data_either)
 
     except Exception as e:
         return exc.UseCaseError(e, logger=LOGGER)()
@@ -224,12 +253,6 @@ def __collect_unique_identifiers(
 
         for qualifier in specimen_keys:
             identifiers.extend(node.metadata.qualifiers.get(qualifier))
-
-    if len(identifiers) == 0:
-        return exc.UseCaseError(
-            f"Unable to find identifiers for nodes `{[i.accession for i in nodes]}`",
-            logger=LOGGER,
-        )()
 
     return right(set(identifiers))
 
@@ -323,6 +346,7 @@ def __collect_single_gene_metadata(
             )
 
         record: SeqRecord
+        chunk_nodes: list[Node] = []
         for record in parsed_content:
             try:
                 source_feature = next(
@@ -344,7 +368,7 @@ def __collect_single_gene_metadata(
             if record_metadata.is_left:
                 return record_metadata
 
-            nodes.append(
+            chunk_nodes.append(
                 Node(
                     accession=record.name,
                     marker=marker,
@@ -352,10 +376,14 @@ def __collect_single_gene_metadata(
                 )
             )
 
-    response_either = local_node_registration_repo.create_many(nodes=nodes)
+        if (
+            response_either := local_node_registration_repo.create_many(
+                nodes=[*chunk_nodes, *cached_accessions]
+            )
+        ).is_left:
+            return response_either
 
-    if response_either.is_left:
-        return response_either
+        nodes.extend(chunk_nodes)
 
     return right([*nodes, *cached_accessions])
 

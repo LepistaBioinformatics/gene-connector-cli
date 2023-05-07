@@ -9,7 +9,6 @@ from pandera import (
     DataFrameModel,
     DataFrameSchema,
     Field,
-    String,
 )
 from pandera.typing import Series
 
@@ -121,7 +120,10 @@ def __check_accession(accessions: str) -> Literal[True]:
         if accession is nan:
             continue
 
-        accession_splitted = [i.strip() for i in accession.split(",")]
+        if isinstance(accession, str):
+            accession = accession.split(",")  # type: ignore
+
+        accession_splitted = [i.strip() for i in accession if i]
 
         for accession in accession_splitted:
             validate_single_accession(accession)
@@ -145,7 +147,7 @@ GeneColumnSchema = (
     Column,
     "^[a-z]{3}-[a-zA-Z0-9]+$",
     dict(
-        dtype=String,
+        # dtype=str,
         regex=True,
         required=True,
         nullable=True,

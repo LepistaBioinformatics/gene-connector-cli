@@ -287,7 +287,7 @@ class ReferenceData:
                                 logger=LOGGER,
                             )()
 
-                        if not isinstance(value, str):
+                        if not isinstance(value, list):
                             return exc.InvalidArgumentError(
                                 "Unable to load JSON. Metadata value must be a string.",
                                 logger=LOGGER,
@@ -308,12 +308,6 @@ class ReferenceData:
                         except KeyError:
                             return exc.InvalidArgumentError(
                                 f"Unable to load JSON. Invalid metadata key group: `{group}`.",
-                                logger=LOGGER,
-                            )()
-
-                        if key not in group_enum.value.keys:
-                            return exc.InvalidArgumentError(
-                                f"Unable to load JSON. Invalid metadata key: `{key}`.",
                                 logger=LOGGER,
                             )()
 
