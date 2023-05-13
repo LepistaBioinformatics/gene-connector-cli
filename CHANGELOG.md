@@ -1,3 +1,16 @@
+## v0.4.0 (2023-05-13)
+
+### Feat
+
+- update the caching strategy and create a final method to generate a compiled table of all populated data
+- upgrade pickledb storage
+- upgrade the main pipeline execution logs to be more informative and human friendly
+
+### Fix
+
+- upgrade project to include the input data partially at the output data
+- move the current user email checking to the use case that perform the genbank data fetching instead of the settings file
+
 ## v0.3.0 (2023-05-02)
 
 ### Feat
