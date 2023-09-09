@@ -2031,7 +2031,7 @@
             "identifier": "BRIP 14643IsoT",
             "mit-gapdh": "AF081402",
             "nuc-its": "AF071350",
-            "nuc-tef1": NaN,
+            "nuc-tef1": null,
             "scientificName": "Bi. luttrellii"
         },
         {
@@ -2092,9 +2092,9 @@
         },
         {
             "identifier": "Bi 1T",
-            "mit-gapdh": NaN,
+            "mit-gapdh": null,
             "nuc-its": "AB675490",
-            "nuc-tef1": NaN,
+            "nuc-tef1": null,
             "scientificName": "Bi. salkadehensis"
         },
         {
@@ -2122,7 +2122,7 @@
             "identifier": "CBS 141.31",
             "mit-gapdh": "EF513206",
             "nuc-its": "EF452444",
-            "nuc-tef1": NaN,
+            "nuc-tef1": null,
             "scientificName": "Bi. setariae"
         },
         {
