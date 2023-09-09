@@ -15,16 +15,25 @@ build-backend = "setuptools.build_meta"
 [project]
 
 name = "gcon"
+version = "0.4.0"
 authors = [{ name = "Samuel Galvão Elias", email = "sgelias@outlook.com" }]
 description = "The Gene-Connector command line interface"
+readme = "README.md"
 requires-python = ">=3.11"
 keywords = ["DNA", "Bioinformatics", "Phylogeny", "Genomics", "Genetics"]
-classifiers = ["Programming Language :: Python :: 3.11"]
-dynamic = ["version", "dependencies"]
-
-[tool.setuptools.dynamic]
-
-dependencies = {file = ["requirements.txt"]}
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Bioinformatics Researchers",
+    "Intended Audience :: Biomedical Researchers",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Microbiologists",
+    "Intended Audience :: Taxonomists",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
 
 
 # ? ----------------------------------------------------------------------------
@@ -33,7 +42,7 @@ dependencies = {file = ["requirements.txt"]}
 
 [project.scripts]
 
-gcon="gcon.ports.cli.main:gcon_cmd"
+gcon = "gcon.ports.cli.main:gcon_cmd"
 
 
 # ? ----------------------------------------------------------------------------
@@ -51,7 +60,6 @@ gcon = ["assets/*"]
 [tool.commitizen]
 
 name = "cz_conventional_commits"
-version = "0.4.0"
 tag_format = "v$version"
 bump_message = "bump: $current_version → $new_version [skip-ci]"
 
@@ -62,7 +70,7 @@ python_version = 3.11
 exclude = ["build/"]
 ignore_missing_imports = "True"
 explicit_package_bases = "./src/"
-follow_imports  = "normal"
+follow_imports = "normal"
 warn_redundant_casts = "True"
 warn_unused_ignores = "False"
 disallow_any_generics = "True"

@@ -2,6 +2,7 @@ from pathlib import Path
 
 import click
 
+from gcon.__version__ import version
 from gcon.adapters.pickledb.repositories.connector import PickleDbConnector
 from gcon.adapters.pickledb.repositories.node_fetching import (
     NodeFetchingPickleDbRepository,
@@ -18,6 +19,7 @@ from gcon.settings import LOGGER
 
 
 @click.group()
+@click.version_option(version)
 def gcon_cmd() -> None:
     pass
 
