@@ -16,6 +16,9 @@ unidecode = "*"
 mypy = "*"
 black = "*"
 gcon = {editable = true, path = "."}
+twine = "*"
+keyring = "*"
+artifacts-keyring = "*"
 
 [requires]
 python_version = "3.11"

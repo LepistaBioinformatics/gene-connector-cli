@@ -3,7 +3,6 @@ dist
 *egg-info
 __pycache__
 *.pyc
-Pipfile.lock
 .env
 .dmypy.json
 pipeline.log
