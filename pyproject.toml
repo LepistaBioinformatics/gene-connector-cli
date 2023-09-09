@@ -14,7 +14,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 
-name = "gcon"
+name = "gene-connector-cli"
 version = "0.4.3"
 authors = [{ name = "Samuel Galvão Elias", email = "sgelias@outlook.com" }]
 description = "The Gene-Connector command line interface"
@@ -26,11 +26,8 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Development Status :: 4 - Beta",
-    "Intended Audience :: Bioinformatics Researchers",
-    "Intended Audience :: Biomedical Researchers",
-    "Intended Audience :: Developers",
-    "Intended Audience :: Microbiologists",
-    "Intended Audience :: Taxonomists",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Other Audience",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]

@@ -5,9 +5,9 @@ ___
 Genbank currently stands as one of the most significant global repositories of
 genetic information.
 
-[![Licence](https://img.shields.io/pypi/l/gcon?style=for-the-badge)](LICENSE)
+[![Licence](https://img.shields.io/pypi/l/gene-connector-cli?style=for-the-badge)](LICENSE)
 [![Github Version](https://img.shields.io/github/v/tag/sgelias/gene-connector-cli?style=for-the-badge)](pyptoject.toml)
-[![PyPI Version](https://img.shields.io/pypi/v/gcon?style=for-the-badge)](pyptoject.toml)
+[![PyPI Version](https://img.shields.io/pypi/v/gene-connector-cli?style=for-the-badge)](pyptoject.toml)
 
 ___
 
