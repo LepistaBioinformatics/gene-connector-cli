@@ -54,13 +54,6 @@ gcon = ["assets/*"]
 # ? Code consistence
 # ? ----------------------------------------------------------------------------
 
-[tool.commitizen]
-
-name = "cz_conventional_commits"
-tag_format = "v$version"
-bump_message = "bump: $current_version → $new_version [skip-ci]"
-
-
 [tool.mypy]
 
 python_version = 3.11
