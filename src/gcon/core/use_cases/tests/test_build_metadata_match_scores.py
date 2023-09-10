@@ -35,3 +35,9 @@ class BuildMetadataMatchScoresTest(TestCase):
 
         for connection in response.value.connections:
             self.assertIsInstance(connection.scores, ConnectionScores)
+
+
+if __name__ == "__main__":
+    from unittest import main
+
+    main()

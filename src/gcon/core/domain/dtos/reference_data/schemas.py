@@ -3,13 +3,7 @@ from typing import Literal
 
 from bibtexparser import loads as bib_loads
 from numpy import nan
-from pandera import (
-    Check,
-    Column,
-    DataFrameModel,
-    DataFrameSchema,
-    Field,
-)
+from pandera import Check, Column, DataFrameModel, DataFrameSchema, Field
 from pandera.typing import Series
 
 

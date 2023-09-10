@@ -1,8 +1,9 @@
-import gcon.core.domain.utils.exceptions as exc
+import clean_base.exceptions as exc
+from clean_base.either import Either, right
+
 from gcon.core.domain.dtos.connection import Connection
 from gcon.core.domain.dtos.metadata import MetadataKeyGroup
 from gcon.core.domain.dtos.score import ConnectionScores
-from gcon.core.domain.utils.either import Either, right
 from gcon.settings import LOGGER
 
 from ._calculate_connection_observed_score import (

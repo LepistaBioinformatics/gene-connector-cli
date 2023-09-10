@@ -1,15 +1,16 @@
 from typing import Any
 
-from gcon.adapters.pickledb.repositories.connector import PickleDbConnector
-from gcon.core.domain.dtos.node import Node
-from gcon.core.domain.entities.node_registration import NodeRegistration
-from gcon.core.domain.utils.either import Either, right
-from gcon.core.domain.utils.entities import (
+from clean_base.either import Either, right
+from clean_base.entities import (
     CreateManyResponse,
     CreateResponse,
     GetOrCreateResponse,
 )
-from gcon.core.domain.utils.exceptions import CreationError
+from clean_base.exceptions import CreationError
+
+from gcon.adapters.pickledb.repositories.connector import PickleDbConnector
+from gcon.core.domain.dtos.node import Node
+from gcon.core.domain.entities.node_registration import NodeRegistration
 from gcon.settings import LOGGER
 
 

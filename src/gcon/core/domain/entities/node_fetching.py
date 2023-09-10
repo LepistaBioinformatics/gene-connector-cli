@@ -1,12 +1,10 @@
 from typing import Any
-from gcon.core.domain.utils.either import Either
-from gcon.core.domain.utils.entities import (
-    Fetching,
-    FetchManyResponse,
-    FetchResponse,
-)
+
+from clean_base.either import Either
+from clean_base.entities import Fetching, FetchManyResponse, FetchResponse
+from clean_base.exceptions import FetchingError
+
 from gcon.core.domain.dtos.node import Node
-from gcon.core.domain.utils.exceptions import FetchingError
 
 
 class NodeFetching(Fetching):

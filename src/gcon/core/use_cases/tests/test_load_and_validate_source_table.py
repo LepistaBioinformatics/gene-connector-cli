@@ -2,9 +2,10 @@ from os import getenv
 from pathlib import Path
 from unittest import TestCase
 
+from clean_base.either import Either
+from clean_base.exceptions import UseCaseError
+
 from gcon.core.domain.dtos.reference_data import ReferenceData
-from gcon.core.domain.utils.either import Either
-from gcon.core.domain.utils.exceptions import UseCaseError
 from gcon.core.use_cases.load_and_validate_source_table import (
     load_and_validate_source_table,
 )

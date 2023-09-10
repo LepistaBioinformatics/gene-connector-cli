@@ -1,49 +1,8 @@
-from logging import (
-    CRITICAL,
-    DEBUG,
-    ERROR,
-    FATAL,
-    INFO,
-    NOTSET,
-    WARN,
-    WARNING,
-    Formatter,
-    StreamHandler,
-    getLogger,
-)
+from logging import WARNING, Formatter, StreamHandler, getLogger
 from os import getenv
 from sys import stdout
 
-# ? ----------------------------------------------------------------------------
-# ? Build logger configurations
-# ? ----------------------------------------------------------------------------
-
-
-LOGGING_LEVEL = DEBUG
-
-
-ENV_LOGGING_LEVEL = getenv("LOGGING_LEVEL")
-
-
-if ENV_LOGGING_LEVEL is not None:
-    ENV_LOGGING_LEVEL = eval(ENV_LOGGING_LEVEL.upper())
-
-    if ENV_LOGGING_LEVEL not in [
-        CRITICAL,
-        DEBUG,
-        ERROR,
-        FATAL,
-        INFO,
-        NOTSET,
-        WARN,
-        WARNING,
-    ]:
-        raise ValueError(
-            f"Invalid `ENV_LOGGING_LEVEL` value from env: {ENV_LOGGING_LEVEL}"
-        )
-
-    LOGGING_LEVEL = ENV_LOGGING_LEVEL  # type: ignore
-
+from clean_base.settings import LOGGING_LEVEL
 
 # ? ----------------------------------------------------------------------------
 # ? Initialize global logger
@@ -72,6 +31,11 @@ LOGGER.addHandler(stdout_handler)
 
 
 # ? Configure bibtexparser external library logger
+#
+# ! IMPORTANT
+# ! This is needed to avoid the following warning message:
+# ! "UserWarning: BibTeX Mako templates not found in the current directory"
+#
 getLogger("bibtexparser").setLevel(WARNING)
 
 
@@ -88,12 +52,4 @@ CURRENT_USER_EMAIL: str | None = getenv("CURRENT_USER_EMAIL")
 # ? ----------------------------------------------------------------------------
 
 
-CHUNK_SIZE = 15
-
-
-# ? ----------------------------------------------------------------------------
-# ? The file to lock processed steps
-# ? ----------------------------------------------------------------------------
-
-
-LOCK_FILE = "finished-{step}.lock"
+CHUNK_SIZE = int(getenv("CHUNK_SIZE", 15))

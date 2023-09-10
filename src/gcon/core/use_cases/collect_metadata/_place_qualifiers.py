@@ -1,6 +1,7 @@
-import gcon.core.domain.utils.exceptions as exc
+import clean_base.exceptions as exc
+from clean_base.either import Either, right
+
 from gcon.core.domain.dtos.metadata import Metadata
-from gcon.core.domain.utils.either import Either, right
 from gcon.settings import LOGGER
 
 

@@ -2,12 +2,13 @@ from json import load
 from pathlib import Path
 from typing import Any, Self
 
+import clean_base.exceptions as exc
 from attrs import field, frozen
+from clean_base.either import Either, right
 from pandas import DataFrame
 from pandera import DataFrameSchema
 from pandera.errors import SchemaError
 
-import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.connection import Connection
 from gcon.core.domain.dtos.metadata import (
     Metadata,
@@ -16,7 +17,6 @@ from gcon.core.domain.dtos.metadata import (
 )
 from gcon.core.domain.dtos.node import Node
 from gcon.core.domain.dtos.score import ConnectionScores
-from gcon.core.domain.utils.either import Either, right
 from gcon.settings import LOGGER
 
 from .schemas import (

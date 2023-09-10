@@ -1,15 +1,15 @@
 from pathlib import Path
 from uuid import uuid4
 
+import clean_base.exceptions as exc
+from clean_base.either import Either, right
 from numpy import nan
 from pandas import read_csv
 
-import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.reference_data import (
     ReferenceData,
     StandardFieldsSchema,
 )
-from gcon.core.domain.utils.either import Either, right
 from gcon.settings import LOGGER
 
 from ._validate_genes_fields import validate_genes_fields

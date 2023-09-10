@@ -1,9 +1,9 @@
+import clean_base.exceptions as exc
+from clean_base.either import Either, right
 from pandas import DataFrame
 from pandera.errors import SchemaError
 
-import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.reference_data import OptionalColumnsSchema
-from gcon.core.domain.utils.either import Either, right
 from gcon.settings import LOGGER
 
 from ._dtos import ReferenceRowOptions

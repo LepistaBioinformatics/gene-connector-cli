@@ -3,18 +3,18 @@ from json import dump
 from operator import iconcat
 from pathlib import Path
 
+import clean_base.exceptions as exc
 from Bio import Entrez
+from clean_base.either import Either, right
+from clean_base.lock import has_named_lock, lock_named
+from clean_base.validations import slugify_string
 
-import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.connection import Connection
 from gcon.core.domain.dtos.node import Node
 from gcon.core.domain.dtos.reference_data import ReferenceData
 from gcon.core.domain.dtos.reference_data.schemas import StandardFieldsSchema
 from gcon.core.domain.entities.node_fetching import NodeFetching
 from gcon.core.domain.entities.node_registration import NodeRegistration
-from gcon.core.domain.utils.either import Either, right
-from gcon.core.domain.utils.lock import has_lock, lock
-from gcon.core.domain.utils.slugify import slugify_string
 from gcon.settings import CURRENT_USER_EMAIL, LOGGER
 
 from ._collect_single_gene_metadata import collect_single_gene_metadata
@@ -74,7 +74,7 @@ def collect_metadata(
             step=slugify_string(collect_metadata.__name__),
         )
 
-        if has_lock(**lock_config):
+        if has_named_lock(**lock_config):
             if (
                 reference_data_either := ReferenceData.from_json(
                     json_path=marker_output_file,
@@ -209,7 +209,7 @@ def collect_metadata(
         # ? Lock the step execution
         # ? --------------------------------------------------------------------
 
-        lock(**lock_config)
+        lock_named(**lock_config)
 
         # ? --------------------------------------------------------------------
         # ? Return a positive response

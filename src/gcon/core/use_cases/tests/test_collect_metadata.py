@@ -33,3 +33,9 @@ class CollectMetadataTest(TestCase):
         self.assertTrue(metadata.is_right)
         self.assertIsInstance(metadata.value, ReferenceData)
         self.assertEqual(len(metadata.value.connections), 4)
+
+
+if __name__ == "__main__":
+    from unittest import main
+
+    main()

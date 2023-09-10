@@ -1,11 +1,12 @@
 from typing import Any
 
+from clean_base.either import Either, right
+from clean_base.entities import FetchManyResponse, FetchResponse
+from clean_base.exceptions import FetchingError
+
 from gcon.adapters.pickledb.repositories.connector import PickleDbConnector
 from gcon.core.domain.dtos.node import Node
 from gcon.core.domain.entities.node_fetching import NodeFetching
-from gcon.core.domain.utils.either import Either, right
-from gcon.core.domain.utils.entities import FetchManyResponse, FetchResponse
-from gcon.core.domain.utils.exceptions import FetchingError
 from gcon.settings import LOGGER
 
 

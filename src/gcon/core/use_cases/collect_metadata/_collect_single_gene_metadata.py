@@ -1,15 +1,15 @@
 from io import StringIO
 
+import clean_base.exceptions as exc
 from Bio import Entrez, SeqIO
 from Bio.SeqRecord import SeqRecord
+from clean_base.either import Either, right
+from clean_base.entities import FetchResponse
 
-import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.metadata import Metadata
 from gcon.core.domain.dtos.node import Node
 from gcon.core.domain.entities.node_fetching import NodeFetching
 from gcon.core.domain.entities.node_registration import NodeRegistration
-from gcon.core.domain.utils.either import Either, right
-from gcon.core.domain.utils.entities import FetchResponse
 from gcon.settings import CHUNK_SIZE, LOGGER
 
 from ._chunks_accessions import chunks_accessions

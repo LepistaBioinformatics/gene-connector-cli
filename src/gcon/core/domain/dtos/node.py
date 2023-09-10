@@ -1,14 +1,14 @@
 from __future__ import annotations
 
+import clean_base.exceptions as exc
 from attrs import field, frozen
+from clean_base.either import Either, right
 
-import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.metadata import (
     Metadata,
     MetadataKey,
     MetadataKeyGroup,
 )
-from gcon.core.domain.utils.either import Either, right
 from gcon.settings import LOGGER
 
 

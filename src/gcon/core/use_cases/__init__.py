@@ -2,15 +2,15 @@ from json import dumps
 from pathlib import Path
 from typing import Any, Literal
 
+import clean_base.exceptions as exc
+from clean_base.either import Either, right
 from pandas import DataFrame
+
 from gcon.core.domain.dtos.metadata import MetadataKey
 from gcon.core.domain.dtos.reference_data import ReferenceData
 from gcon.core.domain.dtos.reference_data.schemas import StandardFieldsSchema
-
-import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.entities.node_fetching import NodeFetching
 from gcon.core.domain.entities.node_registration import NodeRegistration
-from gcon.core.domain.utils.either import Either, right
 from gcon.core.use_cases.build_metadata_match_scores import (
     build_metadata_match_scores,
 )
