@@ -12,6 +12,9 @@ from gcon.adapters.pickledb.repositories.node_registration import (
 )
 from gcon.core.use_cases import run_gcon_pipeline
 from gcon.settings import LOGGER
+from gcon.core.use_cases.load_and_validate_source_table._dtos import (
+    SourceGenomeEnum,
+)
 
 # ? ----------------------------------------------------------------------------
 # ? Initialize the CLI groups
@@ -22,6 +25,43 @@ from gcon.settings import LOGGER
 @click.version_option(version)
 def gcon_cmd() -> None:
     pass
+
+
+@gcon_cmd.group(
+    "info",
+    help="Get information and examples about the Gcon utility",
+)
+def info_cmd() -> None:
+    pass
+
+
+@info_cmd.command(
+    "source-genomes",
+    help="Get information about the allowed source genomes",
+)
+def source_genomes_cmd() -> None:
+    for option, example in [
+        (
+            SourceGenomeEnum.NUCLEUS,
+            f"{SourceGenomeEnum.NUCLEUS.value}-its",
+        ),
+        (
+            SourceGenomeEnum.MITOCHONDRIA,
+            f"{SourceGenomeEnum.MITOCHONDRIA.value}-gapdh",
+        ),
+        (
+            SourceGenomeEnum.PLASTID,
+            f"{SourceGenomeEnum.PLASTID.value}-rbcl",
+        ),
+        (
+            SourceGenomeEnum.UNKNOWN,
+            f"{SourceGenomeEnum.UNKNOWN.value}-gene",
+        ),
+    ]:
+        click.echo("-" * 40)
+        click.echo(f"Source genome: {option.name} ({option.value})")
+        click.echo(f"  Example: {example}")
+        click.echo()
 
 
 @gcon_cmd.command(
