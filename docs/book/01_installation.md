@@ -1,6 +1,6 @@
 # INSTALLATION ⚙️
 
-[◀️ Home](../../README.md) | [◀️ Documentation](../README.md)
+[◀️ Home](https://github.com/sgelias/gene-connector-cli/blob/main/README.md) | [◀️ Documentation](https://github.com/sgelias/gene-connector-cli/blob/main/docs/README.md)
 
 ___
 
@@ -35,7 +35,7 @@ pip install -e .
 
 ## Check installation and version
 
-Gene Connector CLI is a command line interface (CLI) tool, them main command being `gcon`, available after installation. See [usage guide](02_usage.md) for details.
+Gene Connector CLI is a command line interface (CLI) tool, them main command being `gcon`, available after installation. See [usage guide](https://github.com/sgelias/gene-connector-cli/blob/main/docs/book/02_usage.md) for details.
 
 ```bash
 gcon --help
