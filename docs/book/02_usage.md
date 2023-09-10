@@ -63,3 +63,9 @@ The Gene Connector pipeline generates two files:
 - `out.json`: the output file containing the resolved data in JSON format.
 
 Both files are redundant, thus, the user can choose the format that best fits its needs. The JSON format is useful to be used in other tools that requires JSON as input, like web applications that uses JavaScript as programming language. The TSV format is useful to be used in other tools that requires TSV as input, like R and Python scripts.
+
+___
+
+[◀️ Prev: Installation](https://github.com/sgelias/gene-connector-cli/blob/main/docs/book/01_installation.md)
+
+[▶️ Next: Project Structure](https://github.com/sgelias/gene-connector-cli/blob/main/docs/book/03_project_structure.md)

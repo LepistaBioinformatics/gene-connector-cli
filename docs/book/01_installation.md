@@ -55,3 +55,7 @@ ___
 ```bash
 python3.11 -m pip install gene-connector-cli
 ```
+
+___
+
+[▶️ Next: Usage](https://github.com/sgelias/gene-connector-cli/blob/main/docs/book/02_usage.md)
