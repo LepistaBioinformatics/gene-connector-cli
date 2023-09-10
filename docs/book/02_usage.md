@@ -1,6 +1,7 @@
-# USAGE
+# USAGE 👨🏽‍💻
 
-[⬅️ Home](../README.md)
+[◀️ Home](../../README.md) | [◀️ Documentation](../README.md)
+
 ___
 
 ## Data preparation
@@ -8,7 +9,7 @@ ___
 Our tool requires a simple tabular (TSV) file with the following columns:
 
 - `identifier`: unique identifier for each specimen.
-- `scientificName`: the scientific name of the organism.
+- `scientificName`: the scientific name of the organism. Its important that the column name seems exactly like this (using the [camelCase](https://en.wikipedia.org/wiki/Camel_case) syntax).
 - `gene-name`: the gene column containing the accession numbers.
 
 The first line of the file after the header must contains the column classifier names. Column classifier must be:

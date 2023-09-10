@@ -1,6 +1,7 @@
-# INSTALLATION
+# INSTALLATION ⚙️
 
-[⬅️ Home](../README.md)
+[◀️ Home](../../README.md) | [◀️ Documentation](../README.md)
+
 ___
 
 The installation procedure is the same for all platforms. The main requirement
@@ -49,7 +50,7 @@ pip uninstall gene-connector-cli
 
 ___
 
-NOTE: If your environment contains more than one python version installed, you include `python3.11 -m` before `pip` in the above commands. Example:
+⚠️ **IMPORTANT**: If your environment contains more than one python version installed, you include `python3.11 -m` before `pip` in the above commands. Example:
 
 ```bash
 python3.11 -m pip install gene-connector-cli
