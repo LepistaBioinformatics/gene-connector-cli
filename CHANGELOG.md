@@ -1,3 +1,11 @@
+## v0.4.4 (2023-09-10)
+
+### Refactor
+
+- place use-cases to dedicated sub-module folders to turn better the module organization
+
+## v0.4.3 (2023-09-09)
+
 ## v0.4.0 (2023-05-13)
 
 ### Feat
