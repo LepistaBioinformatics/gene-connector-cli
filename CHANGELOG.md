@@ -1,3 +1,9 @@
+## v0.4.5 (2023-09-10)
+
+### Fix
+
+- fix source-data validation to check all records before return an duplication error
+
 ## v0.4.4 (2023-09-10)
 
 ### Refactor
