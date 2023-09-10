@@ -1,3 +1,17 @@
+## v0.5.0 (2023-09-10)
+
+### Feat
+
+- include a feature that allow user to print examples from gene headers
+
+### Fix
+
+- move left return on find duplicate accession numbers to the last step of the genes validations to allow the pipeline to validate all records before stop pipeline
+
+### Refactor
+
+- replace native domain utils to use clean-base dependencies instead
+
 ## v0.4.5 (2023-09-10)
 
 ### Fix
