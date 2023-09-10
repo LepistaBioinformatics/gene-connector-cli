@@ -91,7 +91,7 @@ def collect_metadata(
         if CURRENT_USER_EMAIL is None:
             return exc.UseCaseError(
                 "`CURRENT_USER_EMAIL` not configured correctly. Please "
-                "configure before running the pipeline.",
+                "configure before execute GCON pipeline.",
                 logger=LOGGER,
             )()
 

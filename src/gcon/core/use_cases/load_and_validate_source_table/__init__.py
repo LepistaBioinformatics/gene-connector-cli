@@ -67,12 +67,12 @@ def load_and_validate_source_table(
         #
         # ? --------------------------------------------------------------------
 
-        validation_response = validate_required_fields(
-            definition_row=definition_row,
-            content_rows=content_rows,
-        )
-
-        if validation_response.is_left:
+        if (
+            validation_response := validate_required_fields(
+                definition_row=definition_row,
+                content_rows=content_rows,
+            )
+        ).is_left:
             return validation_response
         del validation_response
 
@@ -83,12 +83,12 @@ def load_and_validate_source_table(
         #
         # ? --------------------------------------------------------------------
 
-        validation_response = validate_optional_fields(
-            definition_row=definition_row,
-            content_rows=content_rows,
-        )
-
-        if validation_response.is_left:
+        if (
+            validation_response := validate_optional_fields(
+                definition_row=definition_row,
+                content_rows=content_rows,
+            )
+        ).is_left:
             return validation_response
 
         optional_fields: list[str] = validation_response.value
@@ -101,13 +101,13 @@ def load_and_validate_source_table(
         #
         # ? --------------------------------------------------------------------
 
-        validation_response = validate_genes_fields(
-            definition_row=definition_row,
-            content_rows=content_rows,
-            ignore_duplicates=ignore_duplicates,
-        )
-
-        if validation_response.is_left:
+        if (
+            validation_response := validate_genes_fields(
+                definition_row=definition_row,
+                content_rows=content_rows,
+                ignore_duplicates=ignore_duplicates,
+            )
+        ).is_left:
             return validation_response
 
         gene_fields: list[str] = validation_response.value
