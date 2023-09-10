@@ -6,3 +6,10 @@ class ReferenceRowOptions(Enum):
     STANDARD = "std"
     OPTIONAL = "opt"
     GENE = "gene"
+
+
+class SourceGenomeEnum(Enum):
+    NUCLEUS = "nuc"
+    MITOCHONDRIA = "mit"
+    PLASTID = "pla"
+    UNKNOWN = "unk"

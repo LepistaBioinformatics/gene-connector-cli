@@ -124,6 +124,8 @@ def validate_genes_fields(
     # ? Notify user of any duplicated accessions
     # ? ------------------------------------------------------------------------
 
+    err = 0
+
     if (
         within_genic_unique_accessions.__len__() > 0
         and ignore_duplicates is False
@@ -134,21 +136,14 @@ def validate_genes_fields(
             LOGGER.warning(", ".join(accessions))
             LOGGER.warning("")
 
-        return exc.UseCaseError(
-            (
-                "Duplicate accessions found. Please check the log for more "
-                + "details. Case it is an intentional duplication, please "
-                + "re-run the command with the --ignore-duplicates flag."
-            ),
-            logger=LOGGER,
-        )()
+        err += 1
 
     if (
         inter_genic_duplicate_accessions.__len__() > 0
         and ignore_duplicates is False
     ):
         LOGGER.warning("-" * 40)
-        LOGGER.warning("One or more accession found in multiple genes:")
+        LOGGER.warning("Repeated accession found in multiple genes:")
 
         for gene, accession in sorted(
             inter_genic_duplicate_accessions, key=lambda x: (x[0], x[1])
@@ -156,6 +151,9 @@ def validate_genes_fields(
             LOGGER.warning(f"{gene}: {accession}")
         LOGGER.warning("")
 
+        err += 1
+
+    if err > 0:
         return exc.UseCaseError(
             (
                 "Duplicate accessions found. Please check the log for more "
