@@ -63,11 +63,10 @@
         },
         "clean-base": {
             "hashes": [
-                "sha256:23be1b93cebe883cbecc7c0c2e2b89ed4fbbf91878453cea26aed96847d55750",
-                "sha256:8c4a07062278fe2aed23f660872662d665a4795628ceb9b6236b280f62fe411c"
+                "sha256:832e4b70bee7a444082eb0d77815af2449b171e0e6a2ccbbaa1575f1f1548a0c"
             ],
             "index": "pypi",
-            "version": "==0.1.1"
+            "version": "==0.1.2"
         },
         "click": {
             "hashes": [

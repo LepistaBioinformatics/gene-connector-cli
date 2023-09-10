@@ -10,14 +10,17 @@ from gcon.adapters.pickledb.repositories.node_fetching import (
 from gcon.adapters.pickledb.repositories.node_registration import (
     NodeRegistrationPickleDbRepository,
 )
-from gcon.core.use_cases import run_gcon_pipeline
+from gcon.core.use_cases import (
+    load_and_validate_source_table,
+    run_gcon_pipeline,
+)
 from gcon.settings import LOGGER
 from gcon.core.use_cases.load_and_validate_source_table._dtos import (
     SourceGenomeEnum,
 )
 
 # ? ----------------------------------------------------------------------------
-# ? Initialize the CLI groups
+# ? Initialize CLI groups
 # ? ----------------------------------------------------------------------------
 
 
@@ -33,6 +36,46 @@ def gcon_cmd() -> None:
 )
 def info_cmd() -> None:
     pass
+
+
+# ? ----------------------------------------------------------------------------
+# ? Create CLI shared options
+# ? ----------------------------------------------------------------------------
+
+
+__INPUT_TABLE = click.option(
+    "-i",
+    "--input-table",
+    required=True,
+    prompt=True,
+    type=click.Path(
+        resolve_path=True,
+        readable=True,
+        exists=True,
+        file_okay=True,
+        path_type=Path,
+    ),
+    help="A reference table to resolve",
+)
+
+
+__IGNORE_DUPLICATES = click.option(
+    "-i",
+    "--ignore-duplicates",
+    is_flag=True,
+    show_default=True,
+    default=False,
+    help=(
+        "Ignore duplicate gene accession numbers in the source table if True. "
+        + "This is usual in cases which the same code is used for continuous "
+        + "genes. This is a common situation at ribosomal genes."
+    ),
+)
+
+
+# ? ----------------------------------------------------------------------------
+# ? Create CLI commands
+# ? ----------------------------------------------------------------------------
 
 
 @info_cmd.command(
@@ -65,36 +108,29 @@ def source_genomes_cmd() -> None:
 
 
 @gcon_cmd.command(
+    "validate",
+    help="Validate a reference table",
+)
+@__INPUT_TABLE
+@__IGNORE_DUPLICATES
+def validate_cmd(
+    input_table: Path,
+    ignore_duplicates: bool,
+) -> None:
+    if (
+        left_response := load_and_validate_source_table(
+            source_table_path=input_table,
+            ignore_duplicates=ignore_duplicates,
+        )
+    ).is_left:
+        raise Exception(left_response.value)
+
+
+@gcon_cmd.command(
     "resolve",
-    help="Resolve a reference table",
+    help="Resolve a reference table.",
 )
-@click.option(
-    "-i",
-    "--input-table",
-    required=True,
-    prompt=True,
-    type=click.Path(
-        resolve_path=True,
-        readable=True,
-        exists=True,
-        file_okay=True,
-        path_type=Path,
-    ),
-    help="A reference table to resolve",
-)
-@click.option(
-    "-t",
-    "--temporary-directory",
-    required=True,
-    prompt=True,
-    type=click.Path(
-        readable=True,
-        exists=False,
-        dir_okay=True,
-        path_type=Path,
-    ),
-    help="A directory path to store temporary files",
-)
+@__INPUT_TABLE
 @click.option(
     "-o",
     "--output-file",
@@ -106,19 +142,21 @@ def source_genomes_cmd() -> None:
         file_okay=True,
         path_type=Path,
     ),
-    help="The system path of the output file",
+    help="The system path of the output file. Please ignore file extension.",
 )
+@__IGNORE_DUPLICATES
 @click.option(
-    "-i",
-    "--ignore-duplicates",
-    is_flag=True,
-    show_default=True,
-    default=False,
-    help=(
-        "Ignore duplicate gene accession numbers in the source table if True. "
-        + "This is usual in cases which the same code is used for continuous "
-        + "genes. This is a common situation at ribosomal genes."
+    "-t",
+    "--temporary-directory",
+    required=False,
+    default=Path("tmp"),
+    type=click.Path(
+        readable=True,
+        exists=False,
+        dir_okay=True,
+        path_type=Path,
     ),
+    help="A directory path to store temporary files.",
 )
 @click.option(
     "--cache-file",
@@ -143,17 +181,19 @@ def resolve_cmd(
     ignore_duplicates: bool,
     cache_file: Path,
 ) -> None:
+    if not temporary_directory.is_dir():
+        temporary_directory.mkdir(parents=True)
+
     try:
-        if not temporary_directory.is_dir():
-            temporary_directory.mkdir(parents=True)
+        connector = PickleDbConnector(
+            db_path=Path(cache_file).with_suffix(".json")
+        )
+    except Exception as e:
+        LOGGER.exception(e)
+        raise Exception("Could not initialize PickleDbConnector.")
 
-        try:
-            connector = PickleDbConnector(db_path=cache_file)
-        except Exception as e:
-            LOGGER.exception(e)
-            raise Exception("Could not initialize PickleDbConnector.")
-
-        response_either = run_gcon_pipeline(
+    if (
+        response_either := run_gcon_pipeline(
             source_table_path=input_table,
             output_dir_path=temporary_directory,
             output_file=output_file,
@@ -165,9 +205,5 @@ def resolve_cmd(
                 db=connector,
             ),
         )
-
-        if response_either.is_left:
-            raise Exception(response_either.value.msg)
-
-    except Exception as e:
-        LOGGER.exception(e)
+    ).is_left:
+        raise Exception(response_either.value.msg)

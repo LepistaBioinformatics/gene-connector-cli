@@ -131,10 +131,11 @@ def validate_genes_fields(
         and ignore_duplicates is False
     ):
         for gene, accessions in within_genic_unique_accessions.items():
-            LOGGER.warning("-" * 40)
-            LOGGER.warning(f"One or more accession found in {gene}:")
-            LOGGER.warning(", ".join(accessions))
-            LOGGER.warning("")
+            LOGGER.error("-" * 40)
+            LOGGER.error(f"One or more duplicate accession found in {gene}:")
+            for accession in accessions:
+                LOGGER.error(accession)
+            LOGGER.error("")
 
         err += 1
 
@@ -142,14 +143,14 @@ def validate_genes_fields(
         inter_genic_duplicate_accessions.__len__() > 0
         and ignore_duplicates is False
     ):
-        LOGGER.warning("-" * 40)
-        LOGGER.warning("Repeated accession found in multiple genes:")
+        LOGGER.error("-" * 40)
+        LOGGER.error("Inter genic duplications found:")
 
         for gene, accession in sorted(
             inter_genic_duplicate_accessions, key=lambda x: (x[0], x[1])
         ):
-            LOGGER.warning(f"{gene}: {accession}")
-        LOGGER.warning("")
+            LOGGER.error(f"{gene}: {accession}")
+        LOGGER.error("")
 
         err += 1
 
@@ -161,6 +162,7 @@ def validate_genes_fields(
                 + "re-run the command with the --ignore-duplicates flag."
             ),
             logger=LOGGER,
+            exp=True,
         )()
 
     # ? ------------------------------------------------------------------------
