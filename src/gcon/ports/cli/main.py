@@ -10,7 +10,7 @@ from gcon.adapters.pickledb.repositories.node_fetching import (
 from gcon.adapters.pickledb.repositories.node_registration import (
     NodeRegistrationPickleDbRepository,
 )
-from gcon.core.use_cases.run_gcon_pipeline import run_gcon_pipeline
+from gcon.core.use_cases import run_gcon_pipeline
 from gcon.settings import LOGGER
 
 # ? ----------------------------------------------------------------------------

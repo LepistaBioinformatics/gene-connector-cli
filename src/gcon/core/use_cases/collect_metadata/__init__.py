@@ -1,26 +1,24 @@
 from functools import reduce
-from io import StringIO
 from json import dump
 from operator import iconcat
 from pathlib import Path
-from typing import Generator
 
-from Bio import Entrez, SeqIO
-from Bio.SeqRecord import SeqRecord
+from Bio import Entrez
 
 import gcon.core.domain.utils.exceptions as exc
 from gcon.core.domain.dtos.connection import Connection
-from gcon.core.domain.dtos.metadata import Metadata, MetadataKeyGroup
 from gcon.core.domain.dtos.node import Node
 from gcon.core.domain.dtos.reference_data import ReferenceData
 from gcon.core.domain.dtos.reference_data.schemas import StandardFieldsSchema
 from gcon.core.domain.entities.node_fetching import NodeFetching
 from gcon.core.domain.entities.node_registration import NodeRegistration
 from gcon.core.domain.utils.either import Either, right
-from gcon.core.domain.utils.entities import FetchResponse
 from gcon.core.domain.utils.lock import has_lock, lock
 from gcon.core.domain.utils.slugify import slugify_string
-from gcon.settings import CHUNK_SIZE, CURRENT_USER_EMAIL, LOGGER
+from gcon.settings import CURRENT_USER_EMAIL, LOGGER
+
+from ._collect_single_gene_metadata import collect_single_gene_metadata
+from ._collect_unique_identifiers import collect_unique_identifiers
 
 
 def collect_metadata(
@@ -107,7 +105,7 @@ def collect_metadata(
         for marker in reference_data.gene_fields:
             LOGGER.debug(f"Recovering sequences from `{marker}` marker")
 
-            marker_nodes = __collect_single_gene_metadata(
+            marker_nodes = collect_single_gene_metadata(
                 entrez_handle=Entrez,
                 marker=marker,
                 accessions=reduce(
@@ -159,7 +157,7 @@ def collect_metadata(
 
                 row_nodes.extend(acc_metadata)
 
-            identifiers = __collect_unique_identifiers(
+            identifiers = collect_unique_identifiers(
                 nodes=row_nodes,
             )
 
@@ -221,218 +219,3 @@ def collect_metadata(
 
     except Exception as e:
         return exc.UseCaseError(e, logger=LOGGER)()
-
-
-def __collect_unique_identifiers(
-    nodes: list[Node],
-) -> Either[exc.UseCaseError, set[str]]:
-    """Collect unique identifiers from a list of nodes.
-
-    Args:
-        nodes (list[Node]): List of nodes.
-
-    Returns:
-        Either[exc.UseCaseError, set[str]]: Either a UseCaseError or a set of
-            unique identifiers.
-
-    Raises:
-        exc.UseCaseError: If the metadata source is not available.
-
-    """
-
-    identifiers: list[str] = list()
-
-    for node in nodes:
-        specimen_keys = [
-            qualifier
-            for qualifier in node.metadata.qualifiers.keys()
-            if qualifier.group == MetadataKeyGroup.SPECIMEN
-        ]
-
-        if len(specimen_keys) == 0:
-            continue
-
-        for qualifier in specimen_keys:
-            identifiers.extend(node.metadata.qualifiers.get(qualifier))
-
-    return right(set(identifiers))
-
-
-def __collect_single_gene_metadata(
-    entrez_handle: Entrez,
-    accessions: list[str],
-    marker: str,
-    local_node_fetching_repo: NodeFetching,
-    local_node_registration_repo: NodeRegistration,
-) -> Either[exc.UseCaseError, list[Metadata]]:
-    """Collect metadata from a list of accessions.
-
-    Args:
-        entrez_handle (Entrez): Entrez handle.
-        accessions (list[str]): List of accessions.
-
-    Returns:
-        Either[exc.UseCaseError, list[Metadata]]: Either a UseCaseError or a
-            list of Metadata.
-
-    Raises:
-        exc.UseCaseError: If the metadata source is not available.
-
-    """
-
-    # ? ------------------------------------------------------------------------
-    # ? Collect nodes from local storage
-    #
-    # Locally stored nodes includes nodes that were previously fetched from
-    # Entrez and stored in the local storage. This is done to avoid fetching
-    # the same nodes multiple times.
-    #
-    # ? ------------------------------------------------------------------------
-
-    LOGGER.debug(f"Collecting nodes from local storage for `{marker}` marker")
-
-    cached_accessions: list[Node] = []
-    new_accessions: list[Node] = []
-
-    for accession in accessions:
-        local_nodes_response_either = local_node_fetching_repo.get(
-            accession=accession,
-        )
-
-        if local_nodes_response_either.is_left:
-            return local_nodes_response_either
-
-        fetch_response: FetchResponse = local_nodes_response_either.value
-
-        if fetch_response.fetched is False:
-            new_accessions.append(accession)
-            continue
-
-        cached_accessions.append(fetch_response.instance)
-
-    LOGGER.debug(
-        f"Found {len(cached_accessions)} cached nodes for `{marker}` marker"
-    )
-
-    # ? ------------------------------------------------------------------------
-    # ? Populate not already stored accessions
-    #
-    # Accessions that are not already stored in the local storage are fetched
-    # from Entrez and stored in the local storage.
-    #
-    # ? ------------------------------------------------------------------------
-
-    nodes: list[Node] = []
-    chunks = [i for i in __chunks(new_accessions, CHUNK_SIZE)]
-
-    for index, acc_chunk in enumerate(chunks):
-        LOGGER.debug(
-            f"Processing chunk {index + 1} of {len(chunks)}. "
-            + f"Size: {len(acc_chunk)}"
-        )
-
-        parsed_content: list[SeqRecord] = []
-        with entrez_handle.efetch(
-            db="nuccore",
-            id=",".join(acc_chunk),
-            rettype="gb",
-        ) as chunk_handle:
-            parsed_content.extend(
-                [
-                    i
-                    for i in SeqIO.parse(
-                        StringIO(chunk_handle.read()), "genbank"
-                    )
-                ]
-            )
-
-        record: SeqRecord
-        chunk_nodes: list[Node] = []
-        for record in parsed_content:
-            try:
-                source_feature = next(
-                    feature
-                    for feature in record.features
-                    if feature.type == "source"
-                )
-
-            except StopIteration:
-                return exc.UseCaseError(
-                    f"Metadata source not available for `{record.id}`",
-                    logger=LOGGER,
-                )()
-
-            record_metadata = __place_qualifiers(
-                raw_qualifiers=source_feature.qualifiers,
-            )
-
-            if record_metadata.is_left:
-                return record_metadata
-
-            chunk_nodes.append(
-                Node(
-                    accession=record.name,
-                    marker=marker,
-                    metadata=record_metadata.value,
-                )
-            )
-
-        if (
-            response_either := local_node_registration_repo.create_many(
-                nodes=[*chunk_nodes, *cached_accessions]
-            )
-        ).is_left:
-            return response_either
-
-        nodes.extend(chunk_nodes)
-
-    return right([*nodes, *cached_accessions])
-
-
-def __place_qualifiers(
-    raw_qualifiers: dict[str, list[str | int]],
-) -> Either[exc.UseCaseError, Metadata]:
-    """Place qualifiers in the correct Metadata fields.
-
-    Args:
-        raw_qualifiers (dict[str, list[str | int]]): Raw qualifiers.
-
-    Returns:
-        Either[exc.UseCaseError, Metadata]: Either a UseCaseError or a Metadata.
-
-    Raises:
-        exc.UseCaseError: If the qualifier value length is not 1.
-    """
-
-    metadata = Metadata()
-
-    for key, value in raw_qualifiers.items():
-        if len(value) == 0:
-            return exc.UseCaseError(
-                f"Invalid qualifier value length for `{key}`. It should have"
-                + f"at last one value. Found: {value}",
-                logger=LOGGER,
-            )()
-
-        metadata.add_feature(key, value)
-
-    return right(metadata)
-
-
-def __chunks(
-    accessions: list[str],
-    size: int,
-) -> Generator[list[str], None, None]:
-    """Yield successive n-sized chunks from l.
-
-    Args:
-        accessions (list[str]): List of accessions.
-        size (int): Chunk size.
-
-    Yields:
-        Generator[list[str], None, None]: Generator of chunks.
-
-    """
-
-    for i in range(0, len(accessions), size):
-        yield accessions[i : i + size]
