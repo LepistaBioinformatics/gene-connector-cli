@@ -15,7 +15,7 @@ build-backend = "setuptools.build_meta"
 [project]
 
 name = "gene-connector-cli"
-version = "0.5.0"
+version = "0.6.0"
 authors = [{ name = "Samuel Galvão Elias", email = "sgelias@outlook.com" }]
 description = "The Gene-Connector command line interface"
 readme = "README.md"

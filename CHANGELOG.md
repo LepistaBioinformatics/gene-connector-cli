@@ -1,3 +1,9 @@
+## v0.6.0 (2023-09-10)
+
+### Feat
+
+- implements the validate commad to check input table before run gcon pipeline
+
 ## v0.5.0 (2023-09-10)
 
 ### Feat
