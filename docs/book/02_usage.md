@@ -64,6 +64,18 @@ The Gene Connector pipeline generates two files:
 
 Both files are redundant, thus, the user can choose the format that best fits its needs. The JSON format is useful to be used in other tools that requires JSON as input, like web applications that uses JavaScript as programming language. The TSV format is useful to be used in other tools that requires TSV as input, like R and Python scripts.
 
+## Example
+
+We recommend to use the *Bipolaris* example data file provided in the `assets` repository. To do so, use the following command:
+
+```bash
+gcon resolve \
+    --input-table assets/bipolaris-gophy.tsv \
+    --output-file out
+```
+
+This example dataset includes duplicated records, allowing to users to test the `--ignore-duplicates` flag and see the expected results.
+
 ___
 
 [◀️ Prev: Installation](https://github.com/sgelias/gene-connector-cli/blob/main/docs/book/01_installation.md)
