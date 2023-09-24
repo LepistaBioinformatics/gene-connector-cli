@@ -1,3 +1,9 @@
+## v0.6.4 (2023-09-24)
+
+### Fix
+
+- replace click by rick click and convert gene names with source-genomes examples as table
+
 ## v0.6.3 (2023-09-10)
 
 ## v0.6.2 (2023-09-10)
