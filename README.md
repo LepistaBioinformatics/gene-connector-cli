@@ -2,7 +2,7 @@
 
 ___
 
-Genbank currently stands as one of the most significant global repositories of genetic information.
+Genbank currently stands as one of the most significant global repositories of genetic information. Nevertheless, it is not always easy to find the information we need in the format we need. Gene Connector (gcon) is a command line interface (CLI) tool that aims to facilitate the metadata extraction from nucleotide records from Entrez Genbank API's. It is a tool that can be used by researchers, students and anyone interested in genetic associated metadata information.
 
 [![Licence](https://img.shields.io/pypi/l/gene-connector-cli?style=for-the-badge)](LICENSE)
 [![Github Version](https://img.shields.io/github/v/tag/sgelias/gene-connector-cli?style=for-the-badge)](pyproject.toml)
