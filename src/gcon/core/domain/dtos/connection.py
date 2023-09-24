@@ -80,7 +80,13 @@ class Connection:
         """
 
         nodes_signature = "".join(
-            [node.update_signature().signature.__str__() for node in self.nodes]
+            [
+                node.signature.__str__()
+                for node in sorted(
+                    [i.update_signature() for i in self.nodes],
+                    key=lambda x: x.signature,
+                )
+            ]
         )
 
         self.signature = uuid3(

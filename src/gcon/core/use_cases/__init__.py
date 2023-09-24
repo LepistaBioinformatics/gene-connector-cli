@@ -170,6 +170,7 @@ def __build_metadata_table(
             connection_record.update(
                 {
                     "id": connection.id,
+                    "signature": connection.signature,
                     StandardFieldsSchema.identifier: f"{JOIN_SEPARATOR}".join(
                         set(connection.identifiers)
                     ),
@@ -184,7 +185,11 @@ def __build_metadata_table(
                     accession = f"{JOIN_SEPARATOR}".join(
                         [accession, node.accession]
                     )
+
                 connection_record.update({node.marker: accession})
+                connection_record.update(
+                    {f"signature-{node.marker}": node.signature}
+                )
 
                 for key, value in node.metadata.qualifiers.items():
                     composed_key = build_metadata_string_key(key=key)
@@ -240,7 +245,7 @@ def __build_metadata_table(
             right_on="uuid",
         ).reindex(
             [
-                "id",
+                "signature",
                 StandardFieldsSchema.identifier,
                 StandardFieldsSchema.sci_name,
                 *reference_data.optional_fields,
@@ -248,6 +253,9 @@ def __build_metadata_table(
                 "reachable_completeness_score",
                 "information_gain",
                 *sorted(unique_marker_keys),
+                *sorted(
+                    i for i in output_df.columns if i.startswith("signature-")
+                ),
                 *sorted(unique_metadata_keys),
             ],
             axis=1,

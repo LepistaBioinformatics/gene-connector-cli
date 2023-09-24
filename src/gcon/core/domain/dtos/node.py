@@ -66,8 +66,8 @@ class Node:
             name=(
                 self.accession
                 + self.marker
-                + "".join(dict_metadata.keys())
-                + "".join(["".join(i) for i in dict_metadata.values()])
+                + "".join(sorted(dict_metadata.keys()))
+                + "".join(["".join(i) for i in sorted(dict_metadata.values())])
             ),
         )
 
