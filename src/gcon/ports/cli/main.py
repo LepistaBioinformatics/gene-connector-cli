@@ -1,6 +1,7 @@
 from pathlib import Path
 
-import click
+# import click
+import rich_click as click
 
 from gcon.__version__ import version
 from gcon.adapters.pickledb.repositories.connector import PickleDbConnector
@@ -80,9 +81,17 @@ __IGNORE_DUPLICATES = click.option(
 
 @info_cmd.command(
     "source-genomes",
-    help="Get information about the allowed source genomes",
+    help="Get examples about the gene column values for each source genome",
 )
 def source_genomes_cmd() -> None:
+    from rich.console import Console
+    from rich.table import Table
+
+    table = Table(title="Example values for gene columns")
+    table.add_column("Source Genome", style="cyan")
+    table.add_column("Prefix", style="green")
+    table.add_column("Example", style="green")
+
     for option, example in [
         (
             SourceGenomeEnum.NUCLEUS,
@@ -98,13 +107,13 @@ def source_genomes_cmd() -> None:
         ),
         (
             SourceGenomeEnum.UNKNOWN,
-            f"{SourceGenomeEnum.UNKNOWN.value}-gene",
+            f"{SourceGenomeEnum.UNKNOWN.value}-alphagene",
         ),
     ]:
-        click.echo("-" * 40)
-        click.echo(f"Source genome: {option.name} ({option.value})")
-        click.echo(f"  Example: {example}")
-        click.echo()
+        table.add_row(option.name, option.value, example)
+
+    console = Console()
+    console.print(table)
 
 
 @gcon_cmd.command(
