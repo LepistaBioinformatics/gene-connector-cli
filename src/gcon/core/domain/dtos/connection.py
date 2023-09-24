@@ -1,10 +1,11 @@
 from typing import Any, Self
-from uuid import UUID, uuid4
+from uuid import UUID, uuid3, uuid4
 
 from attrs import define, field
 
 from gcon.core.domain.dtos.node import Node
 from gcon.core.domain.dtos.score import ConnectionScores
+from gcon.settings import GCON_NAMESPACE_HASH
 
 
 @define(kw_only=True)
@@ -22,6 +23,7 @@ class Connection:
     # ? ------------------------------------------------------------------------
 
     id: UUID = field(init=False)
+    signature: UUID = field(init=False)
     identifiers: set[str] = field()
     nodes: set[Node] = field()
     scores: ConnectionScores | None = field(default=None)
@@ -50,12 +52,40 @@ class Connection:
 
         """
 
+        me = self.__update_signature()
+
         return {
-            "id": self.id,
-            "identifiers": list(self.identifiers),
-            "nodes": [node.to_dict() for node in self.nodes],
-            "scores": self.scores.to_dict() if self.scores else None,
+            "id": me.id,
+            "signature": me.signature,
+            "identifiers": list(me.identifiers),
+            "nodes": [
+                node.to_dict(update_signature=False) for node in me.nodes
+            ],
+            "scores": me.scores.to_dict() if me.scores else None,
         }
 
     def with_scores(self, scores: ConnectionScores) -> None:
         self.scores = scores
+
+    # ? ------------------------------------------------------------------------
+    # ? PUBLIC INSTANCE METHODS
+    # ? ------------------------------------------------------------------------
+
+    def __update_signature(self) -> Self:
+        """Update the connection signature.
+
+        This is an internal method called before to convert the connection to a
+        dictionary.
+
+        """
+
+        nodes_signature = "".join(
+            [node.update_signature().signature.__str__() for node in self.nodes]
+        )
+
+        self.signature = uuid3(
+            namespace=GCON_NAMESPACE_HASH,
+            name=("".join(self.identifiers) + nodes_signature),
+        )
+
+        return self

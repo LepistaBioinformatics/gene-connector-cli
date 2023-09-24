@@ -3,6 +3,8 @@ from collections import defaultdict
 import clean_base.exceptions as exc
 from clean_base.either import Either, right
 from pandas import DataFrame, Series
+from rich.console import Console
+from rich.table import Table
 
 from gcon.core.domain.dtos.reference_data import ReferenceData
 from gcon.settings import LOGGER
@@ -107,10 +109,6 @@ def validate_genes_fields(
         if len(duplicates) > 0:
             within_genic_unique_accessions[gene].extend(duplicates)
 
-            """ LOGGER.warning(f"One or more accession found in {gene}:")
-            for accession in duplicates:
-                print(f"{gene}: {accession}") """
-
         for unique in uniques:
             if (
                 unique in inter_genic_unique_accessions
@@ -132,10 +130,19 @@ def validate_genes_fields(
     ):
         for gene, accessions in within_genic_unique_accessions.items():
             LOGGER.error("-" * 40)
-            LOGGER.error(f"One or more duplicate accession found in {gene}:")
+            LOGGER.error(
+                "\033[93mOne or more duplicated accession found in "
+                + f"`{gene}` gene:\033[0m"
+            )
+
+            table = Table(highlight=False)
+            table.add_column("Accession", style="green", min_width=15)
+
             for accession in accessions:
-                LOGGER.error(accession)
-            LOGGER.error("")
+                table.add_row(accession)
+
+        console = Console()
+        console.print(table)
 
         err += 1
 
@@ -144,13 +151,19 @@ def validate_genes_fields(
         and ignore_duplicates is False
     ):
         LOGGER.error("-" * 40)
-        LOGGER.error("Inter genic duplications found:")
+        LOGGER.error("\033[93mInter genic duplications found:\033[0m")
+
+        table = Table(highlight=False)
+        table.add_column("Gene", style="magenta")
+        table.add_column("Accession", style="green", min_width=15)
 
         for gene, accession in sorted(
             inter_genic_duplicate_accessions, key=lambda x: (x[0], x[1])
         ):
-            LOGGER.error(f"{gene}: {accession}")
-        LOGGER.error("")
+            table.add_row(gene, accession)
+
+        console = Console()
+        console.print(table)
 
         err += 1
 
@@ -159,7 +172,7 @@ def validate_genes_fields(
             (
                 "Duplicate accessions found. Please check the log for more "
                 + "details. Case it is an intentional duplication, please "
-                + "re-run the command with the --ignore-duplicates flag."
+                + "re-run the command with the --skip-duplicates flag."
             ),
             logger=LOGGER,
             exp=True,

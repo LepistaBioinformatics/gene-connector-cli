@@ -159,7 +159,7 @@ class ReferenceData:
             # ? ----------------------------------------------------------------
 
             if json_path.is_file() is False:
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     f"Invalid file path: `{json_path}`",
                     logger=LOGGER,
                 )()
@@ -182,7 +182,7 @@ class ReferenceData:
 
             for grouped_key in required_keys:
                 if grouped_key not in content:
-                    return exc.InvalidArgumentError(
+                    return exc.DadaTransferObjectError(
                         f"Unable to load JSON. Missing key: `{grouped_key}`",
                         logger=LOGGER,
                     )()
@@ -207,7 +207,7 @@ class ReferenceData:
             ]
 
             if not isinstance(connections_content, list):
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     "Unable to load JSON. Connections must be a list.",
                     logger=LOGGER,
                 )()
@@ -215,7 +215,7 @@ class ReferenceData:
             for connection in connections_content:
                 for grouped_key in required_connection_keys:
                     if grouped_key not in connection:
-                        return exc.InvalidArgumentError(
+                        return exc.DadaTransferObjectError(
                             f"Unable to load JSON. Missing key: `{grouped_key}`",
                             logger=LOGGER,
                         )()
@@ -225,13 +225,13 @@ class ReferenceData:
                 nodes = connection.pop("nodes")
 
                 if not isinstance(identifiers, list):
-                    return exc.InvalidArgumentError(
+                    return exc.DadaTransferObjectError(
                         "Unable to load JSON. Identifiers must be a list.",
                         logger=LOGGER,
                     )()
 
                 if not isinstance(nodes, list):
-                    return exc.InvalidArgumentError(
+                    return exc.DadaTransferObjectError(
                         "Unable to load JSON. Nodes must be a list.",
                         logger=LOGGER,
                     )()
@@ -240,7 +240,7 @@ class ReferenceData:
 
                 for identifier in identifiers:
                     if not isinstance(identifier, str):
-                        return exc.InvalidArgumentError(
+                        return exc.DadaTransferObjectError(
                             "Unable to load JSON. Identifier must be a string.",
                             logger=LOGGER,
                         )()
@@ -252,7 +252,7 @@ class ReferenceData:
                 for node in nodes:
                     for grouped_key in required_node_keys:
                         if grouped_key not in node:
-                            return exc.InvalidArgumentError(
+                            return exc.DadaTransferObjectError(
                                 f"Unable to load JSON. Missing key: `{grouped_key}`",
                                 logger=LOGGER,
                             )()
@@ -262,19 +262,19 @@ class ReferenceData:
                     metadata = node.pop("metadata")
 
                     if not isinstance(accession, str):
-                        return exc.InvalidArgumentError(
+                        return exc.DadaTransferObjectError(
                             "Unable to load JSON. Accession must be a string.",
                             logger=LOGGER,
                         )()
 
                     if not isinstance(marker, str):
-                        return exc.InvalidArgumentError(
+                        return exc.DadaTransferObjectError(
                             "Unable to load JSON. Marker must be a string.",
                             logger=LOGGER,
                         )()
 
                     if not isinstance(metadata, dict):
-                        return exc.InvalidArgumentError(
+                        return exc.DadaTransferObjectError(
                             "Unable to load JSON. Metadata must be a dictionary.",
                             logger=LOGGER,
                         )()
@@ -283,13 +283,13 @@ class ReferenceData:
 
                     for grouped_key, value in metadata.items():
                         if not isinstance(grouped_key, str):
-                            return exc.InvalidArgumentError(
+                            return exc.DadaTransferObjectError(
                                 "Unable to load JSON. Metadata key must be a string.",
                                 logger=LOGGER,
                             )()
 
                         if not isinstance(value, list):
-                            return exc.InvalidArgumentError(
+                            return exc.DadaTransferObjectError(
                                 "Unable to load JSON. Metadata value must be a string.",
                                 logger=LOGGER,
                             )()
@@ -297,8 +297,11 @@ class ReferenceData:
                         splitted_key = grouped_key.split(".")
 
                         if len(splitted_key) != 2:
-                            return exc.InvalidArgumentError(
-                                "Unable to load JSON. Metadata key must be in the format `namespace.key`.",
+                            return exc.DadaTransferObjectError(
+                                (
+                                    "Unable to load JSON. Metadata key must be in"
+                                    + " the format `namespace.key`."
+                                ),
                                 logger=LOGGER,
                             )()
 
@@ -307,8 +310,11 @@ class ReferenceData:
                         try:
                             group_enum = MetadataKeyGroup[group]
                         except KeyError:
-                            return exc.InvalidArgumentError(
-                                f"Unable to load JSON. Invalid metadata key group: `{group}`.",
+                            return exc.DadaTransferObjectError(
+                                (
+                                    "Unable to load JSON. Invalid metadata key "
+                                    + f"group: `{group}`."
+                                ),
                                 logger=LOGGER,
                             )()
 
@@ -323,7 +329,7 @@ class ReferenceData:
                             expected_metadata_key
                             not in metadata_instance.qualifiers
                         ):
-                            return exc.InvalidArgumentError(
+                            return exc.DadaTransferObjectError(
                                 f"Unable to load JSON. Invalid metadata key: `{key}`.",
                                 logger=LOGGER,
                             )()
@@ -339,20 +345,20 @@ class ReferenceData:
                 scores: ConnectionScores | None = None
                 if (parsed_scores := connection.get("scores")) is not None:
                     if not isinstance(parsed_scores, dict):
-                        return exc.InvalidArgumentError(
+                        return exc.DadaTransferObjectError(
                             "Unable to load JSON. Scores must be a dictionary.",
                             logger=LOGGER,
                         )()
 
                     for key, value in parsed_scores.items():
                         if not isinstance(key, str):
-                            return exc.InvalidArgumentError(
+                            return exc.DadaTransferObjectError(
                                 "Unable to load JSON. Score key must be a string.",
                                 logger=LOGGER,
                             )()
 
                         if not isinstance(value, (int, float)):
-                            return exc.InvalidArgumentError(
+                            return exc.DadaTransferObjectError(
                                 "Unable to load JSON. Score value must be a number.",
                                 logger=LOGGER,
                             )()
@@ -387,7 +393,7 @@ class ReferenceData:
             optional_fields_content = content.pop("optional_fields")
 
             if not isinstance(optional_fields_content, list):
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     "Unable to load JSON. Optional fields must be a list.",
                     logger=LOGGER,
                 )()
@@ -399,7 +405,7 @@ class ReferenceData:
             gene_fields_content = content.pop("gene_fields")
 
             if not isinstance(gene_fields_content, list):
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     "Unable to load JSON. Gene fields must be a list.",
                     logger=LOGGER,
                 )()
@@ -411,7 +417,7 @@ class ReferenceData:
             data_content = content.pop("data")
 
             if not isinstance(data_content, list):
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     "Unable to load JSON. Data must be a list.",
                     logger=LOGGER,
                 )()

@@ -41,7 +41,7 @@ def run_gcon_pipeline(
         # ? --------------------------------------------------------------------
 
         if not source_table_path.exists():
-            return exc.InvalidArgumentError(
+            return exc.UseCaseError(
                 f"Source table file not found: {source_table_path}",
                 logger=LOGGER,
             )()

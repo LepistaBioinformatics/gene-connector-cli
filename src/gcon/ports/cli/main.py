@@ -61,13 +61,13 @@ __INPUT_TABLE = click.option(
 
 
 __IGNORE_DUPLICATES = click.option(
-    "-i",
-    "--ignore-duplicates",
+    "-s",
+    "--skip-duplicates",
     is_flag=True,
     show_default=True,
     default=False,
     help=(
-        "Ignore duplicate gene accession numbers in the source table if True. "
+        "Skip duplicate gene accession numbers in the source table if True. "
         + "This is usual in cases which the same code is used for continuous "
         + "genes. This is a common situation at ribosomal genes."
     ),
@@ -124,12 +124,12 @@ def source_genomes_cmd() -> None:
 @__IGNORE_DUPLICATES
 def validate_cmd(
     input_table: Path,
-    ignore_duplicates: bool,
+    skip_duplicates: bool,
 ) -> None:
     if (
         left_response := load_and_validate_source_table(
             source_table_path=input_table,
-            ignore_duplicates=ignore_duplicates,
+            ignore_duplicates=skip_duplicates,
         )
     ).is_left:
         raise Exception(left_response.value)
@@ -187,7 +187,7 @@ def resolve_cmd(
     input_table: Path,
     temporary_directory: Path,
     output_file: Path,
-    ignore_duplicates: bool,
+    skip_duplicates: bool,
     cache_file: Path,
 ) -> None:
     if not temporary_directory.is_dir():
@@ -206,7 +206,7 @@ def resolve_cmd(
             source_table_path=input_table,
             output_dir_path=temporary_directory,
             output_file=output_file,
-            ignore_duplicates=ignore_duplicates,
+            ignore_duplicates=skip_duplicates,
             local_node_fetching_repo=NodeFetchingPickleDbRepository(
                 db=connector,
             ),

@@ -29,13 +29,16 @@ def build_metadata_match_scores(
         # ? --------------------------------------------------------------------
 
         if not isinstance(reference_data, ReferenceData):
-            return exc.InvalidArgumentError(
-                f"`{reference_data}` is not a valid instance of `{type(ReferenceData)}`",
+            return exc.UseCaseError(
+                (
+                    f"`{reference_data}` is not a valid instance of "
+                    + f"`{type(ReferenceData)}`"
+                ),
                 logger=LOGGER,
             )()
 
         if len(reference_data.connections) != reference_data.data.shape[0]:
-            return exc.InvalidArgumentError(
+            return exc.UseCaseError(
                 "reference data doe's not match connections length",
                 logger=LOGGER,
             )()

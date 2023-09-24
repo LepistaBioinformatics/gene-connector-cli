@@ -52,13 +52,13 @@ def collect_metadata(
         # ? --------------------------------------------------------------------
 
         if not isinstance(reference_data, ReferenceData):
-            return exc.InvalidArgumentError(
+            return exc.UseCaseError(
                 f"`{reference_data}` is not a instance of `{ReferenceData}`",
                 logger=LOGGER,
             )
 
         if output_dir_path.is_dir() is False:
-            return exc.InvalidArgumentError(
+            return exc.UseCaseError(
                 f"Invalid directory path: `{output_dir_path}`",
                 logger=LOGGER,
             )

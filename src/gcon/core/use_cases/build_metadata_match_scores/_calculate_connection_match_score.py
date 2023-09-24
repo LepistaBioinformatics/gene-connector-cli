@@ -31,7 +31,7 @@ def calculate_connection_match_score(
         # ? --------------------------------------------------------------------
 
         if not isinstance(connection, Connection):
-            return exc.InvalidArgumentError(
+            return exc.UseCaseError(
                 f"`{connection}` is not a valid instance of `{type(Connection)}`",
                 logger=LOGGER,
             )()

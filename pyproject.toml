@@ -133,3 +133,10 @@ warn_untyped_fields = "True"
 [tool.flake8]
 
 ignore = "E722, W503, E501, E203"
+
+
+[tool.black]
+
+line-length = 80
+target-version = ["py311"]
+include = "\\.pyi?$"

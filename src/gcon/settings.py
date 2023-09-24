@@ -1,6 +1,7 @@
 from logging import WARNING, Formatter, StreamHandler, getLogger
 from os import getenv
 from sys import stdout
+from uuid import UUID
 
 from clean_base.settings import LOGGING_LEVEL
 
@@ -53,3 +54,14 @@ CURRENT_USER_EMAIL: str | None = getenv("CURRENT_USER_EMAIL")
 
 
 CHUNK_SIZE = int(getenv("CHUNK_SIZE", 15))
+
+
+# ? ----------------------------------------------------------------------------
+# ? Application default DNS
+#
+# This is used to calculate hashes from connections and nodes
+#
+# ? ----------------------------------------------------------------------------
+
+
+GCON_NAMESPACE_HASH = UUID("a3e8d8f6-2d0d-11ec-8d3d-0242ac130003")

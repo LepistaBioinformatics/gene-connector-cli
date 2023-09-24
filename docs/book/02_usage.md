@@ -41,7 +41,7 @@ Such command will validate the data file and return a message indicating if the 
 export LOGGING_LEVEL=error
 ```
 
-In fungi taxonomy, it is common to sequencing one or more genes of the same operon with overlapping primers (like SSU, ITS, and LSU). In such cases, the same specimen will have more than one sequence for the same accession number. To deal with such cases, use the flag `--ignore-duplicates` or simple `-i`. Such flag will ignore the duplicates during validation step.
+In fungi taxonomy, it is common to sequencing one or more genes of the same operon with overlapping primers (like SSU, ITS, and LSU). In such cases, the same specimen will have more than one sequence for the same accession number. To deal with such cases, use the flag `--skip-duplicates` or simple `-i`. Such flag will ignore the duplicates during validation step.
 
 ## Gene Connector execution
 
@@ -53,7 +53,7 @@ gcon resolve \
     --output-file out
 ```
 
-Such command will execute the complete pipeline and generate the output file. The above cited option `--ignore-duplicates` flag can be used here too.
+Such command will execute the complete pipeline and generate the output file. The above cited option `--skip-duplicates` flag can be used here too.
 
 ## Outputs
 
@@ -74,7 +74,7 @@ gcon resolve \
     --output-file out
 ```
 
-This example dataset includes duplicated records, allowing to users to test the `--ignore-duplicates` flag and see the expected results.
+This example dataset includes duplicated records, allowing to users to test the `--skip-duplicates` flag and see the expected results.
 
 ___
 

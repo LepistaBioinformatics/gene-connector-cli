@@ -47,7 +47,7 @@ def load_and_validate_source_table(
         # ? --------------------------------------------------------------------
 
         if not source_table_path.exists():
-            return exc.InvalidArgumentError(
+            return exc.UseCaseError(
                 f"Source table file not found: {source_table_path}",
                 logger=LOGGER,
             )()

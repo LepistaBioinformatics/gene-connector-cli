@@ -1,7 +1,8 @@
-from __future__ import annotations
+from typing import Self
+from uuid import UUID, uuid3
 
 import clean_base.exceptions as exc
-from attrs import field, frozen
+from attrs import define, field
 from clean_base.either import Either, right
 
 from gcon.core.domain.dtos.metadata import (
@@ -9,10 +10,10 @@ from gcon.core.domain.dtos.metadata import (
     MetadataKey,
     MetadataKeyGroup,
 )
-from gcon.settings import LOGGER
+from gcon.settings import GCON_NAMESPACE_HASH, LOGGER
 
 
-@frozen(kw_only=True)
+@define(kw_only=True)
 class Node:
     """Node class.
 
@@ -29,6 +30,7 @@ class Node:
     # ? CLASS ATTRIBUTES
     # ? ------------------------------------------------------------------------
 
+    signature: UUID = field(init=False)
     accession: str = field()
     marker: str = field()
     metadata: Metadata = field()
@@ -49,27 +51,58 @@ class Node:
     # ? PUBLIC INSTANCE METHODS
     # ? ------------------------------------------------------------------------
 
-    def to_dict(self) -> dict[str, str | int]:
+    def update_signature(self) -> Self:
+        """Update the node signature.
+
+        This is an public method called before to convert the node to a
+        dictionary.
+
+        """
+
+        dict_metadata = self.metadata.to_dict()
+
+        self.signature = uuid3(
+            namespace=GCON_NAMESPACE_HASH,
+            name=(
+                self.accession
+                + self.marker
+                + "".join(dict_metadata.keys())
+                + "".join(["".join(i) for i in dict_metadata.values()])
+            ),
+        )
+
+        return self
+
+    def to_dict(
+        self,
+        update_signature: bool = True,
+    ) -> dict[str, str | int | UUID]:
+        me = self
+
+        if update_signature:
+            me = self.update_signature()
+
         return {
-            "accession": self.accession,
-            "marker": self.marker,
-            "metadata": self.metadata.to_dict(),
+            "signature": me.signature.__str__(),
+            "accession": me.accession,
+            "marker": me.marker,
+            "metadata": me.metadata.to_dict(),
         }
+
+    # ? ------------------------------------------------------------------------
+    # ? PUBLIC CLASS METHODS
+    # ? ------------------------------------------------------------------------
 
     @classmethod
     def from_dict(
         cls,
         node_dict: dict[str, str | int],
-    ) -> Either[exc.MappedErrors, Node]:
-        required_node_keys = [
-            "accession",
-            "marker",
-            "metadata",
-        ]
+    ) -> Either[exc.MappedErrors, Self]:
+        required_node_keys = ["signature", "accession", "marker", "metadata"]
 
         for grouped_key in required_node_keys:
             if grouped_key not in node_dict:
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     f"Unable to load JSON. Missing key: `{grouped_key}`",
                     logger=LOGGER,
                 )()
@@ -79,19 +112,19 @@ class Node:
         metadata = node_dict.pop("metadata")
 
         if not isinstance(accession, str):
-            return exc.InvalidArgumentError(
+            return exc.DadaTransferObjectError(
                 "Unable to load JSON. Accession must be a string.",
                 logger=LOGGER,
             )()
 
         if not isinstance(marker, str):
-            return exc.InvalidArgumentError(
+            return exc.DadaTransferObjectError(
                 "Unable to load JSON. Marker must be a string.",
                 logger=LOGGER,
             )()
 
         if not isinstance(metadata, dict):
-            return exc.InvalidArgumentError(
+            return exc.DadaTransferObjectError(
                 "Unable to load JSON. Metadata must be a dictionary.",
                 logger=LOGGER,
             )()
@@ -100,13 +133,13 @@ class Node:
 
         for grouped_key, value in metadata.items():
             if not isinstance(grouped_key, str):
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     "Unable to load JSON. Metadata key must be a string.",
                     logger=LOGGER,
                 )()
 
             if not isinstance(value, list):
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     "Unable to load JSON. Metadata value must be a string.",
                     logger=LOGGER,
                 )()
@@ -114,8 +147,11 @@ class Node:
             splitted_key = grouped_key.split(".")
 
             if len(splitted_key) != 2:
-                return exc.InvalidArgumentError(
-                    "Unable to load JSON. Metadata key must be in the format `namespace.key`.",
+                return exc.DadaTransferObjectError(
+                    (
+                        "Unable to load JSON. Metadata key must be in the "
+                        + "format `namespace.key`."
+                    ),
                     logger=LOGGER,
                 )()
 
@@ -124,13 +160,13 @@ class Node:
             try:
                 group_enum = MetadataKeyGroup[group]
             except KeyError:
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     f"Unable to load JSON. Invalid metadata key group: `{group}`.",
                     logger=LOGGER,
                 )()
 
             if key not in group_enum.value.keys:
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     f"Unable to load JSON. Invalid metadata key: `{key}`.",
                     logger=LOGGER,
                 )()
@@ -143,7 +179,7 @@ class Node:
             metadata_instance.add_feature(key=key, value=value)
 
             if expected_metadata_key not in metadata_instance.qualifiers:
-                return exc.InvalidArgumentError(
+                return exc.DadaTransferObjectError(
                     f"Unable to load JSON. Invalid metadata key: `{key}`.",
                     logger=LOGGER,
                 )()
@@ -153,5 +189,5 @@ class Node:
                 accession=accession,
                 marker=marker,
                 metadata=metadata_instance,
-            )
+            ).update_signature()
         )
