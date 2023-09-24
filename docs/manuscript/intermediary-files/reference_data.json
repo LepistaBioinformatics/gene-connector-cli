@@ -1,0 +1,2219 @@
+{
+    "connections": [
+        {
+            "identifiers": [
+                "BRIP 12490T",
+                "BRIP 12490"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452442",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918526",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Leyburn",
+                        "HOST_SUBSTRATE.host": "Austrostipa verticillata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12490",
+                        "TAXONOMY.organism": "Bipolaris austrostipae",
+                        "TAXONOMY.type_material": "holotype of Bipolaris austrostipae"
+                    }
+                },
+                {
+                    "accession": "KX452408",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918526",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Leyburn",
+                        "HOST_SUBSTRATE.host": "Austrostipa verticillata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12490",
+                        "TAXONOMY.organism": "Bipolaris austrostipae",
+                        "TAXONOMY.type_material": "holotype of Bipolaris austrostipae"
+                    }
+                },
+                {
+                    "accession": "KX452459",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918526",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Leyburn",
+                        "HOST_SUBSTRATE.host": "Austrostipa verticillata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12490",
+                        "TAXONOMY.organism": "Bipolaris austrostipae",
+                        "TAXONOMY.type_material": "holotype of Bipolaris austrostipae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 11740T",
+                "BRIP 11740"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452443",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918527",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Axonopus fissifolius",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 11740",
+                        "TAXONOMY.organism": "Bipolaris axonopicola",
+                        "TAXONOMY.type_material": "holotype of Bipolaris axonopicola"
+                    }
+                },
+                {
+                    "accession": "KX452409",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918527",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Axonopus fissifolius",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 11740",
+                        "TAXONOMY.organism": "Bipolaris axonopicola",
+                        "TAXONOMY.type_material": "holotype of Bipolaris axonopicola"
+                    }
+                },
+                {
+                    "accession": "KX452460",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918527",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Axonopus fissifolius",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 11740",
+                        "TAXONOMY.organism": "Bipolaris axonopicola",
+                        "TAXONOMY.type_material": "holotype of Bipolaris axonopicola"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 13577T",
+                "BRIP 13577"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452445",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918528",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Bamaga",
+                        "HOST_SUBSTRATE.host": "Urochloa subquadripara",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 13577",
+                        "TAXONOMY.organism": "Bipolaris bamagaensis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris bamagaensis"
+                    }
+                },
+                {
+                    "accession": "KX452411",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918528",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Bamaga",
+                        "HOST_SUBSTRATE.host": "Urochloa subquadripara",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 13577",
+                        "TAXONOMY.organism": "Bipolaris bamagaensis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris bamagaensis"
+                    }
+                },
+                {
+                    "accession": "KX452462",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918528",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Bamaga",
+                        "HOST_SUBSTRATE.host": "Urochloa subquadripara",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 13577",
+                        "TAXONOMY.organism": "Bipolaris bamagaensis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris bamagaensis"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS690.96",
+                "CBS 690.96",
+                "CBS:690.96",
+                "BPI"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ909762",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.F. Castaneda",
+                        "ACTORS.identified_by": "R.F. Castaneda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:102001",
+                        "SPECIMEN.isolate": "CBS690.96",
+                        "SPECIMEN.specimen_voucher": "BPI",
+                        "TAXONOMY.organism": "Bipolaris bicolor"
+                    }
+                },
+                {
+                    "accession": "KM042893",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.F. Castaneda",
+                        "ACTORS.identified_by": "R.F. Castaneda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:102001",
+                        "SPECIMEN.culture_collection": "CBS:690.96",
+                        "SPECIMEN.strain": "CBS 690.96",
+                        "TAXONOMY.organism": "Bipolaris bicolor"
+                    }
+                },
+                {
+                    "accession": "KM093776",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.F. Castaneda",
+                        "ACTORS.identified_by": "R.F. Castaneda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:102001",
+                        "SPECIMEN.culture_collection": "CBS:690.96",
+                        "SPECIMEN.strain": "CBS 690.96",
+                        "TAXONOMY.organism": "Bipolaris bicolor"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 10965",
+                "BRIP 10965T"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415523",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74409",
+                        "HOST_SUBSTRATE.host": "Chloris gayana",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 10965",
+                        "TAXONOMY.organism": "Bipolaris chloridis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris chloridis",
+                        "TIME_REFERENCES.collection_date": "12-Dec-1972"
+                    }
+                },
+                {
+                    "accession": "KJ415423",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74409",
+                        "HOST_SUBSTRATE.host": "Chloris gayana",
+                        "SPECIMEN.strain": "BRIP 10965",
+                        "TAXONOMY.organism": "Bipolaris chloridis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris chloridis",
+                        "TIME_REFERENCES.collection_date": "12-Dec-1972"
+                    }
+                },
+                {
+                    "accession": "KJ415472",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74409",
+                        "HOST_SUBSTRATE.host": "Chloris gayana",
+                        "SPECIMEN.strain": "BRIP 10965",
+                        "TAXONOMY.organism": "Bipolaris chloridis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris chloridis"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 12530T",
+                "BRIP 12530"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415524",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537978",
+                        "HOST_SUBSTRATE.host": "Dactyloctenium radulans",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12530",
+                        "TAXONOMY.organism": "Bipolaris clavata",
+                        "TAXONOMY.type_material": "holotype of Bipolaris clavata",
+                        "TIME_REFERENCES.collection_date": "12-May-1977"
+                    }
+                },
+                {
+                    "accession": "KJ415422",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537978",
+                        "HOST_SUBSTRATE.host": "Dactyloctenium radulans",
+                        "SPECIMEN.strain": "BRIP 12530",
+                        "TAXONOMY.organism": "Bipolaris clavata",
+                        "TAXONOMY.type_material": "holotype of Bipolaris clavata",
+                        "TIME_REFERENCES.collection_date": "12-May-1977"
+                    }
+                },
+                {
+                    "accession": "KJ415471",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537978",
+                        "HOST_SUBSTRATE.host": "Dactyloctenium radulans",
+                        "SPECIMEN.strain": "BRIP 12530",
+                        "TAXONOMY.organism": "Bipolaris clavata",
+                        "TAXONOMY.type_material": "holotype of Bipolaris clavata"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 14845IsoT",
+                "BRIP 14845"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415525",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1165370",
+                        "HOST_SUBSTRATE.host": "Coffea arabica",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 14845",
+                        "TAXONOMY.organism": "Bipolaris coffeana",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris coffeana",
+                        "TIME_REFERENCES.collection_date": "31-Oct-1969"
+                    }
+                },
+                {
+                    "accession": "KJ415421",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1165370",
+                        "HOST_SUBSTRATE.host": "Coffea arabica",
+                        "SPECIMEN.strain": "BRIP 14845",
+                        "TAXONOMY.organism": "Bipolaris coffeana",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris coffeana",
+                        "TIME_REFERENCES.collection_date": "31-Oct-1969"
+                    }
+                },
+                {
+                    "accession": "KJ415470",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1165370",
+                        "HOST_SUBSTRATE.host": "Coffea arabica",
+                        "SPECIMEN.strain": "BRIP 14845",
+                        "TAXONOMY.organism": "Bipolaris coffeana",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris coffeana"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "AR 5185",
+                "AR5185"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ922391",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "T. Tsukiboshiv",
+                        "ACTORS.identified_by": "Dimuthu S. Manamgoda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74410",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "sorghum",
+                        "SPECIMEN.strain": "AR5185",
+                        "TAXONOMY.organism": "Bipolaris cookei"
+                    }
+                },
+                {
+                    "accession": "KM034833",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "T. Tsukiboshiv",
+                        "ACTORS.identified_by": "T. Tsukiboshiv",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74410",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "sorghum",
+                        "SPECIMEN.strain": "AR5185",
+                        "TAXONOMY.organism": "Bipolaris cookei"
+                    }
+                },
+                {
+                    "accession": "KM093777",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "T. Tsukiboshiv",
+                        "ACTORS.identified_by": "T. Tsukiboshiv",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74410",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "sorghum",
+                        "SPECIMEN.strain": "AR5185",
+                        "TAXONOMY.organism": "Bipolaris cookei"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 14838"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415526",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537979",
+                        "HOST_SUBSTRATE.host": "Croton sp.",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 14838",
+                        "TAXONOMY.organism": "Bipolaris crotonis",
+                        "TIME_REFERENCES.collection_date": "21-Nov-1977"
+                    }
+                },
+                {
+                    "accession": "KJ415420",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537979",
+                        "HOST_SUBSTRATE.host": "Croton sp.",
+                        "SPECIMEN.strain": "BRIP 14838",
+                        "TAXONOMY.organism": "Bipolaris crotonis",
+                        "TIME_REFERENCES.collection_date": "21-Nov-1977"
+                    }
+                },
+                {
+                    "accession": "KJ415479",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537979",
+                        "HOST_SUBSTRATE.host": "Croton sp.",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 14838",
+                        "TAXONOMY.organism": "Bipolaris crotonis"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS109894",
+                "CBS:109894",
+                "CBS 109894",
+                "BPI"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ909767",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "J. Bakonyi",
+                        "ACTORS.identified_by": "D.S Manamgoda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74411",
+                        "GEO_REFERENCES.country": "Hungary",
+                        "HOST_SUBSTRATE.host": "Cynodon dactylon",
+                        "HOST_SUBSTRATE.isolation_source": "leaf",
+                        "SPECIMEN.isolate": "CBS109894",
+                        "SPECIMEN.specimen_voucher": "BPI",
+                        "TAXONOMY.organism": "Bipolaris cynodontis",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris cynodontis"
+                    }
+                },
+                {
+                    "accession": "KM034838",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "J. Bakonyi",
+                        "ACTORS.identified_by": "J. Bakonyi",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74411",
+                        "GEO_REFERENCES.country": "Hungary",
+                        "HOST_SUBSTRATE.host": "Cynodon dactylon",
+                        "SPECIMEN.culture_collection": "CBS:109894",
+                        "SPECIMEN.strain": "CBS 109894",
+                        "TAXONOMY.organism": "Bipolaris cynodontis",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris cynodontis"
+                    }
+                },
+                {
+                    "accession": "KM093782",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "J. Bakonyi",
+                        "ACTORS.identified_by": "J. Bakonyi",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74411",
+                        "GEO_REFERENCES.country": "Hungary",
+                        "HOST_SUBSTRATE.host": "Cynodon dactylon",
+                        "SPECIMEN.culture_collection": "CBS:109894",
+                        "SPECIMEN.strain": "CBS 109894",
+                        "TAXONOMY.organism": "Bipolaris cynodontis",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris cynodontis"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS 136207T",
+                "AR4841"
+            ],
+            "nodes": [
+                {
+                    "accession": "KF500530",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "Nathan M. Kleczewski",
+                        "ACTORS.identified_by": "Dimuthu S. Manamgoda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: its5, fwd_seq: ggaagtaaaagtcgtaacaagg, rev_name: its4, rev_seq: tcctccgcttattgatatgc",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1453416",
+                        "GEO_REFERENCES.country": "USA: Indiana, Big Oaks Wildlife Refuge",
+                        "HOST_SUBSTRATE.host": "Microstegium vimineum",
+                        "HOST_SUBSTRATE.isolation_source": "leaf spot",
+                        "SPECIMEN.strain": "AR4841",
+                        "TAXONOMY.organism": "Bipolaris drechsleri",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris drechsleri"
+                    }
+                },
+                {
+                    "accession": "KF500533",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "Nathan M. Kleczewski",
+                        "ACTORS.identified_by": "Dimuthu S. Manamgoda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1453416",
+                        "GEO_REFERENCES.country": "USA: Indiana, Big Oaks Wildlife Refuge",
+                        "HOST_SUBSTRATE.host": "Microstegium vimineum",
+                        "HOST_SUBSTRATE.isolation_source": "leaf spot",
+                        "SPECIMEN.strain": "AR4841",
+                        "TAXONOMY.organism": "Bipolaris drechsleri",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris drechsleri"
+                    }
+                },
+                {
+                    "accession": "KM093760",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "Nathan Kleczewski",
+                        "ACTORS.identified_by": "Dimuthu S. Manamgoda & Andrew Minnis",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1453416",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Microstegium vimineum",
+                        "SPECIMEN.strain": "AR4841",
+                        "TAXONOMY.organism": "Bipolaris drechsleri",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris drechsleri"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 14840",
+                "BRIP 14840T"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415528",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537980",
+                        "HOST_SUBSTRATE.host": "Gossypium sp.",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 14840",
+                        "TAXONOMY.organism": "Bipolaris gossypina",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris gossypina"
+                    }
+                },
+                {
+                    "accession": "KJ415418",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537980",
+                        "HOST_SUBSTRATE.host": "Gossypium sp.",
+                        "SPECIMEN.strain": "BRIP 14840",
+                        "TAXONOMY.organism": "Bipolaris gossypina",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris gossypina"
+                    }
+                },
+                {
+                    "accession": "KJ415467",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537980",
+                        "HOST_SUBSTRATE.host": "Gossypium sp.",
+                        "SPECIMEN.strain": "BRIP 14840",
+                        "TAXONOMY.organism": "Bipolaris gossypina",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris gossypina"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 17189",
+                "BRIP 17186T",
+                "Heliconia chartacea",
+                "BRIP 17186"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415530",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:131375",
+                        "HOST_SUBSTRATE.host": "Heliconia chartacea",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 17189",
+                        "TAXONOMY.organism": "Bipolaris heliconiae",
+                        "TIME_REFERENCES.collection_date": "Jul-1990"
+                    }
+                },
+                {
+                    "accession": "KJ415417",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:131375",
+                        "HOST_SUBSTRATE.host": "Heliconia psittacorum",
+                        "SPECIMEN.strain": "BRIP 17186",
+                        "TAXONOMY.organism": "Bipolaris heliconiae",
+                        "TAXONOMY.type_material": "holotype of Bipolaris heliconiae",
+                        "TIME_REFERENCES.collection_date": "Jul-1990"
+                    }
+                },
+                {
+                    "accession": "KJ415465",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:131375",
+                        "SPECIMEN.haplogroup": "Heliconia chartacea",
+                        "SPECIMEN.strain": "BRIP 17189",
+                        "TAXONOMY.organism": "Bipolaris heliconiae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS:241.92",
+                "CBS 241.92",
+                "CBS241.92",
+                "BPI"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ909763",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "J.H. Simmond",
+                        "ACTORS.identified_by": "D.S Manamgoda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74413",
+                        "GEO_REFERENCES.country": "Nigeria",
+                        "HOST_SUBSTRATE.host": "Hevea",
+                        "HOST_SUBSTRATE.isolation_source": "leaf",
+                        "SPECIMEN.isolate": "CBS241.92",
+                        "SPECIMEN.specimen_voucher": "BPI",
+                        "TAXONOMY.organism": "Bipolaris heveae"
+                    }
+                },
+                {
+                    "accession": "KM034843",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "J.H. Simmond",
+                        "ACTORS.identified_by": "J.H. Simmond",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74413",
+                        "GEO_REFERENCES.country": "Nigeria",
+                        "HOST_SUBSTRATE.host": "Hevea",
+                        "SPECIMEN.culture_collection": "CBS:241.92",
+                        "SPECIMEN.strain": "CBS 241.92",
+                        "TAXONOMY.organism": "Bipolaris heveae"
+                    }
+                },
+                {
+                    "accession": "KM093791",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "J.H. Simmond",
+                        "ACTORS.identified_by": "J.H. Simmond",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74413",
+                        "GEO_REFERENCES.country": "Nigeria",
+                        "HOST_SUBSTRATE.host": "Hevea",
+                        "SPECIMEN.culture_collection": "CBS:241.92",
+                        "SPECIMEN.strain": "CBS 241.92",
+                        "TAXONOMY.organism": "Bipolaris heveae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "Alcorn 14643-1",
+                "BRIP 14643IsoT"
+            ],
+            "nodes": [
+                {
+                    "accession": "AF071350",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:90979",
+                        "OTHER.note": "teleomorph: Cochliobolus luttrellii",
+                        "SPECIMEN.strain": "Alcorn 14643-1",
+                        "TAXONOMY.organism": "Bipolaris luttrellii"
+                    }
+                },
+                {
+                    "accession": "AF081402",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:90979",
+                        "OTHER.note": "teleomorph: Cochliobolus luttrellii",
+                        "SPECIMEN.strain": "Alcorn 14643-1",
+                        "TAXONOMY.organism": "Bipolaris luttrellii"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "Yoder C5",
+                "CBS 137271NT",
+                "C5"
+            ],
+            "nodes": [
+                {
+                    "accession": "AF071325",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:5016",
+                        "OTHER.note": "teleomorph: Cochliobolus heterostrophus",
+                        "SPECIMEN.strain": "Yoder C5",
+                        "TAXONOMY.organism": "Bipolaris maydis"
+                    }
+                },
+                {
+                    "accession": "KM034846",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.identified_by": "Gillian Turgeon",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:5016",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Zea mays",
+                        "SPECIMEN.strain": "C5",
+                        "TAXONOMY.organism": "Bipolaris maydis"
+                    }
+                },
+                {
+                    "accession": "KM093794",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.identified_by": "Gillian Turgeon",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:5016",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Zea mays",
+                        "SPECIMEN.strain": "C5",
+                        "TAXONOMY.organism": "Bipolaris maydis"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 15613",
+                "CBS 280.91T",
+                "CBS 280.91"
+            ],
+            "nodes": [
+                {
+                    "accession": "JN601032",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: ef1-728f, fwd_seq: catcgagaagttcgagaagg, rev_name: ef1-986r, rev_seq: tacttgaaggaacccttacc",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1056644",
+                        "SPECIMEN.isolate": "CBS 280.91",
+                        "TAXONOMY.organism": "Bipolaris microlaenae",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris microlaenae"
+                    }
+                },
+                {
+                    "accession": "JN600974",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: gpd 1, fwd_seq: caacggcttcggtcgcattg, rev_name: gpd 2, rev_seq: gccaagcagttggttgtgc",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1056644",
+                        "SPECIMEN.isolate": "CBS 280.91",
+                        "TAXONOMY.organism": "Bipolaris microlaenae",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris microlaenae"
+                    }
+                },
+                {
+                    "accession": "JN601017",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: ef1 -983 f, fwd_seq: catcgagaagttcgagaagg, rev_name: ef1- 2218r, rev_seq: tacttgaaggaacccttacc",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1056644",
+                        "SPECIMEN.isolate": "BRIP 15613",
+                        "TAXONOMY.organism": "Bipolaris microlaenae",
+                        "TAXONOMY.type_material": "type material of Bipolaris microlaenae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS:132550",
+                "AR 4840",
+                "CBS 132550T",
+                "BPI:883727",
+                "AR4840"
+            ],
+            "nodes": [
+                {
+                    "accession": "JX089579",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1283761",
+                        "SPECIMEN.culture_collection": "CBS:132550",
+                        "SPECIMEN.isolate": "AR 4840",
+                        "TAXONOMY.organism": "Bipolaris microstegii",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris microstegii"
+                    }
+                },
+                {
+                    "accession": "JX089575",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1283761",
+                        "GEO_REFERENCES.country": "USA: West Virginia",
+                        "HOST_SUBSTRATE.host": "Microstegium vimineum",
+                        "SPECIMEN.culture_collection": "CBS:132550",
+                        "SPECIMEN.isolate": "AR 4840",
+                        "SPECIMEN.specimen_voucher": "BPI:883727",
+                        "TAXONOMY.organism": "Bipolaris microstegii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris microstegii",
+                        "TIME_REFERENCES.collection_date": "Aug-2009"
+                    }
+                },
+                {
+                    "accession": "KM093756",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "Nathan M. Kleczewski",
+                        "ACTORS.identified_by": "Andrew Minnis",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1283761",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Microstegium vimineum",
+                        "SPECIMEN.strain": "AR4840",
+                        "TAXONOMY.organism": "Bipolaris microstegii"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "MFLUCC 10-0715",
+                "MFLUCC 100715NT"
+            ],
+            "nodes": [
+                {
+                    "accession": "JX256416",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:101162",
+                        "SPECIMEN.specimen_voucher": "MFLUCC 10-0715",
+                        "TAXONOMY.organism": "Bipolaris oryzae"
+                    }
+                },
+                {
+                    "accession": "JX276430",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: gpd1, fwd_seq: caacggcttcggtcgcattg, rev_name: gpd2, rev_seq: gccaagcagttggttgtgc",
+                        "EXTERNAL_LINKS.db_xref": "taxon:101162",
+                        "SPECIMEN.specimen_voucher": "MFLUCC 10-0715",
+                        "TAXONOMY.organism": "Bipolaris oryzae"
+                    }
+                },
+                {
+                    "accession": "JX266585",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "Manamgoda, DS",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: ef1 983f, fwd_seq: gcyccygghcaycgtgayttyat, rev_name: ef1 2228r, rev_seq: atgacaccracrgcracrgtytg",
+                        "EXTERNAL_LINKS.db_xref": "taxon:101162",
+                        "GEO_REFERENCES.country": "Thailand",
+                        "HOST_SUBSTRATE.host": "Oryza sativa",
+                        "HOST_SUBSTRATE.isolation_source": "stem",
+                        "SPECIMEN.specimen_voucher": "MFLUCC 10-0715",
+                        "TAXONOMY.organism": "Bipolaris oryzae",
+                        "TIME_REFERENCES.collection_date": "10-May-2010"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS 199.29",
+                "CBS_H-7031",
+                "CBS:199.29",
+                "CBS199.29",
+                "CBS 199.29LT"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ909773",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "Y. Nisikado",
+                        "ACTORS.identified_by": "Y. Nisikado",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74417",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "Panicum miliaceum",
+                        "HOST_SUBSTRATE.isolation_source": "leaf",
+                        "SPECIMEN.isolate": "CBS199.29",
+                        "SPECIMEN.specimen_voucher": "CBS_H-7031",
+                        "TAXONOMY.organism": "Bipolaris panici-miliacei",
+                        "TAXONOMY.type_material": "lectotype of Bipolaris panici-miliacei"
+                    }
+                },
+                {
+                    "accession": "KM042896",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "Y. Nisikado",
+                        "ACTORS.identified_by": "Y. Nisikado",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74417",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "Panicum miliaceum",
+                        "SPECIMEN.culture_collection": "CBS:199.29",
+                        "SPECIMEN.strain": "CBS 199.29",
+                        "TAXONOMY.organism": "Bipolaris panici-miliacei",
+                        "TAXONOMY.type_material": "culture from lectotype of Bipolaris panici-miliacei"
+                    }
+                },
+                {
+                    "accession": "KM093788",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "Y. Nisikado",
+                        "ACTORS.identified_by": "Y. Nisikado",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74417",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "Panicum miliaceum",
+                        "SPECIMEN.culture_collection": "CBS:199.29",
+                        "SPECIMEN.strain": "CBS 199.29",
+                        "TAXONOMY.organism": "Bipolaris panici-miliacei",
+                        "TAXONOMY.type_material": "culture from lectotype of Bipolaris panici-miliacei"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 12790",
+                "BRIP 12790T"
+            ],
+            "nodes": [
+                {
+                    "accession": "JN601034",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: ef1-728f, fwd_seq: catcgagaagttcgagaagg, rev_name: ef1-986r, rev_seq: tacttgaaggaacccttacc",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1133684",
+                        "SPECIMEN.isolate": "BRIP 12790",
+                        "TAXONOMY.organism": "Bipolaris peregianensis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris peregianensis"
+                    }
+                },
+                {
+                    "accession": "JN600977",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: gpd 1, fwd_seq: caacggcttcggtcgcattg, rev_name: gpd 2, rev_seq: gccaagcagttggttgtgc",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1133684",
+                        "SPECIMEN.isolate": "BRIP 12790",
+                        "TAXONOMY.organism": "Bipolaris peregianensis",
+                        "TAXONOMY.type_material": "holotype of Bipolaris peregianensis"
+                    }
+                },
+                {
+                    "accession": "JN601022",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "ASSAY.pcr_primers": "fwd_name: ef1 -983 f, fwd_seq: catcgagaagttcgagaagg, rev_name: ef1- 2218r, rev_seq: tacttgaaggaacccttacc",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1133684",
+                        "TAXONOMY.organism": "Bipolaris peregianensis"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 14839",
+                "BRIP 14839IsoT"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415532",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537981",
+                        "HOST_SUBSTRATE.host": "Eleusine coracana",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 14839",
+                        "TAXONOMY.organism": "Bipolaris pluriseptata",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris pluriseptata",
+                        "TIME_REFERENCES.collection_date": "Feb-1981"
+                    }
+                },
+                {
+                    "accession": "KJ415414",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537981",
+                        "HOST_SUBSTRATE.host": "Eleusine coracana",
+                        "SPECIMEN.strain": "BRIP 14839",
+                        "TAXONOMY.organism": "Bipolaris pluriseptata",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris pluriseptata",
+                        "TIME_REFERENCES.collection_date": "Feb-1981"
+                    }
+                },
+                {
+                    "accession": "KJ415461",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537981",
+                        "HOST_SUBSTRATE.host": "Eleusine coracana",
+                        "SPECIMEN.strain": "BRIP 14839",
+                        "TAXONOMY.organism": "Bipolaris pluriseptata",
+                        "TAXONOMY.type_material": "culture from isotype of Bipolaris pluriseptata"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "ICMP 6227"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ922386",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "E.H.C. McKenzie",
+                        "ACTORS.identified_by": "E.H.C. McKenzie",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:48696",
+                        "GEO_REFERENCES.country": "New Zealand",
+                        "HOST_SUBSTRATE.host": "Oplismenus undulatifolius var. imbecillis",
+                        "SPECIMEN.strain": "ICMP 6227",
+                        "TAXONOMY.organism": "Bipolaris sacchari"
+                    }
+                },
+                {
+                    "accession": "KM034842",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "E.H.C. McKenzie",
+                        "ACTORS.identified_by": "E.H.C. McKenzie",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:48696",
+                        "GEO_REFERENCES.country": "New Zealand",
+                        "HOST_SUBSTRATE.host": "Oplismenus undulatifolius var. imbecillis",
+                        "SPECIMEN.strain": "ICMP 6227",
+                        "TAXONOMY.organism": "Bipolaris sacchari"
+                    }
+                },
+                {
+                    "accession": "KM093785",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "Eric H.C. McKenzie",
+                        "ACTORS.identified_by": "Eric H.C. McKenzie",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:48696",
+                        "GEO_REFERENCES.country": "New Zealand",
+                        "HOST_SUBSTRATE.host": "Oplismenus undulatifolius var. imbecillis",
+                        "SPECIMEN.strain": "ICMP 6227",
+                        "TAXONOMY.organism": "Bipolaris sacchari"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "Bi-1",
+                "Bi 1T"
+            ],
+            "nodes": [
+                {
+                    "accession": "AB675490",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "Abdollah Ahmadpour",
+                        "ACTORS.identified_by": "Abdollah Ahmadpour",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1096725",
+                        "GEO_REFERENCES.country": "Iran: West Azerbaijan, Khoy, Salkadeh",
+                        "HOST_SUBSTRATE.host": "Sparganium erectum",
+                        "SPECIMEN.strain": "Bi-1",
+                        "TAXONOMY.organism": "Bipolaris sp. Bi-1",
+                        "TIME_REFERENCES.collection_date": "2010"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 16571",
+                "BRIP 16571LT"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415535",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537982",
+                        "HOST_SUBSTRATE.host": "Salvinia auriculata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 16571",
+                        "TAXONOMY.organism": "Bipolaris salviniae",
+                        "TAXONOMY.type_material": "isolectotype of Bipolaris salviniae",
+                        "TIME_REFERENCES.collection_date": "16-May-1978"
+                    }
+                },
+                {
+                    "accession": "KJ415411",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537982",
+                        "HOST_SUBSTRATE.host": "Salvinia auriculata",
+                        "SPECIMEN.strain": "BRIP 16571",
+                        "TAXONOMY.organism": "Bipolaris salviniae",
+                        "TAXONOMY.type_material": "isolectotype of Bipolaris salviniae",
+                        "TIME_REFERENCES.collection_date": "16-May-1978"
+                    }
+                },
+                {
+                    "accession": "KJ415457",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537982",
+                        "HOST_SUBSTRATE.host": "Salvinia auriculata",
+                        "SPECIMEN.strain": "BRIP 16571",
+                        "TAXONOMY.organism": "Bipolaris salviniae",
+                        "TAXONOMY.type_material": "isolectotype of Bipolaris salviniae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS 155.26T",
+                "CBS 155.26",
+                "CBS:155.26"
+            ],
+            "nodes": [
+                {
+                    "accession": "KY905674",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "H. Atherton",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:2016211",
+                        "OTHER.note": "MUCL:9693",
+                        "SPECIMEN.culture_collection": "CBS:155.26",
+                        "SPECIMEN.strain": "CBS 155.26",
+                        "TAXONOMY.organism": "Bipolaris saccharicola",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris saccharicola"
+                    }
+                },
+                {
+                    "accession": "KY905686",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "H. Atherton",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:2016211",
+                        "OTHER.note": "MUCL:9693",
+                        "SPECIMEN.culture_collection": "CBS:155.26",
+                        "SPECIMEN.strain": "CBS 155.26",
+                        "TAXONOMY.organism": "Bipolaris saccharicola",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris saccharicola"
+                    }
+                },
+                {
+                    "accession": "KY905694",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "H. Atherton",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:2016211",
+                        "OTHER.note": "MUCL:9693",
+                        "SPECIMEN.culture_collection": "CBS:155.26",
+                        "SPECIMEN.strain": "CBS 155.26",
+                        "TAXONOMY.organism": "Bipolaris saccharicola",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris saccharicola"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 14453",
+                "BRIP 14453IsoLT"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415537",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537983",
+                        "HOST_SUBSTRATE.host": "Secale cereale",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 14453",
+                        "TAXONOMY.organism": "Bipolaris secalis",
+                        "TAXONOMY.type_material": "isolectotype of Bipolaris secalis",
+                        "TIME_REFERENCES.collection_date": "Aug-1984"
+                    }
+                },
+                {
+                    "accession": "KJ415409",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537983",
+                        "HOST_SUBSTRATE.host": "Secale cereale",
+                        "SPECIMEN.strain": "BRIP 14453",
+                        "TAXONOMY.organism": "Bipolaris secalis",
+                        "TAXONOMY.type_material": "isolectotype of Bipolaris secalis",
+                        "TIME_REFERENCES.collection_date": "Aug-1984"
+                    }
+                },
+                {
+                    "accession": "KJ415455",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1537983",
+                        "HOST_SUBSTRATE.host": "Secale cereale",
+                        "SPECIMEN.strain": "BRIP 14453",
+                        "TAXONOMY.organism": "Bipolaris secalis",
+                        "TAXONOMY.type_material": "isolectotype of Bipolaris secalis"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS 141.31",
+                "CBS141.31"
+            ],
+            "nodes": [
+                {
+                    "accession": "EF452444",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74419",
+                        "SPECIMEN.isolate": "CBS141.31",
+                        "TAXONOMY.organism": "Bipolaris setariae"
+                    }
+                },
+                {
+                    "accession": "EF513206",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74419",
+                        "SPECIMEN.isolate": "CBS141.31",
+                        "TAXONOMY.organism": "Bipolaris setariae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 15929T",
+                "BRIP 15929"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452453",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918531",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Mount Molloy",
+                        "HOST_SUBSTRATE.host": "Ischaemum rugosum var. segetum",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 15929",
+                        "TAXONOMY.organism": "Bipolaris shoemakeri",
+                        "TAXONOMY.type_material": "holotype of Bipolaris shoemakeri"
+                    }
+                },
+                {
+                    "accession": "KX452419",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918531",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Mount Molloy",
+                        "HOST_SUBSTRATE.host": "Ischaemum rugosum var. segetum",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 15929",
+                        "TAXONOMY.organism": "Bipolaris shoemakeri",
+                        "TAXONOMY.type_material": "holotype of Bipolaris shoemakeri"
+                    }
+                },
+                {
+                    "accession": "KX452470",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918531",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Mount Molloy",
+                        "HOST_SUBSTRATE.host": "Ischaemum rugosum var. segetum",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 15929",
+                        "TAXONOMY.organism": "Bipolaris shoemakeri",
+                        "TAXONOMY.type_material": "holotype of Bipolaris shoemakeri"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 12030",
+                "BRIP 12030T"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452454",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918532",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Zoysia macrantha",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12030",
+                        "TAXONOMY.organism": "Bipolaris simmondsii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris simmondsii"
+                    }
+                },
+                {
+                    "accession": "KX452420",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918532",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Zoysia macrantha",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12030",
+                        "TAXONOMY.organism": "Bipolaris simmondsii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris simmondsii"
+                    }
+                },
+                {
+                    "accession": "KX452471",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918532",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Peregian Beach",
+                        "HOST_SUBSTRATE.host": "Zoysia macrantha",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12030",
+                        "TAXONOMY.organism": "Bipolaris simmondsii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris simmondsii"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 15847T",
+                "BRIP 15822"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452455",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918533",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Julatten",
+                        "HOST_SUBSTRATE.host": "Setaria sphacelata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 15822",
+                        "TAXONOMY.organism": "Bipolaris sivanesaniana"
+                    }
+                },
+                {
+                    "accession": "KX452421",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918533",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Julatten",
+                        "HOST_SUBSTRATE.host": "Setaria sphacelata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 15822",
+                        "TAXONOMY.organism": "Bipolaris sivanesaniana"
+                    }
+                },
+                {
+                    "accession": "KX452472",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918533",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Julatten",
+                        "HOST_SUBSTRATE.host": "Setaria sphacelata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 15822",
+                        "TAXONOMY.organism": "Bipolaris sivanesaniana"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS 110.14",
+                "CBS:110.14"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ922381",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "A.L Bakke",
+                        "ACTORS.identified_by": "A.L. Bakke",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:45130",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Hordeum",
+                        "SPECIMEN.culture_collection": "CBS:110.14",
+                        "SPECIMEN.strain": "CBS 110.14",
+                        "TAXONOMY.organism": "Bipolaris sorokiniana"
+                    }
+                },
+                {
+                    "accession": "KM034822",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "A.L. Bakke",
+                        "ACTORS.identified_by": "A.L. Bakke",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:45130",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Hordeum",
+                        "SPECIMEN.culture_collection": "CBS:110.14",
+                        "SPECIMEN.strain": "CBS 110.14",
+                        "TAXONOMY.organism": "Bipolaris sorokiniana"
+                    }
+                },
+                {
+                    "accession": "KM093763",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "A.L. Bakke",
+                        "ACTORS.identified_by": "A.L. Bakke",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:45130",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Hordeum",
+                        "SPECIMEN.culture_collection": "CBS:110.14",
+                        "SPECIMEN.strain": "CBS 110.14",
+                        "TAXONOMY.organism": "Bipolaris sorokiniana"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 16226T",
+                "BRIP 16226"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452457",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918534",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Maclean Bridge",
+                        "HOST_SUBSTRATE.host": "Setaria sphacelata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 16226",
+                        "TAXONOMY.organism": "Bipolaris subramanianii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris subramanianii"
+                    }
+                },
+                {
+                    "accession": "KX452423",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918534",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Maclean Bridge",
+                        "HOST_SUBSTRATE.host": "Setaria sphacelata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 16226",
+                        "TAXONOMY.organism": "Bipolaris subramanianii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris subramanianii"
+                    }
+                },
+                {
+                    "accession": "KX452474",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918534",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Maclean Bridge",
+                        "HOST_SUBSTRATE.host": "Setaria sphacelata",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 16226",
+                        "TAXONOMY.organism": "Bipolaris subramanianii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris subramanianii"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "ATCC:58317",
+                "ATCC 58317"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ922389",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "J.L Alcorn",
+                        "ACTORS.identified_by": "J.L Alcorn",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74611",
+                        "GEO_REFERENCES.country": "Australia",
+                        "HOST_SUBSTRATE.host": "Urochloa panicoides",
+                        "HOST_SUBSTRATE.isolation_source": "leaf",
+                        "SPECIMEN.culture_collection": "ATCC:58317",
+                        "SPECIMEN.strain": "ATCC 58317",
+                        "TAXONOMY.organism": "Bipolaris urochloae"
+                    }
+                },
+                {
+                    "accession": "KM230396",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "J.L. Alcorn",
+                        "ACTORS.identified_by": "J.L. Alcorn",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74611",
+                        "GEO_REFERENCES.country": "Australia",
+                        "HOST_SUBSTRATE.host": "Urochloa panicoides",
+                        "SPECIMEN.culture_collection": "ATCC:58317",
+                        "SPECIMEN.strain": "ATCC 58317",
+                        "TAXONOMY.organism": "Bipolaris urochloae"
+                    }
+                },
+                {
+                    "accession": "KM093770",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "J.L. Alcorn",
+                        "ACTORS.identified_by": "J.L. Alcorn",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74611",
+                        "GEO_REFERENCES.country": "Australia",
+                        "HOST_SUBSTRATE.host": "Urochloa panicoides",
+                        "SPECIMEN.culture_collection": "ATCC:58317",
+                        "SPECIMEN.strain": "ATCC 58317",
+                        "TAXONOMY.organism": "Bipolaris urochloae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS 127716T",
+                "CBS 127716",
+                "CBS:127716"
+            ],
+            "nodes": [
+                {
+                    "accession": "KY905676",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "M.N. Sisterna",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:2016212",
+                        "GEO_REFERENCES.country": "Argentina",
+                        "HOST_SUBSTRATE.isolation_source": "from leaf spots on Pennisetum clandestinum",
+                        "OTHER.note": "BRIP:15349",
+                        "SPECIMEN.culture_collection": "CBS:127716",
+                        "SPECIMEN.strain": "CBS 127716",
+                        "TAXONOMY.organism": "Bipolaris variabilis",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris variabilis"
+                    }
+                },
+                {
+                    "accession": "KY905688",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "M.N. Sisterna",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:2016212",
+                        "GEO_REFERENCES.country": "Argentina",
+                        "HOST_SUBSTRATE.isolation_source": "from leaf spots on Pennisetum clandestinum",
+                        "OTHER.note": "BRIP:15349",
+                        "SPECIMEN.culture_collection": "CBS:127716",
+                        "SPECIMEN.strain": "CBS 127716",
+                        "TAXONOMY.organism": "Bipolaris variabilis",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris variabilis"
+                    }
+                },
+                {
+                    "accession": "KY905696",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "M.N. Sisterna",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:2016212",
+                        "GEO_REFERENCES.country": "Argentina",
+                        "HOST_SUBSTRATE.isolation_source": "from leaf spots on Pennisetum clandestinum",
+                        "OTHER.note": "BRIP:15349",
+                        "SPECIMEN.culture_collection": "CBS:127716",
+                        "SPECIMEN.strain": "CBS 127716",
+                        "TAXONOMY.organism": "Bipolaris variabilis",
+                        "TAXONOMY.type_material": "culture from holotype of Bipolaris variabilis"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS 327.64",
+                "CBS 327.64T",
+                "CBS327.64",
+                "CBS_H-12278",
+                "CBS:327.64"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ909778",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.R. Nelson",
+                        "ACTORS.identified_by": "R.R. Nelson",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:40125",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Avena sativa",
+                        "HOST_SUBSTRATE.isolation_source": "leaf",
+                        "SPECIMEN.isolate": "CBS327.64",
+                        "SPECIMEN.specimen_voucher": "CBS_H-12278",
+                        "TAXONOMY.organism": "Bipolaris victoriae",
+                        "TAXONOMY.type_material": "epitype of Bipolaris victoriae"
+                    }
+                },
+                {
+                    "accession": "KM034811",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.R. Nelson",
+                        "ACTORS.identified_by": "R.R. Nelson",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:40125",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Avena sativa",
+                        "SPECIMEN.culture_collection": "CBS:327.64",
+                        "SPECIMEN.strain": "CBS 327.64",
+                        "TAXONOMY.organism": "Bipolaris victoriae",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris victoriae"
+                    }
+                },
+                {
+                    "accession": "KM093748",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "R.R. Nelson",
+                        "ACTORS.identified_by": "R.R. Nelson",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:40125",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Avena sativa",
+                        "SPECIMEN.culture_collection": "CBS:327.64",
+                        "SPECIMEN.strain": "CBS 327.64",
+                        "TAXONOMY.organism": "Bipolaris victoriae",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris victoriae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "CBS_H-7221",
+                "CBS 202.29",
+                "CBS202.29",
+                "CBS 202.29ET",
+                "CBS:202.29"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ909779",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "Y. Nisikado",
+                        "ACTORS.identified_by": "Y. Nisikado",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74424",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "Panicum miliaceum",
+                        "HOST_SUBSTRATE.isolation_source": "leaf",
+                        "SPECIMEN.isolate": "CBS202.29",
+                        "SPECIMEN.specimen_voucher": "CBS_H-7221",
+                        "TAXONOMY.organism": "Bipolaris yamadae",
+                        "TAXONOMY.type_material": "epitype of Bipolaris yamadae"
+                    }
+                },
+                {
+                    "accession": "KM034830",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "Y. Nisikado",
+                        "ACTORS.identified_by": "Y. Nisikado",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74424",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "Panicum miliaceum",
+                        "SPECIMEN.culture_collection": "CBS:202.29",
+                        "SPECIMEN.strain": "CBS 202.29",
+                        "TAXONOMY.organism": "Bipolaris yamadae",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris yamadae"
+                    }
+                },
+                {
+                    "accession": "KM093773",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "Y. Nisikado",
+                        "ACTORS.identified_by": "Y. Nisikado",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:74424",
+                        "GEO_REFERENCES.country": "Japan",
+                        "HOST_SUBSTRATE.host": "Panicum miliaceum",
+                        "SPECIMEN.culture_collection": "CBS:202.29",
+                        "SPECIMEN.strain": "CBS 202.29",
+                        "TAXONOMY.organism": "Bipolaris yamadae",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris yamadae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 12239T",
+                "BRIP 12239"
+            ],
+            "nodes": [
+                {
+                    "accession": "KX452458",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918535",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Goondiwindi",
+                        "HOST_SUBSTRATE.host": "Paspalidium caespitosum",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12239",
+                        "TAXONOMY.organism": "Bipolaris woodii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris woodii"
+                    }
+                },
+                {
+                    "accession": "KX452424",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:1918535",
+                        "GEO_REFERENCES.country": "Australia: Queensland, Goondiwindi",
+                        "HOST_SUBSTRATE.host": "Paspalidium caespitosum",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 12239",
+                        "TAXONOMY.organism": "Bipolaris woodii",
+                        "TAXONOMY.type_material": "holotype of Bipolaris woodii"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "BRIP 11512IsoPT",
+                "BRIP 11512"
+            ],
+            "nodes": [
+                {
+                    "accession": "KJ415538",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:91364",
+                        "HOST_SUBSTRATE.host": "Zea mays",
+                        "HOST_SUBSTRATE.isolation_source": "mycelium",
+                        "SPECIMEN.strain": "BRIP 11512",
+                        "TAXONOMY.organism": "Bipolaris zeae",
+                        "TAXONOMY.type_material": "culture from isoparatype of Bipolaris zeae",
+                        "TIME_REFERENCES.collection_date": "18-Jan-1973"
+                    }
+                },
+                {
+                    "accession": "KJ415408",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:91364",
+                        "HOST_SUBSTRATE.host": "Zea mays",
+                        "SPECIMEN.strain": "BRIP 11512",
+                        "TAXONOMY.organism": "Bipolaris zeae",
+                        "TAXONOMY.type_material": "culture from isoparatype of Bipolaris zeae",
+                        "TIME_REFERENCES.collection_date": "18-Jan-1973"
+                    }
+                },
+                {
+                    "accession": "KJ415454",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:91364",
+                        "HOST_SUBSTRATE.host": "Zea mays",
+                        "SPECIMEN.strain": "BRIP 11512",
+                        "TAXONOMY.organism": "Bipolaris zeae",
+                        "TAXONOMY.type_material": "culture from isoparatype of Bipolaris zeae"
+                    }
+                }
+            ]
+        },
+        {
+            "identifiers": [
+                "FIP 532ET",
+                "FIP532"
+            ],
+            "nodes": [
+                {
+                    "accession": "KM230398",
+                    "marker": "nuc-its",
+                    "metadata": {
+                        "ACTORS.collected_by": "Roy Hite",
+                        "ACTORS.identified_by": "Dimuthu S. Manamgoda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:5017",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Zea mays",
+                        "SPECIMEN.strain": "FIP532",
+                        "TAXONOMY.organism": "Bipolaris zeicola",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris zeicola"
+                    }
+                },
+                {
+                    "accession": "KM034815",
+                    "marker": "mit-gapdh",
+                    "metadata": {
+                        "ACTORS.collected_by": "Roy Hite",
+                        "ACTORS.identified_by": "Dimuthu S. Manamgoda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:5017",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Zea mays",
+                        "SPECIMEN.strain": "FIP532",
+                        "TAXONOMY.organism": "Bipolaris zeicola",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris zeicola"
+                    }
+                },
+                {
+                    "accession": "KM093752",
+                    "marker": "nuc-tef1",
+                    "metadata": {
+                        "ACTORS.collected_by": "Roy Hite",
+                        "ACTORS.identified_by": "Dimuthu S. Manamgoda",
+                        "ASSAY.mol_type": "genomic DNA",
+                        "EXTERNAL_LINKS.db_xref": "taxon:5017",
+                        "GEO_REFERENCES.country": "USA",
+                        "HOST_SUBSTRATE.host": "Zea mays",
+                        "SPECIMEN.strain": "FIP532",
+                        "TAXONOMY.organism": "Bipolaris zeicola",
+                        "TAXONOMY.type_material": "culture from epitype of Bipolaris zeicola"
+                    }
+                }
+            ]
+        }
+    ],
+    "data": [
+        {
+            "identifier": "BRIP 12490T",
+            "mit-gapdh": "KX452408",
+            "nuc-its": "KX452442",
+            "nuc-tef1": "KX452459",
+            "scientificName": "Bi. austrostipae"
+        },
+        {
+            "identifier": "BRIP 11740T",
+            "mit-gapdh": "KX452409",
+            "nuc-its": "KX452443",
+            "nuc-tef1": "KX452460",
+            "scientificName": "Bi. axonopicola"
+        },
+        {
+            "identifier": "BRIP 13577T",
+            "mit-gapdh": "KX452411",
+            "nuc-its": "KX452445",
+            "nuc-tef1": "KX452462",
+            "scientificName": "Bi. bamagaensis"
+        },
+        {
+            "identifier": "CBS 690.96",
+            "mit-gapdh": "KM042893",
+            "nuc-its": "KJ909762",
+            "nuc-tef1": "KM093776",
+            "scientificName": "Bi. bicolor"
+        },
+        {
+            "identifier": "BRIP 10965T",
+            "mit-gapdh": "KJ415423",
+            "nuc-its": "KJ415523",
+            "nuc-tef1": "KJ415472",
+            "scientificName": "Bi. chloridis"
+        },
+        {
+            "identifier": "BRIP 12530T",
+            "mit-gapdh": "KJ415422",
+            "nuc-its": "KJ415524",
+            "nuc-tef1": "KJ415471",
+            "scientificName": "Bi. clavata"
+        },
+        {
+            "identifier": "BRIP 14845IsoT",
+            "mit-gapdh": "KJ415421",
+            "nuc-its": "KJ415525",
+            "nuc-tef1": "KJ415470",
+            "scientificName": "Bi. coffeana"
+        },
+        {
+            "identifier": "AR 5185",
+            "mit-gapdh": "KM034833",
+            "nuc-its": "KJ922391",
+            "nuc-tef1": "KM093777",
+            "scientificName": "Bi. cookei"
+        },
+        {
+            "identifier": "BRIP 14838",
+            "mit-gapdh": "KJ415420",
+            "nuc-its": "KJ415526",
+            "nuc-tef1": "KJ415479",
+            "scientificName": "Bi. crotonis"
+        },
+        {
+            "identifier": "CBS 109894",
+            "mit-gapdh": "KM034838",
+            "nuc-its": "KJ909767",
+            "nuc-tef1": "KM093782",
+            "scientificName": "Bi. cynodontis"
+        },
+        {
+            "identifier": "CBS 136207T",
+            "mit-gapdh": "KF500533",
+            "nuc-its": "KF500530",
+            "nuc-tef1": "KM093760",
+            "scientificName": "Bi. drechsleri"
+        },
+        {
+            "identifier": "BRIP 14840T",
+            "mit-gapdh": "KJ415418",
+            "nuc-its": "KJ415528",
+            "nuc-tef1": "KJ415467",
+            "scientificName": "Bi. gossypina"
+        },
+        {
+            "identifier": "BRIP 17186T",
+            "mit-gapdh": "KJ415417",
+            "nuc-its": "KJ415530",
+            "nuc-tef1": "KJ415465",
+            "scientificName": "Bi. heliconiae"
+        },
+        {
+            "identifier": "CBS 241.92",
+            "mit-gapdh": "KM034843",
+            "nuc-its": "KJ909763",
+            "nuc-tef1": "KM093791",
+            "scientificName": "Bi. heveae"
+        },
+        {
+            "identifier": "BRIP 14643IsoT",
+            "mit-gapdh": "AF081402",
+            "nuc-its": "AF071350",
+            "nuc-tef1": null,
+            "scientificName": "Bi. luttrellii"
+        },
+        {
+            "identifier": "CBS 137271NT",
+            "mit-gapdh": "KM034846",
+            "nuc-its": "AF071325",
+            "nuc-tef1": "KM093794",
+            "scientificName": "Bi. maydis"
+        },
+        {
+            "identifier": "CBS 280.91T",
+            "mit-gapdh": "JN600974",
+            "nuc-its": "JN601032",
+            "nuc-tef1": "JN601017",
+            "scientificName": "Bi. microlaenae"
+        },
+        {
+            "identifier": "CBS 132550T",
+            "mit-gapdh": "JX089575",
+            "nuc-its": "JX089579",
+            "nuc-tef1": "KM093756",
+            "scientificName": "Bi. microstegii"
+        },
+        {
+            "identifier": "MFLUCC 100715NT",
+            "mit-gapdh": "JX276430",
+            "nuc-its": "JX256416",
+            "nuc-tef1": "JX266585",
+            "scientificName": "Bi. oryzae"
+        },
+        {
+            "identifier": "CBS 199.29LT",
+            "mit-gapdh": "KM042896",
+            "nuc-its": "KJ909773",
+            "nuc-tef1": "KM093788",
+            "scientificName": "Bi. panicimiliacei"
+        },
+        {
+            "identifier": "BRIP 12790T",
+            "mit-gapdh": "JN600977",
+            "nuc-its": "JN601034",
+            "nuc-tef1": "JN601022",
+            "scientificName": "Bi. peregianensis"
+        },
+        {
+            "identifier": "BRIP 14839IsoT",
+            "mit-gapdh": "KJ415414",
+            "nuc-its": "KJ415532",
+            "nuc-tef1": "KJ415461",
+            "scientificName": "Bi. pluriseptata"
+        },
+        {
+            "identifier": "ICMP 6227",
+            "mit-gapdh": "KM034842",
+            "nuc-its": "KJ922386",
+            "nuc-tef1": "KM093785",
+            "scientificName": "Bi. sacchari"
+        },
+        {
+            "identifier": "Bi 1T",
+            "mit-gapdh": null,
+            "nuc-its": "AB675490",
+            "nuc-tef1": null,
+            "scientificName": "Bi. salkadehensis"
+        },
+        {
+            "identifier": "BRIP 16571LT",
+            "mit-gapdh": "KJ415411",
+            "nuc-its": "KJ415535",
+            "nuc-tef1": "KJ415457",
+            "scientificName": "Bi. salviniae"
+        },
+        {
+            "identifier": "CBS 155.26T",
+            "mit-gapdh": "KY905686",
+            "nuc-its": "KY905674",
+            "nuc-tef1": "KY905694",
+            "scientificName": "Bi. saccharicola"
+        },
+        {
+            "identifier": "BRIP 14453IsoLT",
+            "mit-gapdh": "KJ415409",
+            "nuc-its": "KJ415537",
+            "nuc-tef1": "KJ415455",
+            "scientificName": "Bi. secalis"
+        },
+        {
+            "identifier": "CBS 141.31",
+            "mit-gapdh": "EF513206",
+            "nuc-its": "EF452444",
+            "nuc-tef1": null,
+            "scientificName": "Bi. setariae"
+        },
+        {
+            "identifier": "BRIP 15929T",
+            "mit-gapdh": "KX452419",
+            "nuc-its": "KX452453",
+            "nuc-tef1": "KX452470",
+            "scientificName": "Bi. shoemakeri"
+        },
+        {
+            "identifier": "BRIP 12030T",
+            "mit-gapdh": "KX452420",
+            "nuc-its": "KX452454",
+            "nuc-tef1": "KX452471",
+            "scientificName": "Bi. simmondsii"
+        },
+        {
+            "identifier": "BRIP 15847T",
+            "mit-gapdh": "KX452421",
+            "nuc-its": "KX452455",
+            "nuc-tef1": "KX452472",
+            "scientificName": "Bi. sivanesaniana"
+        },
+        {
+            "identifier": "CBS 110.14",
+            "mit-gapdh": "KM034822",
+            "nuc-its": "KJ922381",
+            "nuc-tef1": "KM093763",
+            "scientificName": "Bi. sorokiniana"
+        },
+        {
+            "identifier": "BRIP 16226T",
+            "mit-gapdh": "KX452423",
+            "nuc-its": "KX452457",
+            "nuc-tef1": "KX452474",
+            "scientificName": "Bi. subramanianii"
+        },
+        {
+            "identifier": "ATCC 58317",
+            "mit-gapdh": "KM230396",
+            "nuc-its": "KJ922389",
+            "nuc-tef1": "KM093770",
+            "scientificName": "Bi. urochloae"
+        },
+        {
+            "identifier": "CBS 127716T",
+            "mit-gapdh": "KY905688",
+            "nuc-its": "KY905676",
+            "nuc-tef1": "KY905696",
+            "scientificName": "Bi. variabilis"
+        },
+        {
+            "identifier": "CBS 327.64T",
+            "mit-gapdh": "KM034811",
+            "nuc-its": "KJ909778",
+            "nuc-tef1": "KM093748",
+            "scientificName": "Bi. victoriae"
+        },
+        {
+            "identifier": "CBS 202.29ET",
+            "mit-gapdh": "KM034830",
+            "nuc-its": "KJ909779",
+            "nuc-tef1": "KM093773",
+            "scientificName": "Bi. yamadae"
+        },
+        {
+            "identifier": "BRIP 12239T",
+            "mit-gapdh": "KX452424",
+            "nuc-its": "KX452458",
+            "nuc-tef1": "KX4524725",
+            "scientificName": "Bi. woodii"
+        },
+        {
+            "identifier": "BRIP 11512IsoPT",
+            "mit-gapdh": "KJ415408",
+            "nuc-its": "KJ415538",
+            "nuc-tef1": "KJ415454",
+            "scientificName": "Bi. zeae"
+        },
+        {
+            "identifier": "FIP 532ET",
+            "mit-gapdh": "KM034815",
+            "nuc-its": "KM230398",
+            "nuc-tef1": "KM093752",
+            "scientificName": "Bi. zeicola"
+        }
+    ],
+    "gene_fields": [
+        "nuc-its",
+        "mit-gapdh",
+        "nuc-tef1"
+    ],
+    "optional_fields": []
+}

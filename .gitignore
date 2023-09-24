@@ -6,7 +6,5 @@ __pycache__
 .env
 .dmypy.json
 pipeline.log
-out.json
-out.tsv
 cache.json
 tmp

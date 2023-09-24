@@ -1,0 +1,1248 @@
+identifier	scientificName	nuc-act	nuc-apmat	nuc-cal	nuc-chs1	mit-gapdh	nuc-gs	nuc-his3	nuc-its	nuc-lsu	nuc-mcm7	nuc-ms204	nuc-rpb1	nuc-rpb2	mit-sod2	nuc-tef1	nuc-tub1	nuc-tub2
+#gcon:defs	std	gene	gene	gene	gene	gene	gene	gene	gene	gene	gene	gene	gene	gene	gene	gene	gene	gene
+2769	Monilinia mali								AB125619
+4222	Monilinia jezoensis								AB182265
+3231 01-01	Monilinia mumeicola								AB125613
+AR 5185	Bipolaris cookei					KM034833			KJ922391							KM093777
+AR4203	Diaporthe phaseolorum			KJ612135				KJ659220	KJ590738							KJ590739		KJ610893
+ARO 1087.P	Monilinia oxycocci								Z73789
+ARO 1459.S	Monilinia cassiopes								Z73776
+ARO 476.1	Monilinia urnula								Z73794
+ARO 619.2	Monilinia megalospora								Z73788
+ARO 885.2	Monilinia aucupariae								Z73771
+ARO 923.K	Monilinia padi								Z73791
+ATCC 200578	Phyllosticta ampelicida	KC193581				KC193584			KC193586
+ATCC 44764	Curvularia tsudae					KC747745			KC424596							KC503940
+ATCC 46255	Phyllosticta vaccinii	KC193580				KC193583			KC193585							KC193582
+ATCC 46649	Cladosporium uredinicola	HM148712							AY251071							HM148467
+ATCC 58317	Bipolaris urochloae					KM230396			KJ922389							KM093770
+ATCC 58538	Monilinia amelanchieris								Z73769
+ATCC 58539	Monilinia azaleae								AB182266
+ATCC 58542	Monilinia johnsonii								Z73783
+ATCC 58546	Monilinia polycodii								Z73792
+ATCC 64508	Monilinia gaylussaciae								Z73782
+ATCC 64682	Colletotrichum incanum	KC110825				KC110807		KC110798	KC110789									KC110816
+BCC 38876	Colletotrichum brevisporum	JN050216			KF687760	JN050227			JN050238									JN050244
+BCC 38877	Colletotrichum tropicicola	JN050218				JN050229			JN050240									JN050246
+BCC 79016	Pilidium septatum								KY922832	KY922833
+Bi 1	Bipolaris salkadehensis								AB675490
+Bp-Zj 01	Curvularia sesuvi								EF175940
+BPI 893190	Diaporthe benedicti			KM669862					KM669929							KM669785
+BRIP 10965	Bipolaris chloridis					KJ415423			KJ415523							KJ415472
+BRIP 11512	Bipolaris zeae					KJ415408			KJ415538							KJ415454
+BRIP 11740	Bipolaris axonopicola					KX452409			KX452443							KX452460
+BRIP 11987	Curvularia hawaiiensis					KJ415399			KJ415547							KJ415445
+BRIP 12030	Bipolaris simmondsii					KX452420			KX452454							KX452471
+BRIP 12044	Curvularia australiensis					KJ415406			KJ415540							KJ415452
+BRIP 12239	Bipolaris woodii					KX452424			KX452458							KX4524725
+BRIP 12375	Curvularia tripogonis					JN600980			JN192388							JN601025
+BRIP 12490	Bipolaris austrostipae					KX452408			KX452442							KX452459
+BRIP 12521	Curvularia australis					KJ415405			KJ415541							KJ415451
+BRIP 12522	Curvularia bothriochloae					KJ415403			KJ415543							KJ415449
+BRIP 12530	Bipolaris clavata					KJ415422			KJ415524							KJ415471
+BRIP 12554	Curvularia ryleyi					KJ415390			KJ415556							KJ415437
+BRIP 12790	Bipolaris peregianensis					JN600977			JN601034							JN601022
+BRIP 12846	Curvularia dactyloctenii					KJ415401			KJ415545							KJ415447
+BRIP 12919	Curvularia neergaardii					KJ415397			KJ415550							KJ415443
+BRIP 13165	Curvularia ravenelii					JN600978			JN192386							JN601024
+BRIP 13524	Curvularia crustacea					KJ415402			KJ415544							KJ415448
+BRIP 13577	Bipolaris bamagaensis					KX452411			KX452445							KX452462
+BRIP 14453	Bipolaris secalis					KJ415409			KJ415537							KJ415455
+BRIP 14541	Curvularia portulacae					KJ415393			KJ415553							KJ415440
+BRIP 14579	Curvularia heteropogonicola					KJ415398			KJ415548							KJ415444
+BRIP 14643	Bipolaris luttrellii					AF081402			AF071350
+BRIP 14834	Curvularia tropicalis					KJ415387			KJ415559							KJ415434
+BRIP 14838	Bipolaris crotonis					KJ415420			KJ415526							KJ415479
+BRIP 14839	Bipolaris pluriseptata					KJ415414			KJ415532							KJ415461
+BRIP 14840	Bipolaris gossypina					KJ415418			KJ415528							KJ415467
+BRIP 14845	Bipolaris coffeana					KJ415421			KJ415525							KJ415470
+BRIP 15847	Bipolaris sivanesaniana					KX452421			KX452455							KX452472
+BRIP 15900	Curvularia sorghina					KJ415388			KJ415558							KJ415435
+BRIP 15929	Bipolaris shoemakeri					KX452419			KX452453							KX452470
+BRIP 16080	Curvularia akaiiensis					KJ415407			KJ415539							KJ415453
+BRIP 16226	Bipolaris subramanianii					KX452423			KX452457							KX452474
+BRIP 16571	Bipolaris salviniae					KJ415411			KJ415535							KJ415457
+BRIP 16732	Curvularia bannonii					KJ415404			KJ415542							KJ415450
+BRIP 17186	Bipolaris heliconiae					KJ415417			KJ415530							KJ415465
+BRIP 17439	Curvularia neoindica					AF081406			AF081449
+BRIP 23186	Curvularia graminicola					JN600964			JN192376							JN601008
+BRIP 4371	Curvularia richardiae					KJ415391			KJ415555							KJ415438
+BRIP 53316	Phyllosticta aristolochiicola								JX486129
+BRIP 54025	Diaporthe gulyae								JF431299							JN645803		KJ197271
+BRIP 54031	Diaporthe kongii								JF431301							JN645797		KJ197272
+BRIP 54669	Diaporthe sackstonii								KJ197287							KJ197249		KJ197267
+BRIP 54736	Diaporthe miriciae								KJ197283							KJ197245		KJ197263
+BRIP 54781	Diaporthe fraxini-angustifoliae								JX862528							JX862534		KF170920
+BRIP 54792	Diaporthe beilharziae								JX862529							JX862535		KF170921
+BRIP 54801	Diaporthe nothofagi								JX862530							JX862536		KF170922
+BRIP 54825	Diaporthe salicicola								JX862531							JX862537		KF170923
+BRIP 54847	Diaporthe pascoei								JX862532							JX862538		KF170924
+BRIP 54884e	Diaporthe middletonii								KJ197286							KJ197248		KJ197266
+BRIP 54884m	Diaporthe charlesworthii								KJ197288							KJ197250		KJ197268
+BRIP 54900	Diaporthe litchicola								JX862533							JX862539		KF170925
+BRIP 55064	Diaporthe macintoshii								KJ197289							KJ197251		KJ197269
+BRIP 55420	Phyllosticta cavendishii								JQ743562
+BRIP 55434	Phyllosticta musarum								JQ743584
+BRIP 55657	Diaporthe goulteri								KJ197290							KJ197252		KJ197270
+BRIP 55665	Diaporthe serafiniae								KJ197274							KJ197236		KJ197254
+BRIP 57412	Curvularia harveyi					KJ415400			KJ415546							KJ415446
+BRIP 57887	Diaporthe vawdreyi								KR936126							KR936129		KR936128
+BRIP 57892	Diaporthe masirevicii								KJ197277							KJ197239		KJ197257
+BRIP 60376	Gaeumannomyces wongoonoo								KP162137
+BRIP 61680	Curvularia clavata					KU552167			KU552205							KU552159
+BRIP 62248	Diaporthe tulliensis								KR936130							KR936133		KR936132
+BRIP 63642	Colletotrichum cairnsense	KU923716			KU923710	KU923704		KU923722	KU923672									KU923688
+BRIP 63684	Paraphoma vinacea								KU176884							KU176896		KU176892
+BRIP 65168	Paraphoma chlamydocopiosa								KU999072							KU999080		KU999084
+BRIP 65169	Paraphoma pye								KU999073							KU999081		KU999085
+C08048	Colletotrichum panacicola	GU944757				GU935847	GU935807		GU935867
+CBS 100098	Phyllosticta citribraziliensis	FJ538468				JF343691			FJ538352							FJ538410
+CBS 100167	Boeremia exigua var. populi	EU880885		KY484605					GU237707							KY484706		GU237501
+CBS 100353	Boeremia noackiana	EU880881		KY484624					GU237710							KY484727		GU237514
+CBS 100354	Boeremia exigua var. viburni	EU880889		KY484613					GU237711					KT389577				GU237506
+CBS 100547	Diaporthe tecomae			KC343457				KC343699	KC343215							KC343941		KC344183
+CBS 101.81	Cladosporium allii	JN906996							JN906977							JN906983
+CBS 101059	Colletotrichum brassicola	JQ005520		JQ005693	JQ005346	JQ005259		JQ005433	JQ005172									JQ005606
+CBS 101121	Calonectria naviculata			GQ267399				GQ267252	GQ280600	GQ280722				KM232309		GQ267317		GQ267211
+CBS 101150	Boeremia exigua var. gilvescens	KY484562		KY484591					GU237715					KT389568		KY484694		GU237495
+CBS 101207	Boeremia exigua var. pseudolilacis	EU880874		KY484609					GU237721							KY484710		GU237503
+CBS 101213	Boeremia exigua var. forsythiae	EU880868		KY484589					GU237723					KT389571		KY484692		GU237494
+CBS 101339	Diaporthe pseudomangiferae			KC343423				KC343665	KC343181							KC343907		KC344149
+CBS 101357	Phaeoacremonium iranianum	DQ173120																DQ173096
+CBS 101585	Phaeoacremonium fraxinopennsylvanicum	DQ173137																AF246809
+CBS 101637	Plenodomus pimpinellae								JF740240									KY064062
+CBS 101711	Diaporthe subordinaria			KC343455				KC343697	KC343213							KC343939		KC344181
+CBS 101738	Phaeoacremonium viticola	DQ173131																AF192391
+CBS 102.42	Curvularia inaequalis					KM061787			KJ922375							KM196574
+CBS 102.80	Boeremia diversispora	EU880861		KY484575					GU237725					KT389565		KY484676		GU237492
+CBS 102189	Colletotrichum antirrhinicola	KM105390			KM105250	KM105531		KM105320	KM105180									KM105460
+CBS 102867	Neofabraea krawtzewii								KR859084					KR859324				AF281459
+CBS 102869	Neofabraea perennans								KR859087					KR859327				AF281473
+CBS 108926	Microdochium neoqueenslandicum								KP859002					KP859111				KP859065
+CBS 109.23	Coniella diplodiopsis								AY339332					KX833440		KX833624
+CBS 109.79	Boeremia crinicola	KY484558		KY484571					GU237737					KT389563				GU237489
+CBS 109063	Calonectria pacifica			AY725762				GQ267255	GQ280603	GQ280725						AY725724		GQ267213
+CBS 109065	Calonectria angustata			GQ267361				DQ190696	GQ280548	GQ280671				KY653359		FJ918551		AF207543
+CBS 109067	Microdochium citrinidiscum								KP859003					KP859112				KP859066
+CBS 109082	Cladosporium silenes	EF679506							EF679354							EF679429
+CBS 109165	Calonectria pseudospathiphylli			GQ267412				AF348241	GQ280615	GQ280737				KY653435		FJ918562		FJ918513
+CBS 109166	Calonectria leucothoes			GQ267392				FJ918523	GQ280590	GQ280712				KY653404		FJ918553		FJ918508
+CBS 109175	Boeremia telephii	EU880906		KY484633					GU237741					KT389585		KY484737		GU237520
+CBS 109176	Boeremia foveata	EU880892		KY484614					GU237742					KT389578		KY484714		GU237508
+CBS 109183	Boeremia exigua var. coffeae	KY484560		KY484576					GU237748					KT389566		KY484678		GU237505
+CBS 109214	Colletotrichum lilii	GU227908			GU228300	GU228202		GU228006	GU227810									GU228104
+CBS 109225	Colletotrichum lupini	JQ949476			JQ948816	JQ948485		JQ949146	JQ948155									JQ949806
+CBS 109354	Gaeumannomyces amomi								AY265318							KX306679
+CBS 109441	Huntiella moniliformopsis								AY528998		KM495444					AY529008		AY528987
+CBS 109479	Phaeoacremonium krajdenii	AY579267																AY579330
+CBS 109490	Diaporthe neoarctii			KC343387				KC343629	KC343145							KC343871		KC344113
+CBS 109742	Diaporthe pustulata			KC343427				KC343669	KC343185							KC343911		KC344153
+CBS 109745	Diaporthe perjuncta			KC343414				KC343656	KC343172							KC343898		KC344140
+CBS 109751	Diaporthe fibrosa			KC343341				KC343583	KC343099							KC343825		KC344067
+CBS 109757	Coniella hibisci								KX833589							KX833689
+CBS 109770	Diaporthe detrusa			KC343303				KC343545	KC343061							KC343787		KC344029
+CBS 109772	Diaporthe decedens			KC343301				KC343543	KC343059							KC343785		KC344027
+CBS 109849	Colletotrichum bryoniicola	KM105391			KM105251	KM105532		KM105321	KM105181									KM105461
+CBS 109894	Bipolaris cynodontis					KM034838			KJ909767							KM093782
+CBS 110.14	Bipolaris sorokiniana					KM034822			KJ922381							KM093763
+CBS 110034	Phaeoacremonium alvesii	AY579234																AY579301
+CBS 110156	Phaeoacremonium leptorrhynchum	DQ173139																DQ173110
+CBS 110394	Coniella peruensis								KJ710463					KX833499		KX833695
+CBS 110573	Phaeoacremonium tardicrescens	AY579233																AY579300
+CBS 110627	Phaeoacremonium amstelodamense	AY579228																AY579295
+CBS 110665	Oculimacula yallundae								MG934456							MG934498
+CBS 110666	Calonectria cylindrospora			GQ267423				FJ918527	GQ280626	GQ280748				KY653378		FJ918557		FJ918509
+CBS 110668	Cylindrocladiella stellenboschensis							JN098922	JN100615	JN099213						JN099051		JN098829
+CBS 110729	Harknessia uromycoides			AY720802					AY720739									AY720771
+CBS 110785	Harknessia fusiformis			AY720784					AY720721									AY720753
+CBS 110798	Calonectria parva			KX784583					KY653270	KY653326				KY653425		KX784716		KX784646
+CBS 110817	Calonectria canadania			AY725743				AF348228	GQ280556	GQ280678				KY653369		GQ267297		AF348212
+CBS 110864	Neofusicoccum stellenboschiana								AY343407					KX464042		AY343348		KX465047
+CBS 110887	Neofusicoccum vitifusiforme								AY343383					KX464049		AY343343		KX465061
+CBS 110918	Calonectria mexicana			GQ267396				FJ972460	GQ280596	GQ280718				KY653412		FJ972526		AF210863
+CBS 110924	Calonectria pseudouxmalensis								KY653276	KY653332				KY653437		KX784726		KX784654
+CBS 110925	Calonectria uxmalensis								KY653288	KY653350				KY653461		KX784708		KX784638
+CBS 110932	Calonectria multilateralis			KX784580					KY653263	KY653319				KY653413		KX784712		KX784642
+CBS 110960	Metulocladosporiella musicola			MG934526					DQ008127							MG934481
+CBS 110962	Metulocladosporiella musicola			MG934527					MG934446							MG934482
+CBS 110964	Metulocladosporiella musicola			MG934528					MG934447							MG934483
+CBS 111.79	Paraphoma radicina								KF251172					KF252180		KF253130		KF252667
+CBS 111021	Coniella limoniformis								KX833586					KX833492		KX833686
+CBS 111025	Coniella obovata								AY339313					KX833497		KX833692
+CBS 111052	Calonectria venezuelana			KX784601												KX784744		KX784671
+CBS 111115	Harknessia eucalyptorum			AY720810					AY720747									AY720779
+CBS 111124	Harknessia syzygii			AY720801					AY720738									AY720770
+CBS 111141	Calonectria gracilipes			GQ267385				DQ190644	GQ280579	GQ280701				KY653387		GQ267311		DQ190566
+CBS 111299	Calonectria ovata			GQ267400				GQ267253	GQ280601	GQ280723				KY653419		GQ267318		GQ267212
+CBS 111301	Calonectria tereticornis															KX784737		KX784664
+CBS 111324	Calonectria lageniformis			KX784574					KY653256	KY653312				KY653400		KX784702		KX784632
+CBS 111377	Apoharknessia insueta			MG934511					JQ706083									MG934506
+CBS 111401	Calonectria plurilateralis			KX784586					KY653271	KY653327				KY653430		KX784719		KX784648
+CBS 111402	Calonectria pseudoecuadoriae			KX784589					KY653273	KY653329				KY653432		KX784723		KX784652
+CBS 111406	Calonectria ecuadoriae			GQ267375				DQ190705	GQ280569	GQ280691				KY653381		GQ267303		DQ190600
+CBS 111423	Calonectria octoramosa			KX784603					KY653265	KY653321				KY653418		KX784746		KX784673
+CBS 111431	Calonectria rumohrae			GQ267419				DQ190675	GQ280622	GQ280744				KY653445		FJ918549		AF232871
+CBS 111449	Calonectria putriramosa			KX784591					KY653277	KY653333				KY653440		KX784728		KX784656
+CBS 111465	Calonectria parvispora			KX784584												KX784717		DQ190607
+CBS 111484	Calonectria brasiliana			KX784559					KY653245	KY653301				KY653362		KX784686		KX784616
+CBS 111553	Diaporthe foeniculina			KC343343				KC343585	KC343101							KC343827		KC344069
+CBS 111578	Harknessia globispora			AY720785					AY720722									AY720754
+CBS 111586	Phaeoacremonium theobromatis	DQ173132																DQ173106
+CBS 111592	Diaporthe angelicae			KC343268				KC343511	KC343026							KC343752		KC343994
+CBS 111635	Phyllosticta rubella	KF289233				KF289129			KF206171							KF289198
+CBS 111639	Phyllosticta cornicola	KF289234							KF170307
+CBS 111645	Phyllosticta parthenocisii	JN692518							JN692542							JN692530
+CBS 111646	Phyllosticta podocarpi	KC357670				KF289169			AF312013							KC357671
+CBS 111649	Phyllosticta pseudotsugae	KF289236				KF289167			KF154277							KF289231
+CBS 111657	Phaeoacremonium griseorubrum	AY579227																AY579294
+CBS 111706	Calonectria ecuadorensis			KX784604					KY653252	KY653308				KY653382		KX784747		KX784674
+CBS 111793	Calonectria pteridis			GQ267413				DQ190679	GQ280616	GQ280738				KY653438		FJ918563		DQ190578
+CBS 111794	Cylindrocladiella microcylindrica							AY793523	AY793452	JN099203						JN099041		AY793483
+CBS 111795	Cylindrocladiella infestans							AY793513	AF220955	JN099199						JN099037		AF320190
+CBS 111807	Calonectria gracilis			GQ267407				DQ190646	GQ280610	GQ280732				KY653390		GQ267323		AF232858
+CBS 111812	Calonectria cliffordicola			KX784566					KY653249	KY653305				KY653374		KX784694		KX784624
+CBS 111829	Harknessia capensis			AY720782					AY720719									AY720751
+CBS 111858	Coniella diplodiella								AY339323					KX833423		KX833603
+CBS 111869	Calonectria brassicae			GQ267382				DQ190720	GQ280576	GQ280698				KM232308		FJ918567		AF232857
+CBS 111870	Calonectria hawksworthii			GQ267386				DQ190649	GQ280580	GQ280702				KY653391		FJ918558		AF333407
+CBS 111886	Diaporthe australafricana			KC343280				KC343522	KC343038							KC343764		KC344006
+CBS 111980	Diaporthe leucospermi			KY435663				KY435653	JN712460							KY435632		KY435673
+CBS 112067	Phyllosticta abieticola	KF289238							KF170306
+CBS 112142	Calonectria gordoniae			GQ267381				DQ190708	GQ280575	GQ280697				KY653386		GQ267309		AF449449
+CBS 112144	Calonectria reteaudii			GQ267417				DQ190661	GQ280620	GQ280742				KY653443		FJ918537		AF389833
+CBS 112146	Calonectria queenslandica			GQ267415				FJ918521	GQ280618	GQ280740						FJ918543		AF389835
+CBS 112151	Calonectria terrae-reginae			GQ267451				FJ918522	GQ280656	GQ280778						FJ918545		FJ918506
+CBS 112152	Calonectria vietnamensis			KX784602					KY653291	KY653347				KY653463		KX784745		KX784672
+CBS 112220	Calonectria colombiensis			AY725748				AY725662	GQ280566	GQ280688						AY725711		GQ267207
+CBS 112388	Cladosporium cladosporioides	HM148490							HM148003							HM148244
+CBS 112513	Calonectria stipitata			KX784596					KY653280	KY653336				KY653450		KX784734		KX784661
+CBS 112527	Phyllosticta paxistimae	KF289239				KF289140			KF206172							KF289209
+CBS 112618	Harknessia protearum			AY720795					AY720732									AY720764
+CBS 112624	Coniella pseudostraminea								KX833593					KX833500		KX833696
+CBS 112640	Coniella eucalyptorum								AY339338					KX833452		KX833637
+CBS 112678	Calonectria multiphialidica			AY725761				AY725673	GQ280597	GQ280719				KY653415		AY725723		AY725628
+CBS 112682	Calonectria multiseptata			GQ267397				DQ190659	GQ280598	GQ280720				KY653416		FJ918535		DQ190573
+CBS 112691	Calonectria variabilis			GQ267458				GQ267264	GQ280663	GQ280785				KY653459		GQ267335		GQ267240
+CBS 112752	Calonectria malesiana			AY725760				AY725672	GQ280594	GQ280716						AY725722		AY725627
+CBS 112753	Calonectria trifurcata			KX784598					KY653292	KY653348				KY653464		KX784740		KX784667
+CBS 112823	Calonectria indonesiae			AY725756				AY725668	GQ280585	GQ280707				KY653394		AY725718		AY725623
+CBS 112829	Calonectria sumatrensis			AY725771				AY725696	GQ280654	GQ280776						AY725733		AY725649
+CBS 112831	Calonectria syzygiicola															KX784736		KX784663
+CBS 112841	Calonectria brassicicola			KX784561												KX784689		KX784619
+CBS 112878	Neofusicoccum viticlavatum								AY343381					KX464048		AY343342		KX465058
+CBS 112897	Cylindrocladiella viticola							AY793544	AY793468	JN099226						JN099064		AY793504
+CBS 112936	Calonectria indonesiana			KX784573												KX784701		KX784631
+CBS 112949	Phaeoacremonium austroafricanum	DQ173122																DQ173099
+CBS 112954	Calonectria australiensis			GQ267363				DQ190699	GQ280552	GQ280674				KY653361		GQ267293		DQ190596
+CBS 112989	Colletotrichum lacticiphilum	JQ949610			JQ948950	JQ948619		JQ949280	JQ948289									JQ949940
+CBS 112996	Colletotrichum acutatum	JQ005839			JQ005797	JQ948677		JQ005818	JQ005776									JQ005860
+CBS 112999	Colletotrichum gloeosporioides	JQ005500	JQ807843	JQ005673	JQ005326	JQ005239	JX010085	JQ005413	JQ005152						JX010365			JQ005587
+CBS 113083	Neofusicoccum pistaciarum								KX464186					KX464027		KX464712		KX464998
+CBS 113089	Neofusicoccum pistaciicola								KX464199					KX464033		KX464727		KX465014
+CBS 113201	Diaporthe rudis			KC343476				KC343718	KC343234							KC343960		KC344202
+CBS 113584	Phaeoacremonium subulatum	AY579231																AY579298
+CBS 113589	Phaeoacremonium australiense	AY579229																AY579296
+CBS 113597	Phaeoacremonium scolyti	AY579224																AF246800
+CBS 113651	Boeremia exigua var. rhapontica	KY484566		KY484612					KY484662							KY484713		KY484760
+CBS 113702	Plenodomus hendersoniae								JF740225					KY064044				KT266271
+CBS 113754	Cladosporium subtilissimum	EF679551							EF679397							EF679475
+CBS 113795	Plenodomus libanotidis								JF740231					KY064046				KY064059
+CBS 113860	Metulocladosporiella musicola			MG934529					DQ008130							MG934484
+CBS 113861	Metulocladosporiella musicola			MG934530					DQ008131							MG934485
+CBS 113862	Metulocladosporiella musicola			MG934531					DQ008132							MG934486
+CBS 113863	Metulocladosporiella musae			MG934524					DQ008138							MG934479
+CBS 113864	Metulocladosporiella musicola			MG934532					DQ008133							MG934487
+CBS 113865	Metulocladosporiella musicola			MG934533					DQ008134							MG934488
+CBS 113873	Metulocladosporiella musicola			MG934534					DQ008135							MG934489
+CBS 114.14	Colletotrichum limetticola	JQ949514			JQ948854	JQ948523		JQ949184	JQ948193									JQ949844
+CBS 114015	Diaporthe ambigua			KC343252				KC343494	KC343010							KC343736		KC343978
+CBS 114016	Diaporthe ampelina			JX197443					AF230751							GQ250351		JX275452
+CBS 114073	Calonectria asiatica			AY725741				AY725658	GQ280550	GQ280672						AY725705		AY725616
+CBS 114133	Coniella africana								AY339344					KX833421		KX833600
+CBS 114176	Neofusicoccum protearum								AF452539					KX464029		KX464720		KX465006
+CBS 114200	Diaporthe padi			KC343411				KC343653	KC343169							KC343895		KC344137
+CBS 114271	Cladosporium grevilleae	JF770473							JF770450							JF770472
+CBS 114289	Huntiella bhutanensis								AY528952,NR119506		KM495412					AY528952		AY528962
+CBS 114293	Pilidium lythri								AY487094	AY487095
+CBS 114417	Calonectria pseudonaviculata			GQ267409				GQ267258	GQ280612	GQ280734				KY653434		GQ267325		GQ267214
+CBS 114434	Diaporthe impulsa			KC343363				KC343605	KC343121							KC343847		KC344089
+CBS 114435	Diaporthe crataegi			KC343297				KC343539	KC343055							KC343781		KC344023
+CBS 114437	Diaporthe carpini			KC343286				KC343528	KC343044							KC343770		KC344012
+CBS 114458	Calonectria ericae			KX784571					KY653255	KY653311				KY653385		KX784699		KX784629
+CBS 114524	Cylindrocladiella parva							AY793526	AF220964	JN099171						JN099009		AY793486
+CBS 114525	Calonectria kyotensis			AY725750					AF261741							AY725713		AF348215
+CBS 114531	Cylindrocladiella pseudoinfestans							AY793548	AF220957	JN099166						JN099004		AY793508
+CBS 114540	Calonectria spathiphylli			GQ267424				AF348230	GQ280627	GQ280749				KY653447		GQ267330		AF348214
+CBS 114551	Calonectria hurae			GQ267387				DQ190728	GQ280583	GQ280705						FJ918548		AF333408
+CBS 114557	Calonectria clavata			GQ267377				DQ190623	GQ280571	GQ280693				KY653372		GQ267305		AF333396
+CBS 114558	Calonectria insularis			GQ267389				FJ918526	GQ280587	GQ280709				KY653398		FJ918556		AF210861
+CBS 114572	Calonectria madagascariensis			GQ267394				DQ190658	GQ280592	GQ280714				KY653409		GQ267314		DQ190572
+CBS 114679	Calonectria paracolhounii			KX784582					KY653268	KY653324				KY653423		KX784714		KX784644
+CBS 114692	Calonectria floridana			KX784588												KX784722		KX784651
+CBS 114715	Ceratocystis variospora								AY907037,EF070421							EF070409	EF070437
+CBS 114716	Ceratocystis caryae								NR_119530,AY907035,EF070424							EF070412	EF070439
+CBS 114721	Ceratocystis mangicola								AY953382			KJ601582		KJ601618		EF433316	EF433307
+CBS 114723	Ceratocystis fimbriata     								KC493160			KJ601578		KJ601614		KJ631109	KF302689
+CBS 114724	Ceratocystis smalleyi								NR_119529,AY907030,EF070420							EF070408	EF070436
+CBS 114730	Oculimacula aestiva								MG934454							MG934496
+CBS 114755	Calonectria tucuruiensis			KX784600					KY653285	KY653341				KY653456		KX784743		KX784670
+CBS 114811	Harknessia hawaiiensis			AY720786					AY720723									AY720755
+CBS 114812	Calonectria acicola			GQ267359				DQ190693	GQ280547	GQ280669				KY653352		GQ267291		DQ190590
+CBS 114827	Calonectria chinensis			AY725747				AY725661	GQ280561	GQ280683				KY653371		AY725710		AY725619
+CBS 114828	Calonectria hongkongensis			AY725755				AY725667	GQ280581	GQ280703						AY725717		AY725622
+CBS 114877	Harknessia molokaiensis			AY720812					AY720749									AY579335
+CBS 114880	Calonectria macroconidialis			GQ267393				DQ190655	GQ280591	GQ280713				KY653410		GQ267313		AF232855
+CBS 114943	Cylindrocladiella natalensis							JN098895	JN100588	JN099178						JN099016		JN098794
+CBS 114979	Diaporthe arengae			KC343276				KC343518	KC343034							KC343760		KC344002
+CBS 114992	Phaeoacremonium angustius	DQ173127																DQ173104
+CBS 115127	Calonectria colombiana			GQ267455				FJ972442	GQ280660	GQ280782						FJ972492		FJ972423
+CBS 115162	Ceratocystis platani								DQ520630			KJ601592		KJ601628		EF070396	EF070425
+CBS 115169	Ceratocystis adelpha								DQ520637							KJ601516	KJ601509
+CBS 115172	Ceratocystis cacaofunesta								AY157953							KJ601519	KJ601512
+CBS 115440	Calonectria amazoniensis			KX784558					KY653244	KY653300				KY653358		KX784685		KX784615
+CBS 115448	Diaporthe hongkongensis			KC343361				KC343603	KC343119							KC343845		KC344087
+CBS 115475	Neofusicoccum ribis								AY236935					EU339554		AY236877		AY236906
+CBS 115647	Harknessia viterboensis			AY720803					AY720740									AY720772
+CBS 115648	Harknessia karwarrae			AY720811					AY720748									AY720780
+CBS 115671	Calonectria brevistipitata			KX784565					KY653248	KY653304				KY653368		KX784693		KX784623
+CBS 115679	Neofusicoccum eucalypticola								AY615141							AY615133		AY615125
+CBS 115778	Ceratocystis polychroma								AY528970							AY528978	AY528966
+CBS 115787	Huntiella omanensis								DQ074742		KM495449					DQ074737		DQ074732
+CBS 115791	Neofusicoccum eucalyptorum								AF283686							AY236891		AY236920
+CBS 115866	Huntiella tribiliformis								AY529003		KM495468					AY529014		AY528993
+CBS 116.75	Neofusicoccum buxi								KX464165					KX464010		KX464678
+CBS 116.76	Boeremia exigua var. linicola	EU880880		KY484604					GU237754					KT389574		KY484705		GU237500
+CBS 116075	Cylindrocladiella longistipitata							AY793546	AF220958	JN099155						JN098993		AY793506
+CBS 116131	Neofusicoccum arbuti								AY819720					KX464003		KF531792		KF531793
+CBS 116205	Microdochium nivale								KP859008					KP859117				KP859071
+CBS 116247	Calonectria terricola															KX784738		KX784665
+CBS 116249	Calonectria nemoralis			KX784609												KX784752		KX784679
+CBS 116250	Calonectria amazonica			KX784555					KY653241	KY653297				KY653355		KX784682		KX784612
+CBS 116265	Calonectria tucuruiensis			KX784610					KY653286	KY653342				KY653457		KX784753		KX784680
+CBS 116271	Calonectria tropicalis			KX784599					KY653284	KY653340				KY653455		KX784742		KX784669
+CBS 116311	Diaporthe saccarata			KC343432				KC343674	KC343190							KC343916		KC344158
+CBS 116319	Calonectria longiramosa			KX784577					KY653260	KY653316				KY653406		KX784705		KX784635
+CBS 116463	Cladosporium pseudiridis	EF679537							EF679383							EF679461
+CBS 116478	Colletotrichum australe	JQ949776			JQ949116	JQ948786		JQ949446	JQ948455									JQ950106
+CBS 117115	Phaeoacremonium vibratile	DQ649063																DQ649064
+CBS 117136	Phyllosticta yuccae	JN692517				JN692507			JN692541							JN692529
+CBS 117169	Diaporthe aspalathi			KC343278				KC343520	KC343036							KC343762		KC344004
+CBS 117453	Neofusicoccum andinum								AY693976					KX464002		AY693977		KX464923
+CBS 117499	Diaporthe cuppatea			JX197414				KC343541	AY339322							AY339354		JX275420
+CBS 118127	Huntiella moniliformis								FJ151422		KM495443					FJ151478		FJ151456
+CBS 118128	Ceratocystis pirilliformis								NR_119452,AF427105			KJ601594		KJ601630		AY528983	DQ371653
+CBS 118190	Colletotrichum agaves								DQ286221
+CBS 118194	Colletotrichum phormii	JQ949767			JQ949107	JQ948777		JQ949437	JQ948446									JQ950097
+CBS 118199	Colletotrichum dracaenophilum	JX519238			JX519230	JX546707		JX546756	DQ286209,JX519222									JX519247
+CBS 118223	Neofusicoccum macroclavatum								DQ093196					KX464022		DQ093217		DQ093206
+CBS 118532	Neofusicoccum mangiferae								AY615186					KX464023		DQ093220		AY615173
+CBS 119.78	Ceratocystis harringtonii								EF070418							EF070406	EF070434
+CBS 119206	Colletotrichum rusci	GU227916			GU228308	GU228210		GU228014	GU227818									GU228112
+CBS 119412	Cladosporium psychrotolerans	EF101365							DQ780386							JN906992
+CBS 119413	Cladosporium salinae	EF101390							DQ780374							JN906993
+CBS 119414	Cladosporium fusiforme	EF101372							DQ780388							JN906988
+CBS 119415	Cladosporium dominicanum	EF101368							DQ780353							JN906986
+CBS 119416	Cladosporium halotolerans	EF101397							DQ780364							JN906989
+CBS 119417	Cladosporium velox	EF101388							DQ780361							JN906995
+CBS 119444	Colletotrichum liriopes	GU227902			GU228294	GU228196		GU228000	GU227804									GU228098
+CBS 119907	Cladosporium spinulosum	EF679542							EF679388							EF679466
+CBS 119951	Plenodomus biglobosus								JF740198					KY064037				KY064054
+CBS 120030	Harknessia ipereniae			JQ706192					EF110614									JQ706151
+CBS 120033	Harknessia gibbosa			JQ706182					EF110615									JQ706142
+CBS 120081	Neofusicoccum corticosae								DQ923533					KX464013		KX464682		KX464958
+CBS 120119	Plenodomus wasabiae								JF740257									KT266272
+CBS 120227	Plenodomus collinsoniae								JF740200					KY064039				KY064056
+CBS 120486	Phyllosticta citriasiana	FJ538476				JF343686			FJ538360							FJ538418
+CBS 120518	Ceratocystis atrox								NR_136981,EF070415							EF070403	EF070431
+CBS 120863	Phaeoacremonium africanum	EU128142																EU128100
+CBS 121.89	Plenodomus agnitus								JF740194					KY064036				KY064053
+CBS 121004	Diaporthe bicincta			KC343376				KC343618	KC343134							KC343860		KC344102
+CBS 121018	Ceratocystis tsitsikammensis								NR_119633,EF408555							EF408576	EF408569
+CBS 121112	Neofusicoccum pruni								EF445349					KX464034		EF445391		KX465016
+CBS 121151	Huntiella savannae								EF408551		KM495462					EF408572		EF408565
+CBS 121403	Neofabraea actinidiae								KR859079					KR859319				KR859285
+CBS 121621	Cladosporium herbarum	EF679516							EF679363							EF679440
+CBS 121623	Cladosporium macrocarpum	EF679529							EF679375							EF679453
+CBS 121624	Cladosporium allicinum	EF679502							EF679350							EF679425
+CBS 121626	Cladosporium herbaroides	EF679509							EF679357							EF679432
+CBS 121628	Cladosporium ramotenellum	EF679538							EF679384							EF679462
+CBS 121629	Cladosporium sinuosum	EF679540							EF679386							EF679464
+CBS 121630	Cladosporium subinflatum	EF679543							EF679389							EF679467
+CBS 121634	Cladosporium tenellum	EF679555							EF679401							EF679479
+CBS 121635	Cladosporium variabile	EF679556							EF679402							EF679480
+CBS 121659	Ceratocystis manginecans								NR_119532,AY953383			KJ601584		KJ601620		EF433317 	EF433308
+CBS 121718	Neofusicoccum mediterraneum								EU04022					KX464024
+CBS 121786	Ceratocystis fimbriatomima								EF190963			KJ601579		KJ601615		EF190957	EF190951
+CBS 121789	Ceratocystis neglecta								NR_137552,EF127990			KJ601588		KJ601624		EU881904	EU881898
+CBS 121792	Ceratocystis colombiana								NR_119483,AY177233			KJ601567		KJ601603		EU241493	AY177225
+CBS 121793	Ceratocystis papillata								NR_119486,AY233867			KJ601590		KJ601626		EU241484	AY233874
+CBS 122.21	Diaporthe batatas			KC343282				KC343524	KC343040							KC343766		KC344008
+CBS 122030	Neofabraea malicorticis								KR859086					KR859326				KR859291
+CBS 122122	Colletotrichum simmondsii	JQ949597		FJ917510	JQ948937	JQ948606	FJ972591	JQ949267	JQ948276									JQ949927
+CBS 122129	Cladosporium funiculosum	HM148583							HM148094							HM148338
+CBS 122289	Ceratocystis polyconidia								EU245006							EU244938	EU244978
+CBS 122291	Huntiella oblonga								EU245019		KM495447					EU244951		EU244991
+CBS 122293	Ceratocystis tanganyicensis								NR_137555,EU244999							EU244931	EU244971
+CBS 122299	Huntiella ceramica								EU245022		KM495485					EU244926		EU244994
+CBS 122373	Harknessia rhabdosphaera			JQ706201					JQ706118									JQ706161
+CBS 122511	Ceratocystis obpyriformis								EU245003							EU244935	EU244975
+CBS 122512	Ceratocystis larium								NR_137016,EU881906               							EU881900	EU881894
+CBS 122517	Huntiella sublaevis								FJ151431		KM495464					FJ151486		FJ151465
+CBS 122603	Ceratocystis curvata								NR_137018, FJ151436			KJ601570		KJ601606		FJ151470	FJ151448
+CBS 122676	Diaporthe cynaroidis			KC343300				KC343542	KC343058							KC343784		KC344026
+CBS 122783	Plenodomus visci								JF740256					KY064050				KY064063
+CBS 122885	Microdochium lycopodinum								KP859016					KP859125				KP859079
+CBS 123013	Ceratocystis diversiconidia								FJ151440			KJ601571		KJ601607		FJ151474	FJ151452
+CBS 123033	Phaeoacremonium tuscanicum	EU863490																EU863458
+CBS 123034	Phaeoacremonium sicilianum	EU863520																EU863488
+CBS 123036	Phaeoacremonium hungaricum	EU863515																EU863483
+CBS 123037	Phaeoacremonium croatiense	EU863514																EU863482
+CBS 123183	Calonectria machaerinae								KY653261	KY653317				KY653407		KX784706		KX784636
+CBS 123191	Cladosporium echinulatum	JN906999							JN906980							JN906987
+CBS 123212	Diaporthe lusitanicae			KC343378				KC343620	KC343136							KC343862		KC344104
+CBS 123402	Calonectria polizzii							FJ972438								FJ972488		FJ972419
+CBS 123634	Neofusicoccum cordaticola								EU821898					EU821928		EU821868		EU821838
+CBS 123639	Neofusicoccum kwambonambiense								EU821900					EU821930		EU821870		EU821840
+CBS 123645	Neofusicoccum umdonicola								EU821904					EU821934		EU821874		EU821844
+CBS 123693	Calonectria cerciana			GQ267369				FJ918528	GQ280559	GQ280681						FJ918559		FJ918510
+CBS 123694	Calonectria pseudoreteaudii			GQ267411				FJ918519	GQ280614	GQ280736						FJ918541		FJ918504
+CBS 123698	Calonectria pini			GQ267436				GQ267273	GQ280639	GQ280761						GQ267344		GQ267224
+CBS 123700	Calonectria brachiatica			GQ267366				FJ696396	GQ280555	GQ280677						GQ267296		FJ696388
+CBS 123755	Colletotrichum boninense	JQ005501		JQ005674	JQ005327	JQ005240		JQ005414	JQ005153									JQ005588
+CBS 123909	Phaeoacremonium cinereum	FJ517153																FJ517161
+CBS 123910	Phaeoacremonium hispanicum	FJ517156																FJ517164
+CBS 124011	Huntiella sumatrana								EU588589		KM495465					EU588678		EU588668
+CBS 124013	Huntiella microbasis								EU588593		KM495442					EU588680		EU588672
+CBS 124016	Ceratocystis eucalypticola								FJ236723			KJ601576		KJ601612		FJ236753	FJ236783
+CBS 124020	Ceratocystis ecuadoriana								FJ151432			KJ601573		KJ601609		FJ151466	FJ151444
+CBS 124030	Diaporthe perniciosa			KC343391				KC343633	KC343149							KC343875		KC344117
+CBS 124043	Cladosporium arthropodii	JN906998							JN906979							JN906985
+CBS 124388	Huntiella inquinans								EU588587		KM495436					EU588674		EU588666
+CBS 124456	Cladosporium pini-ponderosae	FJ936167							FJ936160							FJ936164
+CBS 124457	Cladosporium chubutense	FJ936165							FJ936158							FJ936161
+CBS 124654	Diaporthe convolvuli			KC343296				KC343538	KC343054							KC343780		KC344022
+CBS 124924	Neofusicoccum batangarum								FJ900607					FJ900615		FJ900653		FJ900634
+CBS 125.25	Colletotrichum dematium	GU227917			GU228309	GU228211		GU228015	GU227819									GU228113
+CBS 125251	Calonectria humicola			GQ267445				GQ267282	GQ280648	GQ280770						GQ267353		GQ267233
+CBS 125257	Calonectria pseudoscoparia			GQ267441				GQ267278	GQ280644	GQ280766						GQ267349		GQ267229
+CBS 125260	Calonectria orientalis			GQ267448				GQ267285	GQ267651	GQ280773						GQ267356		GQ267236
+CBS 125261	Calonectria densa			GQ267444				GQ267281	GQ280647	GQ280769						GQ267352		GQ267232
+CBS 125268	Calonectria zuluensis			GQ267459				FJ972433	GQ280664	GQ280786						FJ972483		FJ972414
+CBS 125275	Calonectria eucalypti			GQ267430				GQ267267	GQ280633	GQ280755						GQ267338		GQ267218
+CBS 125277	Calonectria sulawesiensis			GQ267434				GQ267271	GQ280637	GQ280759						GQ267342		GQ267222
+CBS 125334	Colletotrichum anthrisci	GU227943			GU228335	GU228237		GU228041	GU227845									GU228139
+CBS 125337	Colletotrichum lineola	GU227927			GU228319	GU228221		GU228025	GU227829									GU228123
+CBS 125375	Colletotrichum cliviae	GQ856777			GQ856722	GQ856756		JX560963	GQ485607									GQ849440
+CBS 125376	Colletotrichum hippeastri	JQ005579		JQ005752	JQ005405	JQ005318		JQ005492	JQ005231									JQ005665
+CBS 125472	Colletotrichum walleri	JQ949596			JQ948936	JQ948605		JQ949266	JQ948275									JQ949926
+CBS 125478	Colletotrichum vietnamense	KF687792		KF687816	KF687769	KF687832	KF687753	KF687855	KF687721									KF687877
+CBS 125982	Cladosporium acalyphae	HM148481							HM147994							HM148235
+CBS 125983	Cladosporium angustisporum	HM148482							HM147995							HM148236
+CBS 125984	Cladosporium australiense	HM148486							HM147999							HM148240
+CBS 125985	Cladosporium chalastosporoides	HM148488							HM148001							HM148242
+CBS 125986	Cladosporium exasperatum	HM148579							HM148090							HM148334
+CBS 125987	Cladosporium exile	HM148580							HM148091							HM148335
+CBS 125988	Cladosporium hillianum	HM148586							HM148097							HM148341
+CBS 125989	Cladosporium gamsianum	HM148584							HM148095							HM148339
+CBS 125990	Cladosporium licheniphilum	HM148600							HM148111							HM148355
+CBS 125991	Cladosporium oxysporum	HM148607							HM148118							HM148362
+CBS 125992	Cladosporium phyllophilum	HM148643							HM148154							HM148398
+CBS 125993	Cladosporium pseudocladosporioides	HM148647							HM148158							HM148402
+CBS 125994	Cladosporium rectoides	HM148683							HM148193							HM148438
+CBS 125995	Cladosporium tenuissimum	HM148687							HM148197							HM148442
+CBS 125996	Cladosporium perangustum	HM148610							HM148121							HM148365
+CBS 125997	Cladosporium xylophilum	HM148721							HM148230							HM148476
+CBS 126.22	Phyllosticta elongata	FJ538469				KF289164			FJ538353							FJ538411
+CBS 126.93	Boeremia strasseri	EU880904		KY484631					GU237773					KT389584		KY484735		GU237518
+CBS 126340	Cladosporium asperulatum	HM148485							HM147998							HM148239
+CBS 126344	Cladosporium delicatulum	HM148570							HM148081							HM148325
+CBS 126345	Cladosporium flabelliforme	HM148581							HM148092							HM148336
+CBS 126346	Cladosporium iranicum	HM148599							HM148110							HM148354
+CBS 126350	Cladosporium myrtacearum	HM148606							HM148117							HM148361
+CBS 126352	Cladosporium phyllactiniicola	HM148639							HM148150							HM148394
+CBS 126358	Cladosporium scabrellum	HM148685							HM148195							HM148440
+CBS 126362	Cladosporium varians	HM148715							HM148224							HM148470
+CBS 126363	Cladosporium verrucocladosporioides	HM148717							HM148226							HM148472
+CBS 126461	Neofabraea kienholzii								KR859082					KR859322				KR859288
+CBS 126500	Cladosporium subuliforme	HM148686							HM148196							HM148441
+CBS 126529	Colletotrichum scovillei	JQ949588			JQ948928	JQ948597		JQ949258	JQ948267									JQ949918
+CBS 126655	Neofusicoccum nonquaesitum								GU251163					KX464025		GU251295		GU251823
+CBS 126679	Diaporthe amygdali			KC343264				KC343506	KC343022							KC343748		KC343990
+CBS 127.14	Diaporthe vexans			KC343471				KC343713	KC343229							KC343955		KC344197
+CBS 127185	Huntiella chinaeucensis								JQ862729		KM495416					JQ862741		JQ862717
+CBS 127195	Calonectria pseudocolhounii							HQ285802								HQ285816		HQ285788
+CBS 127198	Calonectria crousiana							HQ285808								HQ285822		HQ285794
+CBS 127201	Calonectria fujianensis							HQ285806								HQ285820		HQ285792
+CBS 127215	Ceratocystis corymbiicola								NR_119830, HM071902               							HQ236453	HM071914
+CBS 127268	Diaporthe caulivora			KC343287				KC343529	KC343045							KC343771		KC344013
+CBS 127271	Diaporthe novem			KC343399				KC343641	KC343157							KC343883		KC344125
+CBS 127454	Phyllosticta citricarpa	JF343667				JF343771			JF343583							JF343604
+CBS 127551	Colletotrichum indonesiense	JQ949609			JQ948949	JQ948618		JQ949279	JQ948288									JQ949939
+CBS 127604	Colletotrichum lentis	JQ005829			JQ005787	KM105597		JQ005808	JQ005766									JQ005850
+CBS 127716	Bipolaris variabilis					KY905688			KY905676							KY905696
+CBS 128.31	Oculimacula yallundae								MG934457							MG934499
+CBS 128.57	Colletotrichum spinaceae	GU227945			GU228337	GU228239		GU228043	GU227847									GU228141
+CBS 128008	Neofusicoccum occulatum								EU301030					EU339558		EU339509		EU339472
+CBS 128340	Ceratocystis mangivora								FJ200262			KJ601587		KJ601623		FJ200288	FJ200275
+CBS 128501	Colletotrichum brasiliense	JQ005583		JQ005756	JQ005409	JQ005322		JQ005496	JQ005235									JQ005669
+CBS 128504	Colletotrichum constrictum	JQ005586		JQ005759	JQ005412	JQ005325		JQ005499	JQ005238									JQ005672
+CBS 128505	Colletotrichum novae-zelandiae	JQ005576		JQ005749	JQ005402	JQ005315		JQ005489	JQ005228									JQ005662
+CBS 128517	Colletotrichum fioriniae	JQ949613			JQ948953	JQ948622		JQ949283	JQ948292									JQ949943
+CBS 128525	Colletotrichum parsonsiae	JQ005581		JQ005754	JQ005407	JQ005320		JQ005494	JQ005233									JQ005667
+CBS 128527	Colletotrichum beeveri	JQ005519		JQ005692	JQ005345	JQ005258		JQ005432	JQ005171									JQ005605
+CBS 128530	Colletotrichum acerbum	JQ949780			JQ949120	JQ948790		JQ949450	JQ948459									JQ950110
+CBS 128531	Colletotrichum pyricola	JQ949766			JQ949106	JQ948776		JQ949436	JQ948445									JQ950096
+CBS 128532	Colletotrichum johnstonii	JQ949765			JQ949105	JQ948775		JQ949435	JQ948444									JQ950095
+CBS 128544	Colletotrichum torulosum	JQ005512		JQ005685	JQ005338	JQ005251		JQ005425	JQ005164									JQ005598
+CBS 128570	Phaeoacremonium amygdalinum	JN191303																JN191307
+CBS 128703	Huntiella tyalla								HM071900		KM495470					HQ236452		HM071913
+CBS 128769	Cladosporium phaenocomae	JF499881							JF499837							JF499875
+CBS 128855	Phyllosticta bifrenariae	JF343649				JF343744			JF343565							JF343586
+CBS 128856	Phyllosticta capitalensis	JF343647				JF343776			JF261465							JF261507
+CBS 128992	Ceratocystis albifundus								DQ520638							EF070400	EF070429
+CBS 129060	Phyllosticta brazillianiae	JF343656				JF343758			JF343572							JF343593
+CBS 129518	Neofusicoccum grevilleae								JF951137
+CBS 129519	Diaporthe musigena			KC343385				KC343627	KC343143							KC343869		KC344111
+CBS 129521	Diaporthe acaciigena			KC343247				KC343489	KC343005							KC343731		KC343973
+CBS 129553	Cylindrocladiella cymbiformis							JN098866	JN099103	JN099143						JN098988		JN098753
+CBS 129555	Cylindrocladiella pseudocamelliae							JN098843	JN100577	JN099256						JN098958		JN098814
+CBS 129557	Cylindrocladiella longiphialidica							JN098851	JN100585	JN099264						JN098966		JN098790
+CBS 129561	Cylindrocladiella variabilis							JN098950	JN100643	JN099242						JN099080		JN098719
+CBS 129564	Cylindrocladiella clavata							JN098858	JN099095	JN099135						JN098974		JN098752
+CBS 129566	Cylindrocladiella lanceolata							JN098862	JN099099	JN099139						JN098978		JN098789
+CBS 129567	Cylindrocladiella australiensis							JN098932	JN100624	JN099222						JN099060		JN098747
+CBS 129569	Cylindrocladiella hawaiiensis							JN098929	JN100621	JN099219						JN099057		JN098761
+CBS 129571	Cylindrocladiella thailandica							JN098848	JN100582	JN099261						JN098963		JN098834
+CBS 129573	Cylindrocladiella ellipsoidea							JN098857	JN099094	JN099134						JN098973		JN098757
+CBS 129574	Cylindrocladiella queenslandica							JN098861	JN099098	JN099098						JN098977		JN098826
+CBS 129577	Cylindrocladiella kurandica							JN098953	JN100646	JN099245						JN099083		JN098765
+CBS 129733	Huntiella salinaria								HQ203213		KM495461					HQ236432		HQ203230
+CBS 129736	Huntiella decipiens								HQ203216		KM495422					HQ236435		HQ203233
+CBS 129814	Colletotrichum tamarilloi	JQ949505			JQ948845	JQ948514		JQ949175	JQ948184									JQ949835
+CBS 129818	Colletotrichum colombiense	JQ005522		JQ005695	JQ005348	JQ005261		JQ005435	JQ005174									JQ005608
+CBS 129826	Colletotrichum annellatum	JQ005570		JQ005743	JQ005396	JQ005309		JQ005483	JQ005222									JQ005656
+CBS 129828	Colletotrichum oncidii	JQ005517		JQ005690	JQ005343	JQ005256		JQ005430	JQ005169									JQ005603
+CBS 129953	Colletotrichum rhombiforme	JQ949778			JQ949118	JQ948788		JQ949448	JQ948457									JQ950108
+CBS 130241	Colletotrichum dacrycarpi	JQ005584		JQ005757	JQ005410	JQ005323		JQ005497	JQ005236									JQ005670
+CBS 130243	Colletotrichum utrechtense	KM105411			KM105271	KM105554		KM105341	KM105201									KM105481
+CBS 130354	Calonectria pseudomexicana							JN607266								JN607496		JN607281
+CBS 130357	Calonectria tunisiana							JN607261								JN607291		JN607276
+CBS 130529	Phyllosticta citrichinaensis	JN791526							JN791597							JN791452
+CBS 130642	Colletotrichum hemerocallidis	JQ399991		KJ781319	JQ399998	JQ400012			JQ400005									JQ400019
+CBS 131274	Curvularia malina					KP153179			JF812154							KR493095
+CBS 131279	Huntiella cryptoformis								KC691464							KC691512		KC691488
+CBS 131280	Ceratocystis zambeziensis  								KC691458							KC691506	KC691482
+CBS 131284	Ceratocystis thulamelensis 								KC691456							KC691504	KC691480
+CBS 131306	Diaporthe ceratozamiae								JQ044420
+CBS 131309	Phyllosticta hymenocallidicola	KF289242				KF289142			JQ044423							KF289211
+CBS 131594	Coniella tibouchinae								JQ281774					KX833507		JQ281778
+CBS 131802	Calonectria nymphaeae															KC555273		JN984864
+CBS 132.21	Monilinia laxa								KX982699							LT632537
+CBS 132.81	Dichotomophthora lutea					LT990667			LT990651					LT990637
+CBS 132119	Harknessia australiensis			JQ706171					JQ706085									JQ706130
+CBS 132121	Harknessia ellipsoidea			JQ706173					JQ706087									JQ706132
+CBS 132124	Harknessia pseudohawaiiensis			JQ706196					JQ706111									JQ706155
+CBS 132125	Harknessia ravenstreetina			JQ706197					JQ706112									JQ706156
+CBS 132127	Harknessia spermatoidea			JQ706203					JQ706120									JQ706163
+CBS 132128	Harknessia weresubiae			JQ706205					JQ706122									JQ706165
+CBS 132134	Colletotrichum karstii	HM581995		HM582013	HM582023	HM585391			HM585409									HM585428
+CBS 132135	Colletotrichum yunnanense	JX519239			JX519231	JX546706		JX546755	EF369490,JX546804									JX519248
+CBS 132186	Cladosporium soldanellae	JN907001							JN906982							JN906994
+CBS 132511	Colletotrichum arxii	KF687802		KF687819	KF687780	KF687843	KF687756	KF687858	KF687716									KF687881
+CBS 132525	Diaporthe eucalyptorum								JX069862
+CBS 132527	Diaporthe passiflorae			KY435664				KY435654	JX069860							KY435633		KY435674
+CBS 132530	Coniella wangiensis								JX069873					KX833509		KX833705
+CBS 132533	Diaporthe canthii			KC843174					JX069864							KC843120		KC843230
+CBS 132534	Phyllosticta ericarum	KF289291				KF289162			KF206170							KF289227
+CBS 132550	Bipolaris microstegii					JX089575			JX089579							KM093756
+CBS 132581	Phyllosticta maculata								JQ743570
+CBS 132693	Colletotrichum tanaceti	JX218238			JX259268	JX218243			JX218228									JX218233
+CBS 132879	Colletotrichum grevilleae	KC296941		KC296963	KC296987	KC297010	KC297033	KC297056	KC297078									KC297102
+CBS 132882	Colletotrichum proteae	KC296940		KC296960	KC296986	KC297009		KC297045	KC297079						KC297032			KC297101
+CBS 133122	Colletotrichum temperatum		JX145298						JX145159									JX145211
+CBS 133125	Colletotrichum fructivorum		JX145300						JX145145									JX145196
+CBS 133134	Colletotrichum rhexiae		JX145290						JX145128									JX145179
+CBS 133180	Diaporthe terebinthifolii			KC343458				KC343700	KC343216							KC343942		KC344184
+CBS 133181	Diaporthe schini			KC343433				KC343675	KC343191							KC343917		KC344159
+CBS 133182	Diaporthe raonikayaporum			KC343430				KC343672	KC343188							KC343914		KC344156
+CBS 133183	Diaporthe brasiliensis			KC343284				KC343526	KC343042							KC343768		KC344010
+CBS 133184	Diaporthe paranensis			KC343413				KC343655	KC343171							KC343897		KC344139
+CBS 133185	Diaporthe mayteni			KC343381				KC343623	KC343139							KC343865		KC344107
+CBS 133186	Diaporthe oxe			KC343406				KC343648	KC343164							KC343890		KC344132
+CBS 133266	Colletotrichum gigasporum				KF687761	KF687822		KF687844	AM982797,KF687715									FN557442,KF687866
+CBS 133349	Calonectria pentaseptata							JX855946	JX855950	JX855954						JX855958		JX855942
+CBS 13344	Colletotrichum godetiae	JQ949723			JQ949063	JQ948733		JQ949393	JQ948402									JQ950053
+CBS 133603	Calonectria metrosideri			KC294304				KC294308								KC294310		KC294313
+CBS 133609	Calonectria hodgesii			KC491222												KC491225		KC491228
+CBS 133701	Colletotrichum fuscum	KM105384			KM105244	KM105524		KM105314	KM105174									KM105454
+CBS 133811	Diaporthe endophytica			KC343307				KC343549	KC343065							KC343791		KC344033
+CBS 133812	Diaporthe infecunda			KC343368				KC343610	KC343126							KC343852		KC344094
+CBS 133813	Diaporthe inconspicua			KC343365				KC343607	KC343123							KC343849		KC344091
+CBS 134228	Colletotrichum citricola	KC293616		KC293696	KC293792	KC293736	KC293776		KC293576									KC293656
+CBS 134233	Colletotrichum citri	KC293621		KC293701		KC293741	KC293781		KC293581									KC293661
+CBS 134240	Diaporthe citriasiana			KC357491				MF418282	JQ954645							JQ954663		KC357459
+CBS 134242	Diaporthe citrichinensis			KC357494				KJ420880	JQ954648							JQ954666		MF418524
+CBS 134652	Calonectria robigophila			KM396024				KM396107								KM395850		KM395937
+CBS 134654	Calonectria quinqueramosa			KM396029				KM396112								KM395855		KM395942
+CBS 134656	Calonectria duoramosa			KM396027												KM395853		KM395940
+CBS 134662	Calonectria pseudobrassicae			KM396023				KM396106								KM395849		KM395936
+CBS 134664	Calonectria telluricola			KM396017				KM396100								KM395843		KM395930
+CBS 134669	Calonectria paraensis			KM396011				KM396094								KM395837		KM395924
+CBS 134675	Calonectria pseudovata			KM396033				KM396116								KM395859		KM395946
+CBS 134725	Colletotrichum euphorbiae	KF777125			KF777128	KF777131		KF777134	KF777146									KF777247
+CBS 134729	Colletotrichum paranaense	KC205077			KC205043	KC205026		KC205004	KC204992									KC205060
+CBS 134750	Phyllosticta neopyrolae	AB704233							AB454318
+CBS 134811	Calonectria maranhensis			KM396035				KM396118								KM395861		KM395948
+CBS 134815	Calonectria propaginicola			KM396040				KM396123								KM395866		KM395953
+CBS 134818	Calonectria pseudohodgesii			KM395991				KM396079								KM395817		KM395905
+CBS 134824	Calonectria pseudocerciana			KM396049				KM396132								KM395875		KM395962
+CBS 134837	Calonectria nemicola			KM396066				KM396149								KM395892		KM395979
+CBS 134841	Calonectria pseudospathulata			KM396070				KM396153								KM395896		KM395983
+CBS 134845	Calonectria pseudometrosideri			KM395995				KM396083								KM395821		KM395909
+CBS 134847	Calonectria eucalypticola			KM396051				KM396134								KM395877		KM395964
+CBS 134850	Calonectria piauiensis			KM396060				KM396143								KM395886		KM395973
+CBS 134852	Calonectria glaeboicola			KM396053				KM396136								KM395879		KM395966
+CBS 134855	Calonectria brassiana			KM396056				KM396139								KM395882		KM395969
+CBS 134858	Calonectria multinaviculata			KM396072				KM396155								KM395898		KM395985
+CBS 135100	Paraphoma dioscoreae								KF251167					KF252175		KF253125		KF252662
+CBS 135237	Calonectria silvicola			KM396065				KM396148								KM395891		KM395978
+CBS 135422	Diaporthe citri			KC843157				MF418281	KC843311							KC843071		KC843187
+CBS 135819 	Colletotrichum sydowii	KY263791			KY263787	KY263785		KY263789	KY263783									KY263793
+CBS 135941	Curvularia carica-papayae					HG779146			HG778984
+CBS 136058	Phyllosticta aloeicola	KF289311				KF289124			KF154280							KF289193
+CBS 136059	Phyllosticta citrimaxima	KF289300				KF289157			KF170304							KF289222
+CBS 136060	Phyllosticta cussonia	JF343662				JF343764			JF343578							JF343599
+CBS 136061	Phyllosticta mangiferae-indicae	KF289296				KF289121			KF170305							KF289190
+CBS 136062	Phyllosticta vacciniicola	KF289287				KF289165			KF170312							KF289229
+CBS 136073	Phyllosticta leucothoicola	KF289310							AB454370
+CBS 136077	Calonectria turangicola							KJ463246	KY653287	KY653343						KJ462900		KJ463013
+CBS 136079	Calonectria arbusta			KJ463018				KJ463135								KJ462787		KJ462904
+CBS 136081	Calonectria sphaeropendunculata			KJ463120				KJ463236								KJ462890		KJ463003
+CBS 136085	Calonectria parakyotensis			KJ463081				KJ463197								KJ462851
+CBS 136086	Calonectria aconidialis			KJ463017				KJ463133								KJ462785
+CBS 136092	Calonectria guangxiensis			KJ463034				KJ463151								KJ462803		KJ462919
+CBS 136097	Calonectria papillata			KJ463079				KJ463195	KY653267	KY653323				KY653422		KJ462849		KJ462964
+CBS 136207	Bipolaris drechsleri					KF500533			KF500530							KM093760
+CBS 136228	Colletotrichum destructivum	KM105417			KM105277	KM105561		KM105347	KM105207									KM105487
+CBS 136232	Colletotrichum americae-borealis	KM105434			KM105294	KM105579		KM105364	KM105224									KM105504
+CBS 136244	Phyllosticta cordylinophila	KF289295				KF289076			KF170287							KF289172
+CBS 136247	Calonectria expansa			KJ463029				KJ463146								KJ462798		KJ462914
+CBS 136248	Calonectria hainanensis			KJ463036				KJ463152								KJ462805
+CBS 136249	Calonectria magnispora			KJ463071				KJ463187								KJ462841		KJ462956
+CBS 136412	Diaporthe psoraleae								KF777158							KF777245		KF777251
+CBS 136413	Diaporthe psoraleae-pinnatae								KF777159									KF777252
+CBS 136425	Calonectria blephiliae								KF777141	KF777197						KF777243		KF777246
+CBS 136426	Harknessia proteae								KF777162
+CBS 136433	Pilidium pseudoconcavum								KF777184	KF777236
+CBS 136440	Diaporthe cassines								KF777155							KF777244
+CBS 136441	Diaporthe maytenicola								KF777157									KF777250
+CBS 136552	Diaporthe diospyricola								KF777156
+CBS 136629	Calonectria lateralis			KJ463070				KJ463186	KY653258	KY653314				KY653402		KJ462840		KJ462955
+CBS 136632	Calonectria seminaria			KJ463115				KJ463231	KY653279	KY653335				KY653446		KJ462885		KJ462998
+CBS 136635	Calonectria tetraramosa			KJ463128				KJ463244	KY653282	KY653338				KY653453		KJ462898		KJ463011
+CBS 136638	Calonectria microconidialis			KJ463075				KJ463191	KY653262	KY653318				KY653411		KJ462845		KJ462960
+CBS 136641	Calonectria foliicola			KJ463031				KJ463148								KJ462800		KJ462916
+CBS 136642	Calonectria terrestris			KJ463121				KJ463237								KJ462891		KJ463004
+CBS 136967	Diaporthe asheicola			KJ160542					KJ160562							KJ160594		KJ160518
+CBS 136969	Diaporthe sterilis			KJ160548				MF418350	KJ160579							KJ160611		KJ160528
+CBS 136972	Diaporthe baccae							MF418264	KJ160565							KJ160597		MF418509
+CBS 136976	Calonectria pluriramosa			KJ463112				KJ463228	KY653272	KY653328				KY653431		KJ462882		KJ462995
+CBS 136985	Curvularia hominis					HG779106			HG779011
+CBS 137020	Diaporthe cytosporella			KC843141				MF418283	KC843307							KC843116		KC843221
+CBS 137228	Harknessia arctostaphyli								KJ152781									KJ179923
+CBS 137243	Calonectria mossambicensis			JX570722				JX570726	JX570730							JX570718
+CBS 13727	Diaporthe acerina			KC343248				KC343490	KC343006							KC343732		KC343974
+CBS 137271	Bipolaris maydis					KM034846			AF071325							KM093794
+CBS 13729	Curvularia kusanoi								JN192381							JN601016
+CBS 137332	Calonectria pseudokyotensis			KJ463111				KJ463227								KJ462881		KJ462994
+CBS 137497	Phaeoacremonium luteum	KF835406																KF823800
+CBS 137498	Phaeoacremonium santali	KF835403																KF823797
+CBS 137504	Neofusicoccum algeriense								KJ657702							KJ657715
+CBS 137763	Phaeoacremonium italicum	KJ534046																KJ534074
+CBS 137980	Coniella pseudogranati								KJ869132
+CBS 137981	Diaporthe isoberliniae								KJ869133									KJ869245
+CBS 137985	Diaporthe vangueriae								KJ869137									KJ869247
+CBS 137986	Diaporthe parapterocarpi								KJ869138									KJ869248
+CBS 138.27	Diaporthe beckhausii			KC343283				KC343525	KC343041							KC343767		KC344009
+CBS 138.40	Cladosporium iridis	EF679523							EF679370							EF679447
+CBS 138102	Calonectria henricotiae			KF815157				KF815185	JX535322									JX535308
+CBS 138594	Diaporthe eres			KJ434999				KJ420850	KJ210529							KJ210550		KJ420799
+CBS 138596	Diaporthe helicis			KJ435043				KJ420875	KJ210538							KJ210559		KJ420828
+CBS 138788	Diaporthe virgiliae								KP247573									KP247582
+CBS 138823	Neofusicoccum parvum								AY236943					EU821963		AY236888		AY236917
+CBS 138824	Calonectria pauciramosa			GQ267405				FJ918531	GQ280608	GQ280730				KY653426		FJ918565		FJ918514
+CBS 138862	Diaporthe acaciarum							KP004504	KP004460									KP004509
+CBS 138897	Diaporthe phragmitis							KP004503	KP004445									KP004507
+CBS 138899	Phyllosticta mimusopisicola								KP004447
+CBS 13923	Monilinia mespili								KX982702							LT632540
+CBS 13927	Diaporthe celastrina			KC343289				KC343531	KC343047							KC343773		KC344015
+CBS 139282	Diaporthe sojae			KJ612116				KJ659208	KJ590719							KJ590762		KJ610875
+CBS 139654	Ceratocystis cercfabiensis								KP727592,KP727593,KP727594							KP727643	KP727618
+CBS 139679	Ceratocystis collisensis								KP727578							KP727639	KP727614
+CBS 139893	Coniella eucalyptigena								KR476725
+CBS 139918	Colletotrichum neosansevieriae	KR476790				KR476791		KR476792	KR476747									KR476797
+CBS 139951	Microdochium seminicola								KP859038					KP859147				KP859101
+CBS 140003	Diaporthe spartinicola							KR857696	KR611879									KR857695
+CBS 140462	Cladosporium flavovirens	LN834624							LN834440							LN834536
+CBS 140463	Cladosporium floccosum	LN834600							LN834416							LN834512
+CBS 140465	Cladosporium subcinereum	LN834529							LN834433							LN834617
+CBS 140466	Cladosporium succulentum	LN834618							LN834434							LN834530
+CBS 140479	Cladosporium angustiherbarum	KT600574							KT600378							KT600475
+CBS 140480	Cladosporium angustiterminale	KT600575							KT600379							KT600476
+CBS 140481	Cladosporium austroafricanum	KT600577							KT600381							KT600478
+CBS 140482	Cladosporium austrohemisphaericum	KT600578							KT600382							KT600479
+CBS 140483	Cladosporium ipereniae	KT600589							KT600394							KT600491
+CBS 140484	Cladosporium limoniforme	KT600592							KT600397							KT600494
+CBS 140485	Cladosporium longicatenatum	KT600598							KT600403							KT600500
+CBS 140486	Cladosporium montecillanum	KT600602							KT600406							KT600504
+CBS 140487	Cladosporium parapenidielloides	KT600606							KT600410							KT600508
+CBS 140488	Cladosporium aciculare	KT600607							KT600411							KT600509
+CBS 140489	Cladosporium penidielloides	KT600608							KT600412							KT600510
+CBS 140490	Cladosporium pseudochalastosporioides	KT600611							KT600415							KT600513
+CBS 140491	Cladosporium versiforme	KT600613							KT600417							KT600515
+CBS 140492	Cladosporium rhusicola	KT600637							KT600440							KT600539
+CBS 140493	Cladosporium aggregatocicatricatum	KT600645							KT600448							KT600547
+CBS 140494	Cladosporium ruguloflabelliforme	KT600655							KT600458							KT600557
+CBS 140495	Cladosporium rugulovarians	KT600656							KT600459							KT600558
+CBS 140645	Calonectria monticola			KT964771					KT964775	KT983443						KT964773		KT964769
+CBS 140662	Pilidium eucalyptorum								KT950854	KT950868
+CBS 140685	Cladosporium antropophilum	LN834621							LN834437							LN834533
+CBS 140686	Cladosporium crousii	LN834615							LN834431							LN834527
+CBS 140690	Cladosporium alboflavescens	LN834604							LN834420							LN834516
+CBS 140691	Cladosporium xanthochromaticum	LN834599							LN834415							LN834511
+CBS 140692	Cladosporium angulosum	LN834609							LN834425							LN834521
+CBS 140693	Cladosporium tuberosum	LN834601							LN834417							LN834513
+CBS 141.31	Bipolaris setariae					EF513206			EF452444
+CBS 141284	Colletotrichum ledebouriae	KX228357						KX228365	KX228254
+CBS 141292	Coniella paracastaneicola								KX833591					KX833498		KX833693
+CBS 141329	Diaporthe passifloricola							KX228367	KX228292									KX228387
+CBS 141330	Diaporthe ocoteae								KX228293									KX228388
+CBS 141331	Diaporthe cissampeli							KX228366	KX228273									KX228384
+CBS 141353	Phyllosticta paracapitalensis	KY855677				KY855735			KY855622							KY855951
+CBS 141357	Phyllosticta paracitricarpa	KY855690				KY855748			KY855635							KY855964
+CBS 141377	Gaeumannomyces californicus								KX306490				KX306625			KX306691
+CBS 141378	Gaeumannomyces floridanus								KX306491				KX306626			KX306693
+CBS 141379	Gaeumannomyces fusiformis								KX306492				KX306627			KX306694
+CBS 141387	Gaeumannomyces australiensis								KX306480				KX306619			KX306683
+CBS 141390	Gaeumannomyces oryzicola								KX306516				KX306646			KX306717
+CBS 141394	Gaeumannomyces setariicola								KX306524				KX306654			KX306725
+CBS 141400	Gaeumannomyces walkeri								KX306543				KX306670			KX306746
+CBS 141542	Diaporthe caatingaensis			KY115597				KY115605	KY085927							KY115603		KY115600
+CBS 141596	Coniella fusiformis								KX833576					KX833481		KX833674
+CBS 141597	Coniella lanneae								KX833585					KX833491		KX833685
+CBS 141598	Coniella malaysiana								KX833588					KX833494		KX833688
+CBS 142.84	Plenodomus enteroleucus								JF740214					KY064042				KT266266
+CBS 142101	Phaeoacremonium pseudopanacis	KY173569																KY173609
+CBS 142243	Huntiella abstrusa								KY913291		KY913289							KY913290
+CBS 142517	Cylindrocladiella vitis								KY979751	KY979806						KY979891		KY979918
+CBS 142518	Apoharknessia eucalypti			MG934510					MG934432									MG934505
+CBS 142519	Apoharknessia eucalyptorum			KY979867					KY979752									KY979919
+CBS 142524	Paraphoma rhaphiolepidis								KY979758					KY979851		KY979896		KY979924
+CBS 142538	Harknessia communis			KY979868					KY979778
+CBS 142539	Harknessia banksiae			KY979872					KY979782									KY979938
+CBS 142540	Harknessia banksiigena			KY979874					KY979784
+CBS 142541	Harknessia banksiae-repens			KY979875					KY979785									KY979940
+CBS 142542	Harknessia platyphyllae			KY979877					KY979787
+CBS 142543	Harknessia pellitae			KY979878					KY979788
+CBS 142544	Harknessia malayensis			KY979879					KY979789									KY979941
+CBS 142549	Diaporthe limonicola			MF418256				MF418342	MF418422							MF418501		MF418582
+CBS 142551	Diaporthe melitensis			MF418258				MF418344	MF418424							MF418503		MF418584
+CBS 142612	Cladosporium chasmanthicola	KY646224							KY646221							KY646227
+CBS 142613	Cladosporium kenpeggii	KY646225							KY646222							KY646228
+CBS 142614	Cladosporium welwitschiicola	KY646226							KY646223							KY646229
+CBS 142644	Pleiochaeta carotae								KY905669	KY905663
+CBS 142686	Phaeoacremonium pravum	KY084248																KY084246
+CBS 142688	Phaeoacremonium album	KY906884																KY906885
+CBS 142691	Phaeoacremonium aureum	KY906656																KY906657
+CBS 142694	Phaeoacremonium bibendum	KY906758																KY906759
+CBS 142697	Phaeoacremonium junior	KY906708																KY906709
+CBS 142699	Phaeoacremonium longicollarum	KY906688																KY906689
+CBS 142704	Phaeoacremonium oleae	KY906936																KY906937
+CBS 142705	Phaeoacremonium paululum	KY906880																KY906881
+CBS 142706	Phaeoacremonium proliferatum	KY906902																KY906903
+CBS 142708	Phaeoacremonium rosicola	KY906830																KY906831
+CBS 142710	Phaeoacremonium meliae	KY906824																KY906825
+CBS 142711	Phaeoacremonium spadicum	KY906838																KY906839
+CBS 142712	Phaeoacremonium gamsii	KY906740																KY906741
+CBS 142713	Phaeoacremonium geminum	KY906648																KY906649
+CBS 142779	Cylindrocladiella humicola								MF444906							MF444933		MF444919
+CBS 142782	Cylindrocladiella reginae								MF444909							MF444936		MF444922
+CBS 142784	Cylindrocladiella horticola								MF444911							MF444938		MF444924
+CBS 142786	Cylindrocladiella brevistipitata															MF444940		MF444926
+CBS 142788	Cylindrocladiella lateralis								MF444914							MF444942		MF444928
+CBS 142789	Cylindrocladiella terrestris								MF444915							MF444943		MF444929
+CBS 143.27	Diaporthe megalospora			KC343382				KC343624	KC343140							KC343866		KC344108
+CBS 143.64	Curvularia prasadii					KM061785			KJ922373							KM230408
+CBS 143.84	Plenodomus influorescens								JF740228					KY064045				KT266267
+CBS 143.97	Coniella koreana								KX833584					KX833490		KX833684
+CBS 143347	Diaporthe bohemiae			MG281710				MG281361	MG281015							MG281536		MG281188
+CBS 143349	Diaporthe celeris			MG281712				MG281363	MG281017							MG281538		MG281190
+CBS 143351	Diaporthe hispaniae			MG281820				MG281471	MG281123							MG281644		MG281296
+CBS 143353	Diaporthe hungariae			MG281823				MG281474	MG281126							MG281647		MG281299
+CBS 143401	Macgarvieomyces luzulae	MG934462		MG934519					MG934440				MG934469
+CBS 143409	Phyllosticta persooniae	MG934467				MG934475			MG934460							MG934503
+CBS 143410	Phyllosticta iridigena	MG934466							MG934459							MG934502
+CBS 143449	Diaporthe obtusifoliae							MG386137	MG386072
+CBS 143769	Diaporthe heterophyllae			MG600218				MG600220	MG600222							MG600224		MG600226
+CBS 143770	Diaporthe racemosae			MG600219				MG600221	MG600223							MG600225		MG600227
+CBS 143791	Cylindrocladiella nauliensis								MH111386							MH111396		MH111391
+CBS 143792	Cylindrocladiella nauliensis								MH111387							MH111397		MH111392
+CBS 143793	Cylindrocladiella addiensis								MH111385							MH111395		MH111390
+CBS 143794	Cylindrocladiella addiensis								MH111383							MH111393		MH111388
+CBS 143795	Cylindrocladiella addiensis								MH111384							MH111394		MH111389
+CBS 143847	Microdochium novae-zelandiae								LT990655					LT990641				LT990608
+CBS 143913	Harknessia bourbonica			MG934512					MG934433
+CBS 143914	Harknessia cupressi			MG934514					MG934435
+CBS 143918	Metulocladosporiella chiangmaiensis			MG934522					MG934443							MG934476
+CBS 143919	Metulocladosporiella malaysiana			MG934523					MG934444							MG934477
+CBS 143920	Metulocladosporiella musigena			MG934539					MG934452							MG934494
+CBS 143921	Metulocladosporiella samutensis			MG934540					MG934453							MG934495
+CBS 144.27	Diaporthe neilliae			KC343386				KC343628	KC343144							KC343870		KC344112
+CBS 144.31	Colletotrichum lindemuthianum	JQ005842			JQ005800	JX546712	KF178643	JQ005821	JQ005779									JQ005863
+CBS 144.36	Calonectria indusiata			GQ267453				GQ267262	GQ280658	GQ280780				KY653396		GQ267332		GQ267239
+CBS 144.63	Curvularia muehlenbeckiae					HG779108			HG779002
+CBS 145.26	Diaporthe hickoriae			KC343360				KC343602	KC343118							KC343844		KC344086
+CBS 145.57	Dichotomophthora lutea					LT990663			LT990647					LT990634
+CBS 146.27	Diaporthe rhoina			KC343431				KC343673	KC343189							KC343915		KC344157
+CBS 146.46	Diaporthe alnea			KC343250				KC343492	KC343008							KC343734		KC343976
+CBS 146.63	Curvularia tuberculata					JX276445			JX256433							JX266599
+CBS 148.27	Diaporthe woolworthii			KC343487				KC343729	KC343245							KC343971		KC344213
+CBS 149.22	Coniella straminea								AY339348					KX833506		KX833704
+CBS 149.71	Curvularia senegalensis					HG779128			HG779001
+CBS 149.94	Dichotomophthora brunnea					LT990669			LT990653					LT990639
+CBS 150.22	Monilinia linhartiana								KX982701							LT632539
+CBS 150.63	Curvularia verruculosa					KP645346			KP400652							KP735695
+CBS 151.35	Colletotrichum truncatum	GU227960			GU228352	GU228254		GU228058	GU227862									GU228156
+CBS 151.73	Diaporthe perseae			KC343415				KC343657	KC343173							KC343899		KC344141
+CBS 152.91	Cylindrocladiella nederlandica							JN098910	JN100603	JN099195						JN099033		JN098800
+CBS 153.71	Harknessia renispora			AY720800					AY720737									AY720769
+CBS 154.34	Curvularia affinis					KM230401			KJ909780							KM196566
+CBS 155.26	Bipolaris saccharicola					KY905686			KY905674							KY905694
+CBS 156.35	Curvularia pallescens					KM083606			KJ922380							KM196570
+CBS 156.60	Curvularia homomorpha					JN600970			JN192380							JN601014
+CBS 157.29	Diaporthe nomurai			KC343396				KC343638	KC343154							KC343880		KC344122
+CBS 158.83	Colletotrichum trifolii	KF178575			KF178527	KF178502	KF178624	KF178551	KF178478									KF178599
+CBS 159.84	Colletotrichum melonis	JQ949515			JQ948855	JQ948524		JQ949185	JQ948194									JQ949845
+CBS 160.32	Diaporthe vaccinii			KC343470				KC343712	AF317578							GQ250326		KC344196
+CBS 160.58	Curvularia nodulosa					JN600975			JN601033							JN601019
+CBS 161.64	Diaporthe arecae			KC343274				KC343516	KC343032							KC343758		KC344000
+CBS 161.74	Metulocladosporiella musae								DQ008137							MG934478
+CBS 162.33	Diaporthe crotalariae			KC343298				KC343540	KC343056							KC343782		KC344024
+CBS 163.28	Calonectria pseudopteridis			KM396076												KM395902
+CBS 165.60	Coniella nigra								AY339319					KX833496		KX833691
+CBS 167.49	Colletotrichum spaethianum	GU227905			GU228297	GU228199		GU228003	GU227807									GU228101
+CBS 169.49	Colletotrichum nigrum	JX546646			JX546693	JX546742		JX546791	JX546838									JX546885
+CBS 169.53	Curvularia oryzae					KP645344			KP400650							KM196590
+CBS 170.24	Monilinia seaveri								KX982705
+CBS 170.70	Paraphoma fimeti								KF251170					KF252178		KF253128		KF252665
+CBS 171.52	Cladosporium cucumerinum	HM148561							HM148072							HM148316
+CBS 171.54	Cladosporium paracladosporioides	HM148609							HM148120							HM148364
+CBS 172.24	Monilinia vaccinii-corymbosi								KX982706							LT632543
+CBS 172.49	Coniella fragariae								AY339317					KX833472		KX833663
+CBS 172.51	Colletotrichum lini	JQ005828			JQ005786	KM105581		JQ005807	JQ005765									JQ005849
+CBS 173.55	Curvularia trifolii					HG779124			HG779023
+CBS 174.35	Dichotomophthora portulacae					LT990668			LT990652					LT990638
+CBS 174.55	Calonectria penicilloides			GQ267406				GQ267257	GQ280609	GQ280731				KY653427		GQ267322		AF333414
+CBS 175.67	Colletotrichum phyllanthi	JQ005569		JQ005742	JQ005395	JQ005308		JQ005482	JQ005221									JQ005655
+CBS 180.91	Diaporthe ganjae			KC343354				KC343596	KC343112							KC343838		KC344080
+CBS 186.50	Curvularia brachyspora					KM061784			KJ922372							KM230405
+CBS 187.50	Curvularia geniculata					KM083609			KJ909781							KM230410
+CBS 189.48	Curvularia eragrostidis					HG779154			HG778986							HG779164
+CBS 189.54	Cladosporium langeronii	EF101357							DQ780379							JN906990
+CBS 190.48	Curvularia pisi					KY905690			KY905678							KY905697
+CBS 190.50	Calonectria ilicicola			AY725764				AY725676	GQ280605	GQ280727				KM232307		AY725726		AY725631
+CBS 192.29	Curvularia coicis					JN600962			JN192373							JN601006
+CBS 193.36	Diaporthe stewartii								FJ889448							GQ250324
+CBS 193.54	Cladosporium sphaerospermum	EF101380							DQ780343							EU570261
+CBS 193.62	Curvularia ellisii					JN600963			JN192375							JN601007
+CBS 194.36	Diaporthe longispora			KC343377				KC343619	KC343135							KC343861		KC344103
+CBS 197.29	Curvularia miyakei					KM083611			KJ909770							KM196568
+CBS 198.35	Colletotrichum kinghornii	JQ949775			JQ949115	JQ948785		JQ949445	JQ948454									JQ950105
+CBS 199.29	Bipolaris panici-miliacei					KM042896			KJ909773							KM093788
+CBS 202.29	Bipolaris yamadae					KM034830			KJ909779							KM093773
+CBS 210.79	Curvularia gladioli					HG779123			HG778987
+CBS 210.94	Cylindrocladiella pseudohawaiiensis							JN098890	JN099128	JN099174						JN099012		JN098819
+CBS 217.64	Colletotrichum trichellum	GU227910			GU228302	GU228204		GU228009	GU227812									GU228106
+CBS 221.52	Curvularia uncinata					HG779134			HG779024
+CBS 221.81	Colletotrichum circinans	GU227953			GU228345	GU228247		GU228051	GU227855									GU228149
+CBS 222.96	Curvularia soli					KY905691			KY905679							KY905698
+CBS 230.51	Calonectria brasiliensis			GQ267421				GQ267259	GQ280624	GQ280746				KY653364		GQ267328		GQ267241
+CBS 230.52	Diaporthe infertilis			KC343294				KC343536	KC343052							KC343778		KC344020
+CBS 235.32	Gaeumannomyces oryzinus								JX134669				KM485049			JX134695
+CBS 239.48	Curvularia portulacae					KM083616			KJ909775
+CBS 241.92	Bipolaris heveae					KM034843			KJ909763							KM093791
+CBS 242.91	Microdochium fisheri								KP859015					KP859124				KP859078
+CBS 244.64	Plenodomus congestus								AF439460					KY064041				KY064058
+CBS 246.49	Curvularia buchloës					KM061789			KJ909765							KM196588
+CBS 246.91	Phaeoacremonium minimum	AY735497																AF246811
+CBS 248.92	Plenodomus lupini								JF740236					KY064048				KY064061
+CBS 251.38	Diaporthe scobina			KC343437				KC343679	KC343195							KC343921		KC344163
+CBS 252.38	Coniella granati								KX833581					KX833488		KX833681
+CBS 260.94	Plenodomus lingam								JF740235					KY064047				KY064060
+CBS 269.76	Microdochium tainanense								KP859009					KP859118				KP859072
+CBS 274.52	Curvularia spicifera					JN600979			JN192387							JN601023
+CBS 274.80A	Cladosporium puyae	KT600614							KT600418							KT600516
+CBS 274.80B	Cladosporium colombiae	FJ936166							FJ936159							FJ936163
+CBS 280.91	Bipolaris microlaenae					JN600974			JN601032							JN601017
+CBS 284.91	Curvularia heteropogonis					JN600969			JN192379							JN601013
+CBS 285.71	Microdochium phragmitis								KP859013					KP859122				KP859076
+CBS 288.56	Diaporthe gardeniae			KC343355				KC343597	KC343113							KC343839		KC344081
+CBS 290.79	Microdochium albescens								KP859014					KP859123				KP859077
+CBS 292.67	Colletotrichum brisbanense	JQ949612			JQ948952	JQ948621		JQ949282	JQ948291									JQ949942
+CBS 292.90	Phyllosticta spinarum	JF343669				JF343773			JF343585							JF343606
+CBS 293.79	Calonectria colhounii			GQ267373				DQ190639	GQ280565	GQ280687				KY653376		GQ267301		DQ190564
+CBS 294.61	Curvularia aeria					HF565450			HE861850
+CBS 296.53	Gaeumannomyces radicicola								KM484845				KM485061			KM009206
+CBS 296.67	Diaporthe sclerotioides			KC343435				KC343677	KC343193							KC343919		KC344161
+CBS 298.94	Colletotrichum ocimi	KM105432			KM105292	KM105577		KM105362	KM105222									KM105502
+CBS 300.96	Cladosporium longissimum	EF101385							DQ780352							EU570259
+CBS 308.67	Curvularia papendorfii					KM083617			KJ909774							KM196594
+CBS 317.86	Curvularia akaii					KM230402			KJ909782							KM196569
+CBS 320.53	Allantophomopsiella pseudotsugae								KJ663825					KJ663905
+CBS 326.75	Neofabraea inaequalis								KR859081					KR859321				KR859287
+CBS 327.64	Bipolaris victoriae					KM034811			KJ909778							KM093748
+CBS 329.35	Monilinia fructicola								KX982695							LT632533
+CBS 330.75	Colletotrichum costaricense	JQ949501			JQ948841	JQ948510		JQ949171	JQ948180									JQ949831
+CBS 334.64	Curvularia intermedia					HG779155			HG778991							HG779169
+CBS 337.90	Phaeoacremonium sphinctrophorum	DQ173142																DQ173113
+CBS 338.89	Diaporthe pulla			KC343394				KC343636	KC343152							KC343878		KC344120
+CBS 338.92	Cylindrocladiella elegans							AY793512	AY793444	JN099201						JN099039		AY793474
+CBS 340.92	Cylindrocladiella lageniformis							AY793520	AF220959	JN099165						JN099003		AY793481
+CBS 342.97	Harknessia eucalypti			AY720808					AY720745									AY720777
+CBS 346.37	Colletotrichum fructi	GU227942			GU228334	GU228236		GU228040	GU227844									GU228138
+CBS 348.72	Monilinia fructigena								KX982697							LT632535
+CBS 350.77	Gaeumannomyces hyphopodioides								KX306506				KM009192			KM009204
+CBS 350.90	Curvularia perotidis					KJ415394			JN192385							JN601021
+CBS 352.93	Gaeumannomyces graminicola								KM484834				KM485050			KX306697
+CBS 358.69	Cladosporium phlei	JN907000							JN906981							JN906991
+CBS 367.91	Boeremia hedericola	KY484568		KY484618					GU237842					KT389579		KY484718		GU237511
+CBS 369.75	Colletotrichum coccodes	HM171667			JX546681	HM171673		JX546779	HM171679									JX546873
+CBS 370.54	Diaporthe stictica			KC343454				KC343696	KC343212							KC343938		KC344180
+CBS 375.64	Plenodomus confertus								AF439459					KY064040				KY064057
+CBS 376.65	Curvularia protuberata					KM083605			KJ922376							KM196576
+CBS 378.67	Boeremia lycopersici	EU880898		KY484623					GU237848					KT389580		KY484726		GU237512
+CBS 378.94	Colletotrichum petchii	JQ005571		JQ005744	JQ005397	JQ005310		JQ005484	JQ005223									JQ005657
+CBS 381.67	Plenodomus lindquistii								JF740233									AY749028
+CBS 386.64	Cladosporium colocasiae	HM148555							HM148067							HM148310
+CBS 387.81	Gaeumannomyces ellisiorum								KM484835				KM485051			KX306692
+CBS 388.93	Monilinia baccarum								KX982694							LT632532
+CBS 391.71	Phaeoacremonium inflatipes	AY579259																AF246805
+CBS 398.84	Colletotrichum magnisporum	KF687803			KF687782	KF687842	KF687742	KF687865	KF687718									KF687882
+CBS 401.80	Cladosporium inversicolor	HM148590							HM148101							HM148345
+CBS 413.67	Calonectria uniseptata			GQ267379				GQ267248	GQ280573	GQ280695						GQ267307		GQ267208
+CBS 414.62	Plenodomus fallaciosus								JF740222					KY064043
+CBS 419.78	Curvularia cymbopogonis					HG779129			HG778985							HG779163
+CBS 431.74	Boeremia exigua var. exigua	EU880854		KY484584					FJ427001					KT389569		KY484687		FJ427112
+CBS 434.92	Phyllosticta hypoglossi	FJ538483				JF343695			FJ538367							FJ538425
+CBS 436.77	Colletotrichum pseudoacutatum	JQ949801			JQ949141	JQ948811		JQ949471	JQ948480									JQ950131
+CBS 443.94	Boeremia exigua var. heteromorpha	EU880869		KY484598					GU237866					KT389573		KY484700		GU237497
+CBS 444.82	Diaporthe eugeniae			KC343340				KC343582	KC343098							KC343824		KC344066
+CBS 445.82	Phyllosticta eugeniae	KF289246				KF289139			AY042926							KF289208
+CBS 447.68	Phyllosticta foliorum	KF289247				KF289132			KF170309							KF289201
+CBS 447.70	Phyllosticta gaultheriae	KF289248				JN692508			JN692543							JN692531
+CBS 454.81	Diaporthe chamaeropis			KC343290				KC343532	KC343048							KC343774		KC344016
+CBS 455.68	Coniella javanica								KX833583					KX833489		KX833683
+CBS 461.65	Macgarvieomyces borealis	KM485170		KM485239					KM484854				KM485070
+CBS 462.69	Diaporthe pseudophoenicicola			KC343426				KC343668	KC343184							KC343910		KC344152
+CBS 470.90	Curvularia ovariicola					JN600976			JN192384							JN601020
+CBS 481.92	Diaporthe hordei			KC343362				KC343604	KC343120							KC343846		KC344088
+CBS 486.77	Cylindrocladiella novazelandica							AY793525	AF220963	JN099212						JN099050		AY793485
+CBS 494.80	Oculimacula yallundae								JF412009							MG934500
+CBS 495.72	Diaporthe alleghaniensis			KC343249				KC343491	FJ889444							GQ250298		KC843228
+CBS 495.80	Oculimacula acuformis								MG934455							MG934497
+CBS 495.85	Colletotrichum tofieldiae	GU227899			GU228291	GU228193		GU227997	GU227801									GU228095
+CBS 496.63	Pleiochaeta setosa								EU167563	EU167563
+CBS 496.80	Oculimacula anguioides								LT990662							LT990618
+CBS 498.94	Phaeoacremonium rubrigenum	AY579238																AF246802
+CBS 501.97	Colletotrichum vignae	KM105393			KM105253	KM105534		KM105323	KM105183									KM105463
+CBS 504.72	Diaporthe eleagni			KC343306				KC343548	KC343064							KC343790		KC344032
+CBS 504.97	Colletotrichum sidae	KF178569			KF178521	KF178497	KF178618	KF178545	KF178472									KF178593
+CBS 505.76	Diaporthe manihotia			KC343380				KC343622	KC343138							KC343864		KC344106
+CBS 507.78	Diaporthe melonis			KC343384				KC343626	KC343142							KC343868		KC344110
+CBS 515.78	Colletotrichum nymphaeae	JQ949518			JQ948858	JQ948527		JQ949188	JQ948197									JQ949848
+CBS 515.97	Colletotrichum spinosum	KF178571			KF178523	KF178498	KF178620	KF178547	KF178474									KF178595
+CBS 518.78	Dichotomophthora lutea					LT990666			LT990650
+CBS 521.97	Colletotrichum malvarum	KF178577			KF178529	KF178504	KF178626	KF178553	KF178480									KF178601
+CBS 522.66	Paraphoma chrysanthemicola								KF251166					KF252174		KF253124		KF252661
+CBS 522.97	Colletotrichum tebeestii	KF178570			KF178522	KF178505	KF178619	KF178546	KF178473									KF178594
+CBS 523.78	Coniella erumpens								KX833535					KX833446		KX833630
+CBS 524.73	Coniella macrospora								KX833587					KX833493		KX833687
+CBS 529.93	Colletotrichum radicis	KF687785		KF687806	KF687762	KF687825	KF687743	KF687847	KF687719									KF687869
+CBS 534.93	Diaporthe toxica			KC343462				KC343704	KC343220							KC343946		KC344188
+CBS 535.87	Phyllosticta beaumarisii	KF306232				KF289074			AY042927							KF289170
+CBS 537.75	Curvularia verruciformis					HG779133			HG779026							HG779211
+CBS 539.63	Plenodomus chrysanthemi								JF740253					KY064038				KY064055
+CBS 540.92	Microdochium bolleyi								KP859010					KP859119				KP859073
+CBS 551.93	Plenodomus tracheiphilus								JF740249					KY064049				KT266269
+CBS 552.92	Pleiochaeta ghindensis								EU167561	EU167561
+CBS 555.92	Calonectria spathulata			GQ267426				GQ267261	GQ280630	GQ280752				KY653449		FJ918554		GQ267215
+CBS 558.93	Diaporthe woodii			KC343486				KC343728	KC343244							KC343970		KC344212
+CBS 562.92	Neofusicoccum luteum								KX464170					KX464020		KX464690		KX464968
+CBS 569.79	Boeremia lilacis	EU880875		KY484619					GU237892							KY484721		GU237498
+CBS 570.97	Colletotrichum orbiculare	KF178563			KF178515	KF178490	KF178611	KF178539	KF178466									KF178587
+CBS 571.88	Colletotrichum pseudomajus	KF687801		KF687807	KF687779	KF687826	KF687744	KF687864	KF687722									KF687883
+CBS 574.78	Cladosporium lycoperdinum	HM148604							HM148115							HM148359
+CBS 584.71	Dichotomophthora lutea					LT990664			LT990648					LT990635
+CBS 585.71	Dichotomophthora lutea					LT990665			LT990649					LT990636
+CBS 585.84	Phyllosticta minima	KF289249				KF289135			KF206176							KF289204
+CBS 587.69	Phyllosticta philoprina	KF289250				KF289137			KF154278							KF289206
+CBS 589.78	Diaporthe oncostoma			KC343404				KC343646	KC343162							KC343888		KC344130
+CBS 590.84	Coniella diplodiopsis								AY339334
+CBS 592.81	Diaporthe helianthi			JX197454				KC343599	KC343115							KC343841		KC344083
+CBS 595.76	Neofusicoccum pistaciae								KX464163					KX464008		KX464676		KX464953
+CBS 607.94	Colletotrichum salicis	JQ949781			JQ949121	JQ948791		JQ949451	JQ948460									JQ950111
+CBS 610.82	Macgarvieomyces juncicola	KM485171		KM485240					KM484855				KM485071
+CBS 623.77	Microdochium trichocladiopsis								KP858998					KP859107				KP859061
+CBS 624.68	Curvularia robusta					KM083613			KJ909783							KM196577
+CBS 624.94	Microdochium colombiense								KP858999					KP859108				KP859062
+CBS 629.68	Boeremia sambuci-nigrae	KY484570		KY484630					GU237897							KY484734		GU237517
+CBS 630.82	Curvularia ischaemi					JX276440			JX256428
+CBS 632.80	Colletotrichum orchidophilum	JQ949472			JQ948812	JQ948481		JQ949142	JQ948151									JQ949802
+CBS 651.85	Phaeoacremonium venezuelense	AY579256																AY579320
+CBS 655.741, BRIP 11983	Curvularia nicotiae					KJ415396			KJ415551							KJ415442
+CBS 656.74	Curvularia subpapendorfii					KM061791			KJ909777							KM196585
+CBS 681.84	Diaporthe cf hevea			KC343359				KC343601	KC343117							KC343843		KC344085
+CBS 690.92	Cladosporium antarcticum	EF679484							EF679334							EF679405
+CBS 690.96	Bipolaris bicolor					KM042893			KJ909762							KM093776
+CBS 691.96	Microdochium sorghi								KP859000					KP859109				KP859063
+CBS 719.96	Diaporthe cinerascens			KC343292				KC343534	KC343050							KC343776		KC344018
+CBS 720.97	Diaporthe anacardii			KC343266				KC343508	KC343024							KC343750		KC343992
+CBS 724.97	Colletotrichum pisicola	KM105382			KM105242	KM105522		KM105312	KM105172									KM105452
+CBS 728.68	Calonectria leguminum			GQ267391				DQ190654	GQ280589	GQ280711						FJ918547		AF389837
+CBS 728.79	Phyllosticta podocarpicola	KF289252				KF289134			KF206173							KF289203
+CBS 730.96	Curvularia lunata					JX276441			JX256429							JX266596
+CBS 736.68	Pilidium acerinum								AY487091	AY487092
+CBS 741.79	Microdochium majus								KP859001					KP859110				KP859064
+CBS 749.70	Calonectria lauri			GQ267388				GQ267250	GQ280584	GQ280706				KY653403		GQ267312		GQ267210
+CBS 756.70	Phyllosticta sphaeropsoidea	KF289253				KF289133			AY042934							KF289202
+CBS 766.71	Coniella solicola								KX833597					KX833505		KX833701
+CBS 775.97	Harknessia leucospermi			AY720790					AY720727									AY720759
+CBS 776.97	Phyllosticta owaniana	KF289254				JF343767			FJ538368							FJ538426
+CBS 777.83	Phaeoacremonium argentinense	DQ173135																DQ173108
+CBS 777.97	Phyllosticta telopeae	KF289255				KF289141			KF206205							KF289210
+CBS 812.96	Cladosporium globisporum	HM148585							HM148096							HM148340
+CBS 822.84	Cladosporium basiinflatum	HM148487							HM148000							HM148241
+CBS 842.91	Cladosporium ossifragi	EF679535							EF679381							EF679459
+CBS 852.97	Diaporthe cf hevea			KC343358				KC343600	KC343116							KC343842		KC344084
+CBS 853.73	Colletotrichum cosmi	JQ949595			JQ948935	JQ948604		JQ949265	JQ948274									JQ949925
+CBS 858.71	Phyllosticta cruenta	MG934465				MG934474			MG934458							MG934501
+CBS 859.73	Curvularia borreriae					HF565455			HE861848
+CBS 860.73	Phaeoacremonium parasiticum	AY579253																AF246803
+CBS 875.72	Coniella nicotianae								KX833590					KX833495		KX833690
+CBS 903.73	Gaeumannomyces arxii								KM484837				KM485053			KX306681
+CBS 904.69	Coniella quercicola								KX833595					KX833502		KX833698
+CBS 905.73	Gaeumannomyces tritici								KM484841				KM485057			KX306731
+CBS 937.70	Phyllosticta concentrica	KF289257				JF411745			FJ538350							FJ538408
+CBS102688	Monilinia polystroma								KX982704							LT632542
+CBS129560	Cylindrocladiella pseudoparva							JN098927	JN100620	JN099218						JN099056		JN098824
+CBS142383	Diaporthe malorum			KY435658				KY435648	KY435638							KY435627		KY435668
+CBS142384	Diaporthe pyracanthae			KY435656				KY435645	KY435635							KY435625		KY435666
+CERC1947	Neofusicoccum hellenicum								KP217053							KP217061		KP217069
+CFCC 50062	Diaporthe rostrata			KP208849				KP208851	KP208847							KP208853		KP208855
+CFCC 50469	Diaporthe betulae			KT732997				KT732999	KT732950							KT733016		KT733020
+CFCC 51128	Diaporthe betulicola			KX024659				KX024661	KX024653							KX024655		KX024657
+CFCC 51134	Diaporthe juglandicola			KX024616					KU985101							KX024628		KX024634
+CFCC 51632	Diaporthe camptothecicola			KY228877				KY228881	KY203726							KY228887		KY228893
+CFCC 51634	Diaporthe sennicola			KY228873					KY203722							KY228883		KY228889
+CFCC 51636	Diaporthe sennae			KY228875					KY203724							KY228885		KY228891
+CFCC 51986	Diaporthe sambucusii			KY852499				KY852503	KY852495							KY852507		KY852511
+CFCC 51988	Diaporthe schisandrae			KY852501				KY852505	KY852497							KY852509		KY852513
+CGMCC 3.14354	Phyllosticta schimae	JN692510				JN692506			JN692534							JN692522
+CGMCC 3.14355	Phyllosticta hostae	JN692511				JN692503			JN692535							JN692523
+CGMCC 3.14358	Phyllosticta ilicis-aquifolii	JN692514							JN692538							JN692526
+CGMCC 3.14925	Colletotrichum camelliae	KJ954363	KJ954497	KJ954634		KJ954782	KJ954932		KJ955081									KJ955230
+CGMCC 3.14983 	Colletotrichum aracearum	KX893578				KX893586			KX853167									KX893582
+CGMCC 3.14985	Phyllosticta styracicola	JX025035				JX025030			JX052040							JX025045
+CGMCC 3.14986	Phyllosticta hubeiensis	JX025032				JX025027			JX025037							JX025042
+CGMCC 3.15112	Colletotrichum guizhouensis	KC843536				KC843507			JX625158									JX625185
+CGMCC 3.15117	Colletotrichum bletillum	KC843542				KC843506			JX625178									JX625207
+CGMCC 3.15130	Colletotrichum excelsum-altitudum	KC843548				KC843502			HM751815									JX625211
+CGMCC 3.15175	Diaporthe lithocarpus								KC153104							KC153095		KF576311
+CGMCC 3.15181	Diaporthe mahothocarpus								KC153096							KC153087
+CGMCC 3.15183	Diaporthe ternstroemia								KC153098							KC153089
+CGMCC 3.17081	Diaporthe biguttusis								KF576282							KF576257		KF576306
+CGMCC 3.17084	Diaporthe ellipicola								KF576270							KF576245		KF576294
+CGMCC 3.17087	Diaporthe fusicola			KF576233					KF576281							KF576256		KF576305
+CGMCC 3.17089	Diaporthe longicicola								KF576267							KF576242		KF576291
+CGMCC 3.17092	Diaporthe ovoicicola			KF576222					KF576264							KF576239		KF576288
+CGMCC 3.17252	Diaporthe biconispora							KJ490539	KJ490597							KJ490476		KJ490418
+CGMCC 3.17317	Phyllosticta carochlae	KJ847430				KJ847438			KJ847422							KJ847444
+CGMCC 3.17319	Phyllosticta schimicola	KJ847434				KJ854895			KJ847426							KJ847448
+CGMCC 3.17322	Phyllosticta vitis-rotundifoliae	KJ847436				KJ847442			KJ847428							KJ847450
+CGMCC 3.17354	Colletotrichum henanense	KM023257	KJ954524	KJ954662		KJ954810	KJ954960		KJ955109									KJ955257
+CGMCC 3.17363	Colletotrichum jiangxiense	KJ954471	KJ954607	KJ954752		KJ954902	KJ955051		KJ955201									KJ955348
+CGMCC 3.17615	Colletotrichum conoides	KP890144		KP890150 	KP890156	KP890162			KP890168 									KP890174
+CGMCC 3.17894	Colletotrichum wuxiense	KU251672	KU251722	KU251833	KU251939	KU252045	KU252101		KU251591									KU252200
+CGMCC 3.18221	Plenodomus deqinensis								KY064027					KY064034				KY064052
+CGMCC 3.18222	Boeremia trachelospermi								KY064028					KY064033				KY064051
+CGMCC 3.18282	Diaporthe xishuangbanica							KX999255	KX986783							KX999175		KX999216
+CGMCC 3.18285	Diaporthe acutispora			KX999274				KX999235	KX986764							KX999155		KX999195
+CGMCC 3.18286	Diaporthe velutina							KX999261	KX986790							KX999182		KX999223
+CGMCC 3.18287	Diaporthe elaeagni-glabrae			KX999281				KX999251	KX986779							KX999171		KX999212
+CGMCC 3.18288	Diaporthe incompleta			KX999289				KX999265	KX986794							KX999186		KX999226
+CGMCC 3.18289	Diaporthe yunnanensis			KX999290				KX999267	KX986796							KX999188		KX999228
+CGMCC 3.18293	Diaporthe undulata							KX999269	KX986798							KX999190		KX999230
+CGMCC3.17569	Diaporthe unshiuensis							KJ490529	KJ490587							KJ490466		KJ490408
+CGMCC3.17614 	Colletotrichum grossum	KP890141		KP890147	KP890153	KP890159			KP890165									KP890171
+CGMCC3.17616 	Colletotrichum liaoningense	KP890097 		KP890119	KP890127	KP890135			KP890104									KP890111
+CGMCC3.17929	Microdochium chrysanthemoides								KU746690									KU746781
+CGMCC3.18118	Colletotrichum camelliae-japonicae	KX893576				KX893584			KX853165									KX893580
+CGMCC3.18281	Diaporthe podocarpi-macrophylli			KX999278				KX999246	KX986774							KX999167		KX999207
+CMM 1285	Neofusicoccum brasiliense								JX513628							JX513608		KC794030
+CMM 4312	Phaeoacremonium nordesticola	KY030803																KY030807
+CMW 23785	Neofusicoccum cryptoaustrale								FJ752742					KX464014		FJ752713		FJ752756
+CMW 24480	Neofusicoccum ursorum								FJ752746					KX464047		FJ752709		KX465056
+CMW 6837	Neofusicoccum australe								AY339262					EU339573		AY339270		AY339254
+CNPUV499	Neofabraea brasiliensis								KR107002									KR107011
+COAD 1020	Colletotrichum bidentis	KF178578			KF178530	KF178506	KF178627	KF178554	KF178481									KF178602
+COAD 1877	Colletotrichum abscissum	KP843141			KP843132	KP843129		KP843138	KP843126									KP843135
+CPC 13204	Cladosporium aphidis	JN906997							JN906978							JN906984
+CPC 16277	Harknessia kleinzeeina			JQ706193					JQ706108									JQ706152
+CPC 1675	Calonectria candelabrum			GQ267367				FJ972476	GQ280557	GQ280679						FJ972525		FJ972426
+CPC 17251	Cladosporium cycadicola	KJ869227							KJ869122							KJ869236
+CPC 18124	Metulocladosporiella musicola			MG934535					MG934448							MG934490
+CPC 18945	Colletotrichum tabacum	KM105414			KM105274	KM105557		KM105344	KM105204									KM105484
+CPC 25665	Phyllosticta carissicola	KT950872				KT950876			KT950849							KT950879
+CPC 26020	Gaeumannomyces graminis								KX306498				KX306633			KX306701
+CPC 26057	Gaeumannomyces glycinicola								KX306493				KX306628			KX306695
+CPC 26258	Gaeumannomyces avenae								KX306486				KX306622			KX306688
+CPC 29378	Microdochium bolleyi								LT990657					LT990643				LT990610
+CPC 29693	Microdochium novae-zelandiae								LT990656					LT990642				LT990609
+CPC 30174	Harknessia cupressi			MG934515					MG934436
+CPC 31555	Macgarvieomyces luzulae	MG934463		MG934520					MG934441				MG934470
+CPC 31571	Macgarvieomyces luzulae	MG934464		MG934521					MG934442				MG934471
+CPC 32807	Metulocladosporiella musicola			MG934536					MG934449							MG934491
+CPC 32849	Metulocladosporiella musicola			MG934537					MG934450							MG934492
+CPC 32970	Metulocladosporiella musicola			MG934538					MG934451							MG934493
+CPC 33016	Dichotomophthora basellae					LT990670			LT990654					LT990640
+CPC 33218	Harknessia pilularis			MG934517					MG934438									MG934508
+CPC 33289	Harknessia corymbiae			MG934513					MG934434									MG934507
+CPC 33356	Harknessia pilularis			MG934518					MG934439									MG934509
+CPC 33937	Metulocladosporiella musae			MG934525					MG934445							MG934480
+DAOM 165085	Curvularia gudauskasii								AF071338
+DAOM 42078	Diaporthe cucurbitae							KM453212	KM453210							KM453211		KP118848
+DAOMC 250563	Diaporthe maritima								KU552025							KU552023		KU574615
+DP0482, CBS 139280	Diaporthe arctii			KJ612133				KJ659218	KJ590736							KJ590776		KJ610891
+FAU 599	Diaporthe longicolla			KJ612124				KJ659188	KJ590728							KJ590767		KJ610883
+FAU 656	Diaporthe ueckerae			KJ612122				KJ659215	KJ590726							KJ590747		KJ610881
+FFPRI420987	Diaporthe toxicodendri			LC275200				LC275208	LC275192							LC275216		LC275224
+FIP 532E	Bipolaris zeicola					KM034815			KM230398							KM093752
+GZAAS 5.08601	Colletotrichum viniferum	JN412795		JQ309639		JN412798	JN412787		JN412804									JN412813
+HHUF 19771	Monilinia ssiori								AB220062
+ICMP 10492	Colletotrichum horii	JX009438	JQ807840	JX009604	JX009752	GQ329681	JX010137		GQ329690						JX010370			JX010450
+ICMP 12071	Colletotrichum alienum	JX009572	KM360144	JX009654	JX009882	JX010028	JX010101		JX010251						JX010333			JX010411
+ICMP 16988	Phaeoacremonium globosum	EU595466																EU596525
+ICMP 17037	Phaeoacremonium occidentale	EU595460																EU596524
+ICMP 17421	Phaeoacremonium armeniacum	EU595463																EU596526
+ICMP 17673	Colletotrichum aeschynomenes	JX009483		JX009721	JX009799	JX009930	JX010081		JX010176						JX010314			JX010392
+ICMP 1778	Colletotrichum queenslandicum	JX009447	KC888928	JX009691	JX009899	JX009934	JX010104		JX010276						JX010336			JX010414
+ICMP 17816	Colletotrichum kahawae subsp. kahawae	JX009452	JQ894579	JX009642	JX009813	JX010012	JX010130		JX010231						JX010350			JX010444
+ICMP 17903	Colletotrichum xanthorrhoeae	JX009478	KC790689	JX009653	JX009823	JX009927	JX010138		JX010261						JX010369			JX010448
+ICMP 17919	Colletotrichum alatae	JX009471	KC888932	JX009738	JX009837	JX009990	JX010065		JX010190						JX010305			JX010383
+ICMP 18187	Colletotrichum nupharicola	JX009437	JX145319	JX009663	JX009835	JX009972	JX010088		JX010187						JX010320			JX010398
+ICMP 18537	Colletotrichum aotearoa	JX009564	KC888930	JX009611	JX009853	JX010005	JX010113		JX010205						JX010345			JX010420
+ICMP 18539	Colletotrichum kahawae subsp. ciggaro	JX009523		JX009635	JX009800	JX009966	JX010132		JX010230						JX010346			JX010434
+ICMP 18578	Colletotrichum siamense	FJ907423	JQ899289	FJ917505	JX009865	JX009924	JX010094		JX010171						JX010326			JX010404
+ICMP 18579	Colletotrichum cordylinicola	HM470235	JQ899274	HM470238	JX009864	JX009975	JX010122		JX010226						JX010361			JX010440
+ICMP 18580	Colletotrichum asianum	JX009584	FR718814	FJ917506	JX009867	JX010053	JX010096		FJ972612						JX010328			JX010406
+ICMP 18581	Colletotrichum fructicola	FJ907426	JQ807838	FJ917508	JX009866	JX010033	JX010095		JX010165						JX010327			JX010405
+ICMP 18608	Colletotrichum aenigma	JX009443	KM360143	JX009683	JX009774	JX010044	JX010078		JX010244						JX010311			JX010389
+ICMP 18649	Colletotrichum theobromicola	JX009444	KC790726	JX009591	JX009869	JX010006	JX010139		JX010294						JX010372			JX010447
+ICMP 18653	Colletotrichum tropicale	JX009489	KC790728	JX009719	JX009870	JX010007	JX010097		JX010264						JX010329			JX010407
+ICMP 18658	Colletotrichum clidemiae	JX009537	KC888929	JX009645	JX009877	JX009989	JX010129		JX010265						JX010356			JX010438
+ICMP 19051	Colletotrichum salsolae	JX009562	KC888925	JX009696	JX009863	JX009916	JX010093		JX010242						JX010325			JX010403
+ICMP 19119	Colletotrichum musae	JX009433	KC888926	JX009742	JX009896	JX010050	JX010103		JX010146						JX010335			HQ596280
+ICMP 19120	Colletotrichum psidii	JX009515	KC888931	JX009743	JX009901	JX009967	JX010133		JX010219						JX010366			JX010443
+ICMP 20083	Colletotrichum riograndense	KM655295		KM655296	KM655297	KM655298			KM655299									KM65530
+ICMP 4832	Colletotrichum ti	JX009520	KM360146	JX009649	JX009898	JX009952	JX010123		JX010269						JX010362			JX010442
+ICMP 6227	Bipolaris sacchari					KM034842			KJ922386							KM093785
+ICMP20656	Diaporthe multigutullata							KJ490575	KJ490633							KJ490512		KJ490454
+ICMP20657	Diaporthe biguttulata							KJ490524	KJ490582							KJ490461		KJ490403
+ICMP20659	Diaporthe ovalispora							KJ490570	KJ490628							KJ490507		KJ490449
+ICMP20662	Diaporthe discoidispora							KJ490566	KJ490624							KJ490503		KJ490445
+ICMP20663	Diaporthe subclavata							KJ490572	KJ490630							KJ490509		KJ490451
+IFRDCC 3051	Diaporthe aquatica								JQ797437
+IMI 103806	Colletotrichum chlorophyti	GU227992			GU228384	GU228286		GU228090	GU227894									GU228188
+IMI 165753	Colletotrichum paxtonii	JQ949606			JQ948946	JQ948615		JQ949276	JQ948285									JQ949936
+IMI 288937	Colletotrichum curcumae	GU227991			GU228383	GU228285		GU228089	GU227893									GU228187
+IMI 304802	Colletotrichum cuscutae	JQ949516			JQ948856	JQ948525		JQ949186	JQ948195									JQ949846
+IMI 346845	Cylindrocladiella camelliae							AY793509	AF220952	JN099249						JN099087		AY793471
+IMI 347923	Colletotrichum cymbidiicola	JQ005514		JQ005687	JQ005340	JQ005253		JQ005427	JQ005166									JQ005600
+IMI 349061	Colletotrichum higginsianum	KM105394			KM105254	KM105535		KM105324	KM105184									KM105464
+IMI 350839	Colletotrichum guajavae	JQ949591			JQ948931	JQ948600		JQ949261	JQ948270									JQ949921
+IMI 364297	Colletotrichum sloanei	JQ949608			JQ948948	JQ948617		JQ949278	JQ948287									JQ949938
+IMI 45525	Colletotrichum verruculosum	GU227904			GU228296	GU228198		GU228002	GU227806									GU228100
+IMUR 1843	Cylindrocladiella peruviana							AY793540	AF220966	JN099266						JN098968		AY793500
+KY-1	Monilinia yunnanensis								HQ908788
+LC 3166	Diaporthe oraccinii							KP293517	KP267863							KP267937		KP293443
+LC 3353	Diaporthe penetriteum							KP714493	KP714505							KP714517		KP714529
+LC 3418	Diaporthe apiculatum							KP293550	KP267896							KP267970		KP293476
+LC3083	Diaporthe compacta							KP293508	KP267854							KP267928		KP293434
+MAFF 238172	Cylindrocladiella hahajimaensis								JN687561							JN687562
+MAFF 243051	Colletotrichum hsienjenchang	AB738845			AB738846			AB738847	AB738855
+MAFF 625119	Ceratocystis ficicola								NR_119410			KY685080		KY685082		KY316544	KY685077
+MFLU 14-0625	Colletotrichum menispermi	KU242353			KU242355	KU242356			KU242357									KU242354
+MFLU 14-0626	Colletotrichum quinquefoliae	KU236389				KU236390			KU236391									KU236392
+MFLU 15-1279	Diaporthe schoeni			KY964139					KY964226							KY964182		KY964109
+MFLU 15-1895	Colletotrichum insertae	KX618682			KX618683	KX618684			KX618686									KX618685
+MFLU 15-3228	Diaporthe pseudotsugae			KY964138					KY964225							KY964181		KY964108
+MFLUCC 10-0571	Diaporthe pterocarpi			JX197451					JQ619899							JX275416		JX275460
+MFLUCC 10-0573	Diaporthe siamensis								JQ619879							JX275393		JX275429
+MFLUCC 10-0580	Diaporthe pterocarpicola			JX197433					JQ619887							JX275403		JX275441
+MFLUCC 10-0624	Colletotrichum syzygicola	KF157801		KF254859		KF242156	KF242125		KF242094									KF254880
+MFLUCC 10-0703	Curvularia alcornii					JX276433			JX256420							JX266589
+MFLUCC 10-0711	Curvularia asiatica					JX276436			JX256424							JX266593
+MFLUCC 10-0715	Bipolaris oryzae					JX276430			JX256416							JX266585
+MFLUCC 10-0756	Diaporthe thunbergii			JX197440					JQ619893							JX275409		JX275449
+MFLUCC 12-0299	Diaporthe aseana			KT459464					KT459414							KT459448		KT459432
+MFLUCC 12-0437	Colletotrichum fusiforme	KT290251			KT290253	KT290255			KT290266									KT290256
+MFLUCC 12-0531	Colletotrichum hymenocallidicola	KT290260			KT290262	KT290263			KT290264									KT290261
+MFLUCC 12-0542	Diaporthe garethjonesii			KT459470					KT459423							KT459457		KT459441
+MFLUCC 12-0767	Diaporthe tectonigena			KU749358					KU712429							KU749371		KU743976
+MFLUCC 12-0777	Diaporthe tectonae			KU749345					KU712430							KU749359		KU743977
+MFLUCC 13-0418	Colletotrichum endophytica	KF306258		KC810018		KC832854			KC633854
+MFLUCC 13-0471	Diaporthe tectonendophytica			KU749354					KU712439							KU749367		KU743986
+MFLUCC 13-0707	Phaeoacremonium tectonae	KT285563																KT285555
+MFLUCC 130219	Plenodomus salviae								KT454725
+MFLUCC 14-1002	Colletotrichum sedi	KM974756			KM974754	KM974755			KM974758,									KM974757
+MFLUCC 14-1136	Diaporthe neoraonikayaporum			KU749356					KU712449							KU749369		KU743988
+MFLUCC 15-0022	Colletotrichum changpingense	KP683093			KP852449	KP852469			KP683152									KP852490
+MFLUCC 15-0479	Diaporthe ravennica								KU900335							KX365197		KX432254
+MFLUCC 15-0900	Neofusicoccum italicum								KY856755							KY856754
+MFLUCC 151876	Plenodomus guttulatus								KT454721
+MFLUCC 16-0105	Diaporthe pescicola			KU557603					KU557555							KU557623		KU557579
+MFLUCC 16-0113	Diaporthe momicola			KU557611					KU557563							KU557631		KU557587
+MFLUCC 16-0117	Diaporthe taoicola								KU557567							KU557635		KU557591
+MFLUCC 16-1195	Diaporthe litoricola								MF190139
+MFLUCC 17-0956	Diaporthe acericola			KY964137					KY964224							KY964180		KY964074
+MFLUCC 17-0963	Diaporthe lonicerae			KY964116					KY964190							KY964146		KY964073
+MFLUCC 17-1015	Diaporthe dorycnii								KY964215							KY964171		KY964099
+MFLUCC 17-1023	Diaporthe cichorii			KY964133					KY964220							KY964176		KY964104
+MFLUCC 17-1051	Diaporthe torilicola			KY964127					KY964212							KY964168		KY964096
+MFLUCC13-0726	Colletotrichum hebeiense	KF377532			KF289008	KF377495			KF156863									KF288975
+MUCC 0010	Phyllosticta aspidistricola	AB704204							AB454260
+MUCC 0014	Phyllosticta alliacea	AB704207							AB454263
+MUCC 0017	Phyllosticta kerriae	AB704209							AB454266							KC342576
+MUCC 0024	Phyllosticta ligustricola	AB704212							AB454269
+MUCC 0031	Phyllosticta ardisiicola	AB704216							AB454274
+MUCC 0113	Phyllosticta fallopiae	AB704228							AB454307
+MUCC 124	Phyllosticta pachysandricola	AB704232							AB454317
+MUCC 149	Phyllosticta hamamelidis	KF289309							KF170289
+MUCC 432	Phyllosticta rhaphiolepidis	AB704242							DQ632660							DQ632724
+MUCC 510	Neofusicoccum pennatisporum								EF591925							EF591976		EF591959
+NBRC 9466	Phyllosticta partricuspidatae	KJ847432				KJ847440			KJ847424							KJ847446
+NFCCI 2213	Coniella crousii								HQ264189
+PARC 273	Phaeoacremonium roseum	KF764506																KF764658
+PARC 327	Phaeoacremonium canadense	KF764499																KF764651
+SAPA100010	Colletotrichum chrysanthemi								AB696999									AB696993
+SAPA100011	Colletotrichum carthami								AB696998									AB696992
+STE-U 5966	Phaeoacremonium griseo-olivaceum	EU128139																EU128097
+STE-U 5967	Phaeoacremonium prunicola	EU128137																EU128095
+STE-U 5969	Phaeoacremonium fuscum	EU128141																EU128098
+STE-U 6104	Phaeoacremonium pallidum	EU128144																EU128103
+URM 7672	Phyllosticta catimbauensis	MF466157							MF466160							MF466155
+UTHSC 07-2764	Curvularia chlamydospora					HG779151			HG779021
+UTHSC 08-3414	Curvularia americana					HF565488			HE861833
+UTHSC 08-3458	Curvularia pseudorobusta					HF565476			HE861838
+UTHSC 09-2092	Curvularia pseudolunata					HF565459			HE861842
+VPRI 13689, CBS 142045	Coniella duckerae								KY924929
