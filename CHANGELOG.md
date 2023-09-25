@@ -1,3 +1,10 @@
+## v0.6.5 (2023-09-24)
+
+### Fix
+
+- fix signatures generation before serialize connection and nodes
+- fix returns of all domain modules that uses invalid-argument-error now inexisting from clean-base
+
 ## v0.6.4 (2023-09-24)
 
 ### Fix
