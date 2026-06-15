@@ -90,7 +90,7 @@ mypy = "^1.5.1"
 twine = "^4.0.2"
 keyring = "^24.2.0"
 artifacts-keyring = "^0.3.4"
-black = "^23.9.0"
+black = "^26.3.1"
 
 [tool.poetry.scripts]
 
